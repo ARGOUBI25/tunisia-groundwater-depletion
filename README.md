@@ -1,1 +1,222 @@
-IyBTYXRlbGxpdGUtQmFzZWQgQmlnIERhdGEgQW5hbHlzaXMgb2YgR3JvdW5kd2F0ZXIgRGVwbGV0aW9uIGluIFR1bmlzaWEKClshW0RPSV0oaHR0cHM6Ly96ZW5vZG8ub3JnL2JhZGdlL0RPSS8xMC41MjgxL3plbm9kby5bUkVDT1JEX0lEXS5zdmcpXShodHRwczovL2RvaS5vcmcvMTAuNTI4MS96ZW5vZG8uW1JFQ09SRF9JRF0pClshW0xpY2Vuc2U6IE1JVF0oaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS9MaWNlbnNlLU1JVC15ZWxsb3cuc3ZnKV0oTElDRU5TRSkKWyFbUHl0aG9uIDMuMTFdKGh0dHBzOi8vaW1nLnNoaWVsZHMuaW8vYmFkZ2UvcHl0aG9uLTMuMTEtYmx1ZS5zdmcpXShodHRwczovL3d3dy5weXRob24ub3JnLykKCj4gKipQYXBlcjoqKiAqU2F0ZWxsaXRlLUJhc2VkIEJpZyBEYXRhIEFuYWx5c2lzIG9mIEdyb3VuZHdhdGVyIERlcGxldGlvbiBhbmQKPiBXYXRlciBTdHJlc3MgRHluYW1pY3MgVW5kZXIgQ2xpbWF0ZSBDaGFuZ2UgaW4gQXJpZCBSZWdpb25zOiBBIENhc2UgU3R1ZHkgb2YgVHVuaXNpYSoKPiAqKkpvdXJuYWw6KiogRnJvbnRpZXJzIGluIEJpZyBEYXRhICgyMDI1KQoKLS0tCgojIyBPdmVydmlldwoKQ29tcGxldGUgcmVwcm9kdWNpYmxlIHBpcGVsaW5lIGZvciBzYXRlbGxpdGUtYmFzZWQgZ3JvdW5kd2F0ZXIgYW5hbHlzaXMKaW4gVHVuaXNpYSAoMjAwMuKAkzIwMjQpIGludGVncmF0aW5nIEdSQUNFL0dSQUNFLUZPLCBFUkE1LCBNT0RJUywgYW5kIEdMREFTCnRocm91Z2ggOSBzZXF1ZW50aWFsIFB5dGhvbiBtb2R1bGVzLgoKKipLZXkgcmVzdWx0czoqKgoKfCBab25lIHwgRGVwbGV0aW9uIHJhdGUgfCBDdW11bGF0aXZlICgyMiB5cikgfCBTdHJlc3MgMjAyM+KAkzIwMjQgfAp8LS0tLS0tfC0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLS0tLS0tLXwKfCBOb3J0aCB8IOKIkjAuNTI1IGNtIEVXSCB5cuKBu8K5ICoqKiB8IOKIkjExLjYgY20gRVdIIHwgOTIlIEhpZ2gvQ3JpdGljYWwgfAp8IENlbnRyYWwgfCDiiJIwLjUwMyBjbSBFV0ggeXLigbvCuSAqKiogfCDiiJIxMS4xIGNtIEVXSCB8IDU2JSBIaWdoL0NyaXRpY2FsIHwKfCBTb3V0aCB8IOKIkjAuMzEzIGNtIEVXSCB5cuKBu8K5ICoqKiB8IOKIkjYuOSBjbSBFV0ggfCA1NiUgSGlnaC9Dcml0aWNhbCB8CgotLS0KCiMjIEluc3RhbGxhdGlvbgoKYGBgYmFzaApnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL0FSR09VQkkyNS90dW5pc2lhLWdyb3VuZHdhdGVyLWRlcGxldGlvbi5naXQKY2QgdHVuaXNpYS1ncm91bmR3YXRlci1kZXBsZXRpb24KY29uZGEgZW52IGNyZWF0ZSAtZiBlbnZpcm9ubWVudC55bWwKY29uZGEgYWN0aXZhdGUgdHVuaXNpYS1ndwpgYGAKCi0tLQoKIyMgRGF0YSBBY2Nlc3MKClJhdyBkYXRhICh+MTUgR0IpIG5vdCBpbmNsdWRlZC4gU2VlIFtgc2NyaXB0cy8wMF9kb3dubG9hZF9ndWlkZS5tZGBdKHNjcmlwdHMvMDBfZG93bmxvYWRfZ3VpZGUubWQpLgoKfCBEYXRhc2V0IHwgU291cmNlIHwKfC0tLS0tLS0tLXwtLS0tLS0tLXwKfCBHUkFDRS9HUkFDRS1GTyBKUEwgUkwwNi4zTXYwNCB8IFtOQVNBIFBPLkRBQUNdKGh0dHBzOi8vcG9kYWFjLmpwbC5uYXNhLmdvdi8pIHwKfCBHTERBUyBOT0FIIHYyLjIgKyBWSUMgfCBbTkFTQSBHRVMgRElTQ10oaHR0cHM6Ly9kaXNjLmdzZmMubmFzYS5nb3YvKSB8CnwgRVJBNSAoUCArIFQybSkgfCBbQ29wZXJuaWN1cyBDRFNdKGh0dHBzOi8vY2RzLmNsaW1hdGUuY29wZXJuaWN1cy5ldS8pIHwKfCBNT0RJUyBNT0QxM0EzIHY2LjEgfCBbTkFTQSBBcHBFRUFSU10oaHR0cHM6Ly9hcHBlZWFycy5lYXJ0aGRhdGFjbG91ZC5uYXNhLmdvdi8pIHwKfCBDTUlQNiBTU1AyLTQuNSAvIFNTUDUtOC41IHwgW0VTR0ZdKGh0dHBzOi8vZXNnZi1ub2RlLmxsbmwuZ292L3Byb2plY3RzL2NtaXA2LykgfAoKUHJvY2Vzc2VkIG91dHB1dHMgYXZhaWxhYmxlIG9uIFplbm9kbzogKipodHRwczovL2RvaS5vcmcvMTAuNTI4MS96ZW5vZG8uW1JFQ09SRF9JRF0qKgoKLS0tCgojIyBSdW4gdGhlIHBpcGVsaW5lCgpgYGBiYXNoCiMgRnVsbCBwaXBlbGluZQpiYXNoIHJ1bl9hbGwuc2gKCiMgUmVzdGFydCBmcm9tIG1vZHVsZSAwNgpiYXNoIHJ1bl9hbGwuc2ggLS1mcm9tIDA2CgojIFNpbmdsZSBtb2R1bGUKcHl0aG9uIHNjcmlwdHMvMDZfdHJlbmRfYW5hbHlzaXMucHkKYGBgCgotLS0KCiMjIFJlcG9zaXRvcnkgU3RydWN0dXJlCgpgYGAK4pSc4pSA4pSAIHNjcmlwdHMvICAgICAgICAgIOKGkCA5IHBpcGVsaW5lIG1vZHVsZXMgKDAx4oCTMDliKQrilJzilIDilIAgZGF0YS8gICAgICAgICAgICAg4oaQIFJhdyBkYXRhIChub3QgdmVyc2lvbmVkLCBzZWUgRGF0YSBBY2Nlc3MpCuKUnOKUgOKUgCBvdXRwdXRzLwrilIIgICDilJzilIDilIAgcmVzdWx0cy8gICAgICDihpAgQ1NWIG1ldHJpY3MgKHZlcnNpb25lZCkK4pSCICAg4pSU4pSA4pSAIGZpZ3VyZXMvICAgICAg4oaQIFB1YmxpY2F0aW9uIGZpZ3VyZXMgKHZlcnNpb25lZCkK4pSc4pSA4pSAIHBhcGVyLyAgICAgICAgICAgIOKGkCBMYVRlWCBzb3VyY2UK4pSc4pSA4pSAIGNvbmZpZy55YW1sICAgICAgIOKGkCBBbGwgcGFyYW1ldGVycwrilJzilIDilIAgZW52aXJvbm1lbnQueW1sCuKUnOKUgOKUgCBydW5fYWxsLnNoCuKUlOKUgOKUgCBDSVRBVElPTi5jZmYKYGBgCgotLS0KCiMjIENpdGF0aW9uCgpgYGBiaWJ0ZXgKQGFydGljbGV7dHVuaXNpYV9nd18yMDI1LAogIGF1dGhvciAgPSB7W05PTV0sIFtQUkVOT01dfSwKICB0aXRsZSAgID0ge1NhdGVsbGl0ZS1CYXNlZCBCaWcgRGF0YSBBbmFseXNpcyBvZiBHcm91bmR3YXRlciBEZXBsZXRpb24KICAgICAgICAgICAgIGFuZCBXYXRlciBTdHJlc3MgRHluYW1pY3MgVW5kZXIgQ2xpbWF0ZSBDaGFuZ2UgaW4gQXJpZCBSZWdpb25zOgogICAgICAgICAgICAgQSBDYXNlIFN0dWR5IG9mIFR1bmlzaWF9LAogIGpvdXJuYWwgPSB7RnJvbnRpZXJzIGluIEJpZyBEYXRhfSwKICB5ZWFyICAgID0gezIwMjV9LAogIGRvaSAgICAgPSB7W1BBUEVSX0RPSV19Cn0KYGBgCgotLS0KCiMjIExpY2Vuc2UKCk1JVCDigJQgc2VlIFtMSUNFTlNFXShMSUNFTlNFKQo=
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a6b3c,100:0d4a8a&height=200&section=header&text=Tunisia%20Groundwater%20Depletion&fontSize=32&fontColor=ffffff&fontAlignY=38&desc=Satellite-Based%20Big%20Data%20Analysis%20%7C%202002%E2%80%932024&descSize=15&descAlignY=58&animation=fadeIn" width="100%"/>
+
+<br/>
+
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.%5BRECORD__ID%5D-blue?style=for-the-badge&logo=zenodo)](https://doi.org/10.5281/zenodo.[RECORD_ID])
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Python 3.11](https://img.shields.io/badge/Python-3.11-yellow?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Journal](https://img.shields.io/badge/Journal-Frontiers%20in%20Big%20Data-orange?style=for-the-badge)](https://www.frontiersin.org/journals/big-data)
+[![Status](https://img.shields.io/badge/Status-Under%20Review-red?style=for-the-badge)]()
+
+<br/>
+
+> **Majdi Argoubi** [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6560--5153-a6ce39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-6560-5153) · University of Sousse, Tunisia
+> 
+> **Khaled Mili** [![ORCID](https://img.shields.io/badge/ORCID-0000--0002--6309--5452-a6ce39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-6309-5452) · Corresponding author ✉️
+
+</div>
+
+---
+
+## 📖 About
+
+This repository provides the **complete, reproducible pipeline** for the paper:
+
+> *Satellite-Based Big Data Analysis of Groundwater Depletion and Water Stress Dynamics Under Climate Change in Arid Regions: A Case Study of Tunisia*
+> **Frontiers in Big Data** — Data-driven Climate Sciences (2025)
+
+We integrate **GRACE/GRACE-FO**, **ERA5**, **MODIS NDVI**, and **GLDAS** through a modular 9-module Python pipeline to analyse groundwater storage anomalies (GWSA) across three hydro-climatic zones in Tunisia over 2002–2024, and project future trajectories through 2030 under SSP2-4.5 and SSP5-8.5.
+
+---
+
+## 🗺️ Study Area
+
+Tunisia is divided into **three hydro-climatic zones**:
+
+| Zone | Latitude | Precipitation | Key aquifer systems |
+|------|----------|--------------|---------------------|
+| 🟢 **North** | 34–37.5°N | 400–1500 mm/yr | Coastal phreatic, Zaghouan |
+| 🟡 **Central** | 32–34°N | 150–400 mm/yr | Kairouan, Continental Intercalaire |
+| 🔴 **South** | 30–32°N | < 150 mm/yr | NWSAS, Continental Intercalaire |
+
+---
+
+## 📊 Key Results
+
+<div align="center">
+
+| Zone | Sen's slope | Cumulative depletion | 2023–2024 stress |
+|------|------------|----------------------|-----------------|
+| 🟢 North | −0.525 cm EWH yr⁻¹ *** | −11.6 cm EWH | **92% High/Critical** ⚠️ |
+| 🟡 Central | −0.503 cm EWH yr⁻¹ *** | −11.1 cm EWH | 56% High/Critical |
+| 🔴 South | −0.313 cm EWH yr⁻¹ *** | −6.9 cm EWH | 56% High/Critical |
+
+*\*\*\* p < 0.001 — Modified Mann-Kendall test*
+
+</div>
+
+**No groundwater recovery is projected through 2030 under any emission scenario.**
+
+---
+
+## 🔬 Pipeline Overview
+
+```
+GRACE/GRACE-FO  ──┐
+ERA5 (P, T2m)   ──┤
+MODIS NDVI      ──┤──► 01 Preprocessing ──► 02 Gap Filling ──► 03 Downscaling (1 km)
+GLDAS NOAH/VIC  ──┘         │                    │                    │
+                             └────────────────────┴────────────────────┘
+                                                  │
+                             ┌────────────────────▼────────────────────┐
+                             │         04 Feature Engineering           │
+                             └────────────────────┬────────────────────┘
+                                                  │
+               ┌──────────────┬───────────────────┼───────────────────┐
+               ▼              ▼                   ▼                   ▼
+        05 NDVI          06 Trend           07 Water Stress    08 Prediction
+        Emulator         Analysis           Classification     & Projections
+       (SSP2-4.5/       (MMK test)         (K-Means + RF)    (SARIMAX/LSTM/
+        SSP5-8.5)                                              XGBoost)
+               └──────────────┴───────────────────┴───────────────────┘
+                                                  │
+                                         09 Visualization
+                                        (Publication figures)
+```
+
+---
+
+## 📈 Figures
+
+<div align="center">
+
+| Study Area | GWSA Time Series |
+|:---:|:---:|
+| ![Study Area](outputs/figures/pub_fig1_study_area.png) | ![GWSA](outputs/figures/pub_fig1_gwsa_timeseries.png) |
+
+| MMK Trends | Water Stress |
+|:---:|:---:|
+| ![Trends](outputs/figures/pub_fig2_trend_summary.png) | ![Stress](outputs/figures/pub_fig3_water_stress.png) |
+
+| Prediction Validation | SSP Projections |
+|:---:|:---:|
+| ![Validation](outputs/figures/pub_fig4_prediction_validation.png) | ![Projections](outputs/figures/pub_fig5_projections.png) |
+
+</div>
+
+---
+
+## ⚙️ Installation
+
+```bash
+# Clone
+git clone https://github.com/ARGOUBI25/tunisia-groundwater-depletion.git
+cd tunisia-groundwater-depletion
+
+# Conda (recommended)
+conda env create -f environment.yml
+conda activate tunisia-gw
+
+# Or pip
+pip install -r requirements.txt
+```
+
+---
+
+## 🗄️ Data Access
+
+Raw data (~15 GB) is **not included** in this repository. Download instructions in [`scripts/00_download_guide.md`](scripts/00_download_guide.md).
+
+| Dataset | Source | Size |
+|---------|--------|------|
+| GRACE/GRACE-FO JPL RL06.3Mv04 | [NASA PO.DAAC](https://podaac.jpl.nasa.gov/) | ~2 GB |
+| GLDAS NOAH v2.2 + VIC | [NASA GES DISC](https://disc.gsfc.nasa.gov/) | ~8 GB |
+| ERA5 monthly (P + T₂ₘ) | [Copernicus CDS](https://cds.climate.copernicus.eu/) | ~1 GB |
+| MODIS MOD13A3 v6.1 | [NASA AppEEARS](https://appeears.earthdatacloud.nasa.gov/) | ~3 GB |
+| CMIP6 SSP2-4.5 / SSP5-8.5 | [ESGF](https://esgf-node.llnl.gov/projects/cmip6/) | ~1 GB |
+
+📦 Processed outputs available on Zenodo: **[https://doi.org/10.5281/zenodo.[RECORD_ID]](https://doi.org/10.5281/zenodo.[RECORD_ID])**
+
+---
+
+## 🚀 Reproduce the Results
+
+```bash
+# Full pipeline (~2–4 hours on 8-core laptop)
+bash run_all.sh
+
+# Restart from a specific module
+bash run_all.sh --from 06
+
+# Single module
+python scripts/06_trend_analysis.py
+```
+
+> 💡 **Fast test:** set `n_seeds: 1` in `config.yaml` → runtime ~30 min
+
+---
+
+## 📁 Repository Structure
+
+```
+tunisia-groundwater-depletion/
+├── scripts/                         ← Pipeline modules 00–09b
+│   ├── 01_grace_preprocessing.py
+│   ├── 02_gap_filling.py
+│   ├── 03_downscaling.py
+│   ├── 04_feature_engineering.py
+│   ├── 05_ndvi_emulator.py
+│   ├── 06_trend_analysis.py
+│   ├── 07_water_stress_classification.py
+│   ├── 08_gwsa_prediction.py
+│   └── 09_visualization.py
+├── outputs/
+│   ├── figures/                     ← All publication figures (PNG)
+│   └── results/                     ← Metrics CSV files
+├── paper/                           ← LaTeX source files
+├── data/                            ← Raw data (not versioned)
+├── config.yaml                      ← All parameters
+├── environment.yml                  ← Conda environment
+├── run_all.sh                       ← Pipeline runner
+└── CITATION.cff
+```
+
+---
+
+## 📝 Citation
+
+If you use this code or data, please cite:
+
+```bibtex
+@article{argoubi2025tunisia,
+  author  = {Argoubi, Majdi and Mili, Khaled},
+  title   = {Satellite-Based Big Data Analysis of Groundwater Depletion
+             and Water Stress Dynamics Under Climate Change in Arid
+             Regions: A Case Study of Tunisia},
+  journal = {Frontiers in Big Data},
+  year    = {2025},
+  doi     = {[PAPER_DOI]}
+}
+```
+
+---
+
+## 📬 Contact
+
+| | Majdi Argoubi | Khaled Mili |
+|---|---|---|
+| **Institution** | University of Sousse, Tunisia | — |
+| **ORCID** | [0000-0002-6560-5153](https://orcid.org/0000-0002-6560-5153) | [0000-0002-6309-5452](https://orcid.org/0000-0002-6309-5452) |
+| **Role** | First author | Corresponding author ✉️ |
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** — see [LICENSE](LICENSE) for details.
+
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d4a8a,100:1a6b3c&height=100&section=footer" width="100%"/>
+</div>
