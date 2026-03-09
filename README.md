@@ -94,15 +94,15 @@ GLDAS NOAH/VIC  ──┘         │                    │                    
 
 | Study Area | GWSA Time Series |
 |:---:|:---:|
-| ![Study Area](outputs/figures/pub_fig1_study_area.png) | ![GWSA](outputs/figures/pub_fig1_gwsa_timeseries.png) |
+| ![Study Area](outputs/pub_fig1_study_area.png) | ![GWSA](outputs/pub_fig2_gwsa_timeseries.png) |
 
 | MMK Trends | Water Stress |
 |:---:|:---:|
-| ![Trends](outputs/figures/pub_fig2_trend_summary.png) | ![Stress](outputs/figures/pub_fig3_water_stress.png) |
+| ![Trends](outputs/pub_fig3_trend_summary.png) | ![Stress](outputs/pub_fig5_water_stress.png) |
 
 | Prediction Validation | SSP Projections |
 |:---:|:---:|
-| ![Validation](outputs/figures/pub_fig4_prediction_validation.png) | ![Projections](outputs/figures/pub_fig5_projections.png) |
+| ![Validation](outputs/pub_fig6_prediction_validation.png) | ![Projections](outputs/pub_fig7_projections.png) |
 
 </div>
 
