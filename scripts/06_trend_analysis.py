@@ -1,1 +1,433 @@
-IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyAwNl90cmVuZF9hbmFseXNpcy5weQojIFR1bmlzaWEgR3JvdW5kd2F0ZXIgRGVwbGV0aW9uIFN0dWR5CiMgTU9EVUxFIDUg4oCUIFRyZW5kIERldGVjdGlvbgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIE1ldGhvZG9sb2d5IChTZWN0aW9uIDIuNik6CiMgICBNb2RpZmllZCBNYW5uLUtlbmRhbGwgKE1NSykgdGVzdCB3aXRoIGF1dG9jb3JyZWxhdGlvbiBjb3JyZWN0aW9uIChZdWUgMjAwMikKIyAgICsgU2VuJ3Mgc2xvcGUgZXN0aW1hdG9yIGZvciBtYWduaXR1ZGUKIyAgIEFwcGxpZWQgdG86IEdXU0EsIFByZWNpcGl0YXRpb24sIFRlbXBlcmF0dXJlLCBORFZJCiMgICBQZXIgem9uZSAoTm9ydGgsIENlbnRyYWwsIFNvdXRoKSBhbmQgZnVsbCBwZXJpb2QgKDIwMDItMjAyNCkKIyAgIFNpZ25pZmljYW5jZSBsZXZlbDogYWxwaGE9MC4wNQojCiMgSW5wdXRzOgojICAgb3V0cHV0cy9wcm9jZXNzZWQvZmVhdHVyZXNfbWFzdGVyLmNzdgojCiMgT3V0cHV0czoKIyAgIG91dHB1dHMvcmVzdWx0cy90cmVuZF9yZXN1bHRzLmNzdgojICAgb3V0cHV0cy9yZXN1bHRzL3RyZW5kX3N1bW1hcnkuY3N2CiMgICBvdXRwdXRzL2ZpZ3VyZXMvMDZfdHJlbmRfZ3dzYS5wbmcKIyAgIG91dHB1dHMvZmlndXJlcy8wNl90cmVuZF9wcmVjaXAucG5nCiMgICBvdXRwdXRzL2ZpZ3VyZXMvMDZfdHJlbmRfbmR2aS5wbmcKIyAgIG91dHB1dHMvZmlndXJlcy8wNl90cmVuZF9zdW1tYXJ5LnBuZwojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKaW1wb3J0IG9zCmltcG9ydCBzeXMKaW1wb3J0IGxvZ2dpbmcKaW1wb3J0IHdhcm5pbmdzCmltcG9ydCB5YW1sCmltcG9ydCBudW1weSBhcyBucAppbXBvcnQgcGFuZGFzIGFzIHBkCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aApmcm9tIHNjaXB5IGltcG9ydCBzdGF0cwoKd2FybmluZ3MuZmlsdGVyd2FybmluZ3MoJ2lnbm9yZScpCmltcG9ydCBpbwpzeXMuc3Rkb3V0ID0gaW8uVGV4dElPV3JhcHBlcihzeXMuc3Rkb3V0LmJ1ZmZlciwgZW5jb2Rpbmc9J3V0Zi04JywgZXJyb3JzPSdyZXBsYWNlJykKCkJBU0UgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpKQpvcy5jaGRpcihCQVNFKQoKd2l0aCBvcGVuKCdjb25maWcueWFtbCcsICdyJywgZW5jb2Rpbmc9J3V0Zi04JykgYXMgZjoKICAgIENGRyA9IHlhbWwuc2FmZV9sb2FkKGYpCgpPVVRfUkVTID0gUGF0aChDRkdbJ3BhdGhzJ11bJ291dHB1dHMnXVsncmVzdWx0cyddKQpPVVRfRklHID0gUGF0aChDRkdbJ3BhdGhzJ11bJ291dHB1dHMnXVsnZmlndXJlcyddKQpPVVRfTE9HID0gUGF0aChDRkdbJ3BhdGhzJ11bJ291dHB1dHMnXVsnbG9ncyddKQpPVVRfUFJPQyA9IFBhdGgoQ0ZHWydwYXRocyddWydvdXRwdXRzJ11bJ3Byb2Nlc3NlZCddKQpmb3IgcCBpbiBbT1VUX1JFUywgT1VUX0ZJRywgT1VUX0xPR106CiAgICBwLm1rZGlyKHBhcmVudHM9VHJ1ZSwgZXhpc3Rfb2s9VHJ1ZSkKCmxvZ2dpbmcuYmFzaWNDb25maWcoCiAgICBsZXZlbD1sb2dnaW5nLklORk8sCiAgICBmb3JtYXQ9JyUoYXNjdGltZSlzIFslKGxldmVsbmFtZSlzXSAlKG1lc3NhZ2UpcycsCiAgICBoYW5kbGVycz1bCiAgICAgICAgbG9nZ2luZy5GaWxlSGFuZGxlcihPVVRfTE9HIC8gJzA2X3RyZW5kX2FuYWx5c2lzLmxvZycsIGVuY29kaW5nPSd1dGYtOCcpLAogICAgICAgIGxvZ2dpbmcuU3RyZWFtSGFuZGxlcihzeXMuc3Rkb3V0KQogICAgXQopCmxvZyA9IGxvZ2dpbmcuZ2V0TG9nZ2VyKF9fbmFtZV9fKQpTRVAgPSAnPScgKiA2MAoKQUxQSEEgICAgPSBDRkdbJ3RyZW5kJ11bJ2FscGhhJ10KTUFYX0xBRyAgPSBDRkdbJ3RyZW5kJ11bJ21heF9sYWcnXQpaT05FUyAgICA9IFsnbm9ydGgnLCAnY2VudHJhbCcsICdzb3V0aCddClZBUklBQkxFUyA9IFsnZ3dzYScsICdwcmVjaXBfbW0nLCAndDJtX2MnLCAnbmR2aSddClZBUl9MQUJFTFMgPSB7CiAgICAnZ3dzYScgICAgIDogJ0dXU0EgKGNtIEVXSCknLAogICAgJ3ByZWNpcF9tbSc6ICdQcmVjaXBpdGF0aW9uIChtbS9tb250aCknLAogICAgJ3QybV9jJyAgICA6ICdUZW1wZXJhdHVyZSAoQyknLAogICAgJ25kdmknICAgICA6ICdORFZJJywKfQoKCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgTU9ESUZJRUQgTUFOTi1LRU5EQUxMIFRFU1QgKFl1ZSAmIFdhbmcgMjAwMikKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmRlZiBhdXRvY29ycih4LCBsYWcpOgogICAgIiIiUGVhcnNvbiBhdXRvY29ycmVsYXRpb24gYXQgZ2l2ZW4gbGFnLiIiIgogICAgbiA9IGxlbih4KQogICAgaWYgbGFnID49IG46CiAgICAgICAgcmV0dXJuIDAuMAogICAgeF9tZWFuID0gbnAubWVhbih4KQogICAgbnVtID0gbnAuc3VtKCh4WzpuLWxhZ10gLSB4X21lYW4pICogKHhbbGFnOl0gLSB4X21lYW4pKQogICAgZGVuID0gbnAuc3VtKCh4IC0geF9tZWFuKSoqMikKICAgIHJldHVybiBudW0gLyBkZW4gaWYgZGVuID4gMCBlbHNlIDAuMAoKCmRlZiBtb2RpZmllZF9tYW5uX2tlbmRhbGwoc2VyaWVzLCBhbHBoYT0wLjA1LCBtYXhfbGFnPTEyKToKICAgICIiIgogICAgTW9kaWZpZWQgTWFubi1LZW5kYWxsIHRlc3Qgd2l0aCBhdXRvY29ycmVsYXRpb24gY29ycmVjdGlvbiAoWXVlICYgV2FuZyAyMDAyKS4KCiAgICBSZXR1cm5zIGRpY3Qgd2l0aDoKICAgICAgICB0YXUgICAgICAgIDogS2VuZGFsbCB0YXUKICAgICAgICBwX3ZhbHVlICAgIDogdHdvLXNpZGVkIHAtdmFsdWUgKGNvcnJlY3RlZCkKICAgICAgICB6X3Njb3JlICAgIDogc3RhbmRhcmRpemVkIHRlc3Qgc3RhdGlzdGljIChjb3JyZWN0ZWQpCiAgICAgICAgc2VuX3Nsb3BlICA6IFNlbidzIHNsb3BlICh1bml0cy9tb250aCkKICAgICAgICBzZW5fc2xvcGVfeXI6IFNlbidzIHNsb3BlICh1bml0cy95ZWFyKQogICAgICAgIGludGVyY2VwdCAgOiBTZW4ncyBpbnRlcmNlcHQKICAgICAgICBzaWduaWZpY2FudDogYm9vbCAocCA8IGFscGhhKQogICAgICAgIHRyZW5kICAgICAgOiAnaW5jcmVhc2luZycgfCAnZGVjcmVhc2luZycgfCAnbm8gdHJlbmQnCiAgICAgICAgbiAgICAgICAgICA6IHNhbXBsZSBzaXplCiAgICAgICAgbnNfcmF0aW8gICA6IHZhcmlhbmNlIGluZmxhdGlvbiBmYWN0b3IgKG4vbiopCiAgICAiIiIKICAgIHggPSBucC5hcnJheShzZXJpZXMuZHJvcG5hKCksIGR0eXBlPWZsb2F0KQogICAgbiA9IGxlbih4KQoKICAgIGlmIG4gPCAxMDoKICAgICAgICByZXR1cm4ge2s6IG5wLm5hbiBmb3IgayBpbiBbJ3RhdScsJ3BfdmFsdWUnLCd6X3Njb3JlJywnc2VuX3Nsb3BlJywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdzZW5fc2xvcGVfeXInLCdpbnRlcmNlcHQnLCduc19yYXRpbycsJ24nXX0gfCBcCiAgICAgICAgICAgICAgIHsnc2lnbmlmaWNhbnQnOiBGYWxzZSwgJ3RyZW5kJzogJ2luc3VmZmljaWVudCBkYXRhJ30KCiAgICAjIE1hbm4tS2VuZGFsbCBTIHN0YXRpc3RpYwogICAgUyA9IDAKICAgIGZvciBpIGluIHJhbmdlKG4gLSAxKToKICAgICAgICBmb3IgaiBpbiByYW5nZShpICsgMSwgbik6CiAgICAgICAgICAgIFMgKz0gbnAuc2lnbih4W2pdIC0geFtpXSkKCiAgICAjIFZhcmlhbmNlIG9mIFMgKGJhc2ljKQogICAgdmFyX1MgPSBuICogKG4gLSAxKSAqICgyICogbiArIDUpIC8gMTguMAoKICAgICMgS2VuZGFsbCB0YXUKICAgIG5fcGFpcnMgPSBuICogKG4gLSAxKSAvIDIKICAgIHRhdSA9IFMgLyBuX3BhaXJzIGlmIG5fcGFpcnMgPiAwIGVsc2UgMC4wCgogICAgIyBBdXRvY29ycmVsYXRpb24gY29ycmVjdGlvbiAoWXVlICYgV2FuZyAyMDAyKQogICAgIyBEZXRyZW5kIHNlcmllcyBmaXJzdCAocmVtb3ZlIGxpbmVhciB0cmVuZCkKICAgIHQgPSBucC5hcmFuZ2UobikKICAgIHNsb3BlX3ByZSwgaW50ZXJjZXB0X3ByZSwgXywgXywgXyA9IHN0YXRzLmxpbnJlZ3Jlc3ModCwgeCkKICAgIHhfZGV0cmVuZGVkID0geCAtIChzbG9wZV9wcmUgKiB0ICsgaW50ZXJjZXB0X3ByZSkKCiAgICAjIENvbXB1dGUgYXV0b2NvcnJlbGF0aW9uIGNvZWZmaWNpZW50cyByaG9fcyhpKSBmb3IgaT0xLi5tYXhfbGFnCiAgICBuc19yYXRpbyA9IDEuMAogICAgZm9yIGxhZyBpbiByYW5nZSgxLCBtaW4obWF4X2xhZyArIDEsIG4gLy8gNCkpOgogICAgICAgIHJobyA9IGF1dG9jb3JyKHhfZGV0cmVuZGVkLCBsYWcpCiAgICAgICAgbnNfcmF0aW8gKz0gKDIgKiAobiAtIGxhZykgLyBuKSAqIHJobwoKICAgIG5zX3JhdGlvID0gbWF4KG5zX3JhdGlvLCAxLjApICAjIGNhbm5vdCBiZSA8IDEKICAgIHZhcl9TX2NvcnJlY3RlZCA9IHZhcl9TICogbnNfcmF0aW8KCiAgICAjIFogc2NvcmUKICAgIGlmIFMgPiAwOgogICAgICAgIHogPSAoUyAtIDEpIC8gbnAuc3FydCh2YXJfU19jb3JyZWN0ZWQpCiAgICBlbGlmIFMgPCAwOgogICAgICAgIHogPSAoUyArIDEpIC8gbnAuc3FydCh2YXJfU19jb3JyZWN0ZWQpCiAgICBlbHNlOgogICAgICAgIHogPSAwLjAKCiAgICBwX3ZhbHVlID0gMiAqICgxIC0gc3RhdHMubm9ybS5jZGYoYWJzKHopKSkKCiAgICAjIFNlbidzIHNsb3BlCiAgICBzbG9wZXMgPSBbXQogICAgZm9yIGkgaW4gcmFuZ2UobiAtIDEpOgogICAgICAgIGZvciBqIGluIHJhbmdlKGkgKyAxLCBuKToKICAgICAgICAgICAgaWYgKGogLSBpKSA+IDA6CiAgICAgICAgICAgICAgICBzbG9wZXMuYXBwZW5kKCh4W2pdIC0geFtpXSkgLyAoaiAtIGkpKQogICAgc2VuX3Nsb3BlID0gbnAubWVkaWFuKHNsb3BlcykgaWYgc2xvcGVzIGVsc2UgMC4wCiAgICBzZW5fc2xvcGVfeXIgPSBzZW5fc2xvcGUgKiAxMiAgIyBtb250aGx5IC0+IGFubnVhbAoKICAgICMgU2VuJ3MgaW50ZXJjZXB0IChtZWRpYW4tYmFzZWQpCiAgICBpbnRlcmNlcHQgPSBucC5tZWRpYW4oeCkgLSBzZW5fc2xvcGUgKiBucC5tZWRpYW4odCkKCiAgICBzaWduaWZpY2FudCA9IHBfdmFsdWUgPCBhbHBoYQogICAgaWYgc2lnbmlmaWNhbnQ6CiAgICAgICAgdHJlbmQgPSAnaW5jcmVhc2luZycgaWYgUyA+IDAgZWxzZSAnZGVjcmVhc2luZycKICAgIGVsc2U6CiAgICAgICAgdHJlbmQgPSAnbm8gdHJlbmQnCgogICAgcmV0dXJuIHsKICAgICAgICAndGF1JyAgICAgICAgIDogdGF1LAogICAgICAgICd6X3Njb3JlJyAgICAgOiB6LAogICAgICAgICdwX3ZhbHVlJyAgICAgOiBwX3ZhbHVlLAogICAgICAgICdzZW5fc2xvcGUnICAgOiBzZW5fc2xvcGUsCiAgICAgICAgJ3Nlbl9zbG9wZV95cic6IHNlbl9zbG9wZV95ciwKICAgICAgICAnaW50ZXJjZXB0JyAgIDogaW50ZXJjZXB0LAogICAgICAgICduc19yYXRpbycgICAgOiBuc19yYXRpbywKICAgICAgICAnbicgICAgICAgICAgIDogbiwKICAgICAgICAnc2lnbmlmaWNhbnQnIDogc2lnbmlmaWNhbnQsCiAgICAgICAgJ3RyZW5kJyAgICAgICA6IHRyZW5kLAogICAgfQoKCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgU0VOJ1MgVFJFTkQgTElORQojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKZGVmIHNlbl90cmVuZF9saW5lKHNlcmllcywgc2VuX3Nsb3BlLCBpbnRlcmNlcHQpOgogICAgIiIiQ29tcHV0ZSBTZW4ncyB0cmVuZCBsaW5lIHZhbHVlcyBmb3IgdGltZSBzZXJpZXMuIiIiCiAgICB0ID0gbnAuYXJhbmdlKGxlbihzZXJpZXMpKQogICAgcmV0dXJuIHBkLlNlcmllcyhpbnRlcmNlcHQgKyBzZW5fc2xvcGUgKiB0LCBpbmRleD1zZXJpZXMuaW5kZXgpCgoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBQTE9UVElORwojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKZGVmIHBsb3RfdHJlbmRfdmFyaWFibGUodmFyLCB2YXJfbGFiZWwsIHpvbmVfc2VyaWVzLCByZXN1bHRzX2RmLCBvdXRfcGF0aCk6CiAgICAiIiJGaWd1cmUgMDZ4IOKAlCBUaW1lIHNlcmllcyArIHRyZW5kIGxpbmUgZm9yIG9uZSB2YXJpYWJsZSBhY3Jvc3MgMyB6b25lcy4iIiIKICAgIGltcG9ydCBtYXRwbG90bGliCiAgICBtYXRwbG90bGliLnVzZSgnQWdnJykKICAgIGltcG9ydCBtYXRwbG90bGliLnB5cGxvdCBhcyBwbHQKCiAgICBjb2xvcnMgPSB7J25vcnRoJzogJyMxZjc3YjQnLCAnY2VudHJhbCc6ICcjZmY3ZjBlJywgJ3NvdXRoJzogJyMyY2EwMmMnfQogICAgZmlnLCBheGVzID0gcGx0LnN1YnBsb3RzKDMsIDEsIGZpZ3NpemU9KDEzLCAxMCksIHNoYXJleD1UcnVlKQoKICAgIGZvciBheCwgem9uZSBpbiB6aXAoYXhlcywgWk9ORVMpOgogICAgICAgIHMgPSB6b25lX3Nlcmllc1t6b25lXQogICAgICAgIGF4LnBsb3Qocy5pbmRleCwgcy52YWx1ZXMsIGNvbG9yPWNvbG9yc1t6b25lXSwgbHc9MC45LCBhbHBoYT0wLjcsCiAgICAgICAgICAgICAgICBsYWJlbD1mJ3t6b25lLmNhcGl0YWxpemUoKX0gKG9ic2VydmVkKScpCgogICAgICAgICMgMTItbW9udGggcm9sbGluZyBtZWFuCiAgICAgICAgcm9sbCA9IHMucm9sbGluZygxMiwgbWluX3BlcmlvZHM9NikubWVhbigpCiAgICAgICAgYXgucGxvdChyb2xsLmluZGV4LCByb2xsLnZhbHVlcywgY29sb3I9Y29sb3JzW3pvbmVdLCBsdz0yLjAsIGFscGhhPTAuOTUsCiAgICAgICAgICAgICAgICBsYWJlbD0nMTItbW9udGggcm9sbGluZyBtZWFuJykKCiAgICAgICAgIyBUcmVuZCBsaW5lCiAgICAgICAgcm93ID0gcmVzdWx0c19kZlsocmVzdWx0c19kZlsnem9uZSddID09IHpvbmUpICYgKHJlc3VsdHNfZGZbJ3ZhcmlhYmxlJ10gPT0gdmFyKV0KICAgICAgICBpZiBsZW4ocm93KSA+IDA6CiAgICAgICAgICAgIHJvdyA9IHJvdy5pbG9jWzBdCiAgICAgICAgICAgIHRyZW5kX2xpbmUgPSBzZW5fdHJlbmRfbGluZShzLmRyb3BuYSgpLCByb3dbJ3Nlbl9zbG9wZSddLCByb3dbJ2ludGVyY2VwdCddKQogICAgICAgICAgICBscyA9ICctJyBpZiByb3dbJ3NpZ25pZmljYW50J10gZWxzZSAnLS0nCiAgICAgICAgICAgIGNvbG9yX3QgPSAncmVkJyBpZiByb3dbJ3RyZW5kJ10gPT0gJ2RlY3JlYXNpbmcnIGVsc2UgXAogICAgICAgICAgICAgICAgICAgICAgJ2dyZWVuJyBpZiByb3dbJ3RyZW5kJ10gPT0gJ2luY3JlYXNpbmcnIGVsc2UgJ2dyYXknCiAgICAgICAgICAgIGF4LnBsb3QodHJlbmRfbGluZS5pbmRleCwgdHJlbmRfbGluZS52YWx1ZXMsIGNvbG9yPWNvbG9yX3QsIGx3PTIuNSwKICAgICAgICAgICAgICAgICAgICBsaW5lc3R5bGU9bHMsIGxhYmVsPWYiU2VuIHNsb3BlPXtyb3dbJ3Nlbl9zbG9wZV95ciddOi4zZn0veXIgIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmIih7JyonIGlmIHJvd1snc2lnbmlmaWNhbnQnXSBlbHNlICducyd9KSIpCgogICAgICAgIGF4LnNldF95bGFiZWwodmFyX2xhYmVsLCBmb250c2l6ZT05KQogICAgICAgIGF4LmxlZ2VuZChmb250c2l6ZT04LCBsb2M9J3VwcGVyIHJpZ2h0JykKICAgICAgICBheC5ncmlkKFRydWUsIGFscGhhPTAuMjUpCiAgICAgICAgaWYgdmFyID09ICdnd3NhJzoKICAgICAgICAgICAgYXguYXhobGluZSgwLCBjb2xvcj0naycsIGx3PTAuNSwgbGluZXN0eWxlPSc6JykKCiAgICBheGVzWzBdLnNldF90aXRsZShmJ1RyZW5kIEFuYWx5c2lzIOKAlCB7dmFyX2xhYmVsfSBieSBab25lICgyMDAyLTIwMjQpJywgZm9udHNpemU9MTIpCiAgICBheGVzWy0xXS5zZXRfeGxhYmVsKCdEYXRlJykKICAgIHBsdC50aWdodF9sYXlvdXQoKQogICAgZmlnLnNhdmVmaWcob3V0X3BhdGgsIGRwaT0xNTAsIGJib3hfaW5jaGVzPSd0aWdodCcpCiAgICBwbHQuY2xvc2UoZmlnKQogICAgbG9nLmluZm8oZicgIFtPS10ge291dF9wYXRofScpCgoKZGVmIHBsb3RfdHJlbmRfc3VtbWFyeShyZXN1bHRzX2RmLCBvdXRfcGF0aCk6CiAgICAiIiJGaWd1cmUgMDYgc3VtbWFyeSDigJQgSGVhdG1hcCBvZiBTZW4gc2xvcGVzIGJ5IHpvbmUgeCB2YXJpYWJsZS4iIiIKICAgIGltcG9ydCBtYXRwbG90bGliCiAgICBtYXRwbG90bGliLnVzZSgnQWdnJykKICAgIGltcG9ydCBtYXRwbG90bGliLnB5cGxvdCBhcyBwbHQKCiAgICBmaWcsIGF4ZXMgPSBwbHQuc3VicGxvdHMoMSwgMiwgZmlnc2l6ZT0oMTQsIDUpKQoKICAgICMgU2VuIHNsb3BlIGhlYXRtYXAKICAgIHBpdm90X3Nsb3BlID0gcmVzdWx0c19kZi5waXZvdChpbmRleD0nem9uZScsIGNvbHVtbnM9J3ZhcmlhYmxlJywgdmFsdWVzPSdzZW5fc2xvcGVfeXInKQogICAgcGl2b3Rfc2lnICAgPSByZXN1bHRzX2RmLnBpdm90KGluZGV4PSd6b25lJywgY29sdW1ucz0ndmFyaWFibGUnLCB2YWx1ZXM9J3NpZ25pZmljYW50JykKCiAgICBheCA9IGF4ZXNbMF0KICAgIHZtYXggPSBtYXgoYWJzKHBpdm90X3Nsb3BlLnZhbHVlcy5tYXgoKSksIGFicyhwaXZvdF9zbG9wZS52YWx1ZXMubWluKCkpKQogICAgaW0gPSBheC5pbXNob3cocGl2b3Rfc2xvcGUudmFsdWVzLCBjbWFwPSdSZEJ1Jywgdm1pbj0tdm1heCwgdm1heD12bWF4LCBhc3BlY3Q9J2F1dG8nKQogICAgYXguc2V0X3h0aWNrcyhyYW5nZShsZW4ocGl2b3Rfc2xvcGUuY29sdW1ucykpKQogICAgYXguc2V0X3h0aWNrbGFiZWxzKFtWQVJfTEFCRUxTLmdldChjLCBjKSBmb3IgYyBpbiBwaXZvdF9zbG9wZS5jb2x1bW5zXSwKICAgICAgICAgICAgICAgICAgICAgICByb3RhdGlvbj0zMCwgaGE9J3JpZ2h0JywgZm9udHNpemU9OSkKICAgIGF4LnNldF95dGlja3MocmFuZ2UobGVuKHBpdm90X3Nsb3BlLmluZGV4KSkpCiAgICBheC5zZXRfeXRpY2tsYWJlbHMoW3ouY2FwaXRhbGl6ZSgpIGZvciB6IGluIHBpdm90X3Nsb3BlLmluZGV4XSwgZm9udHNpemU9MTApCiAgICBwbHQuY29sb3JiYXIoaW0sIGF4PWF4LCBsYWJlbD0nU2VuIHNsb3BlICh1bml0cy95ZWFyKScpCiAgICBheC5zZXRfdGl0bGUoIlNlbidzIFNsb3BlICh1bml0cy95ZWFyKSIsIGZvbnRzaXplPTExKQoKICAgICMgQWRkIHZhbHVlcyArIHNpZ25pZmljYW5jZSBtYXJrZXJzCiAgICBmb3IgaSBpbiByYW5nZShsZW4ocGl2b3Rfc2xvcGUuaW5kZXgpKToKICAgICAgICBmb3IgaiBpbiByYW5nZShsZW4ocGl2b3Rfc2xvcGUuY29sdW1ucykpOgogICAgICAgICAgICB2YWwgPSBwaXZvdF9zbG9wZS52YWx1ZXNbaSwgal0KICAgICAgICAgICAgc2lnID0gcGl2b3Rfc2lnLnZhbHVlc1tpLCBqXQogICAgICAgICAgICBtYXJrZXIgPSAnKicgaWYgc2lnIGVsc2UgJycKICAgICAgICAgICAgY29sb3IgID0gJ3doaXRlJyBpZiBhYnModmFsKSA+IHZtYXggKiAwLjUgZWxzZSAnYmxhY2snCiAgICAgICAgICAgIGF4LnRleHQoaiwgaSwgZid7dmFsOi4zZn17bWFya2VyfScsIGhhPSdjZW50ZXInLCB2YT0nY2VudGVyJywKICAgICAgICAgICAgICAgICAgICBmb250c2l6ZT05LCBjb2xvcj1jb2xvciwgZm9udHdlaWdodD0nYm9sZCcpCgogICAgIyBwLXZhbHVlIGhlYXRtYXAKICAgIHBpdm90X3AgPSByZXN1bHRzX2RmLnBpdm90KGluZGV4PSd6b25lJywgY29sdW1ucz0ndmFyaWFibGUnLCB2YWx1ZXM9J3BfdmFsdWUnKQogICAgYXgyID0gYXhlc1sxXQogICAgaW0yID0gYXgyLmltc2hvdyhwaXZvdF9wLnZhbHVlcywgY21hcD0nWWxPclJkX3InLCB2bWluPTAsIHZtYXg9MC4xLCBhc3BlY3Q9J2F1dG8nKQogICAgYXgyLnNldF94dGlja3MocmFuZ2UobGVuKHBpdm90X3AuY29sdW1ucykpKQogICAgYXgyLnNldF94dGlja2xhYmVscyhbVkFSX0xBQkVMUy5nZXQoYywgYykgZm9yIGMgaW4gcGl2b3RfcC5jb2x1bW5zXSwKICAgICAgICAgICAgICAgICAgICAgICAgcm90YXRpb249MzAsIGhhPSdyaWdodCcsIGZvbnRzaXplPTkpCiAgICBheDIuc2V0X3l0aWNrcyhyYW5nZShsZW4ocGl2b3RfcC5pbmRleCkpKQogICAgYXgyLnNldF95dGlja2xhYmVscyhbei5jYXBpdGFsaXplKCkgZm9yIHogaW4gcGl2b3RfcC5pbmRleF0sIGZvbnRzaXplPTEwKQogICAgcGx0LmNvbG9yYmFyKGltMiwgYXg9YXgyLCBsYWJlbD0ncC12YWx1ZScpCiAgICBheDIuc2V0X3RpdGxlKCdwLXZhbHVlIChhbHBoYT0wLjA1LCBkYXNoZWQgbGluZSknLCBmb250c2l6ZT0xMSkKCiAgICBmb3IgaSBpbiByYW5nZShsZW4ocGl2b3RfcC5pbmRleCkpOgogICAgICAgIGZvciBqIGluIHJhbmdlKGxlbihwaXZvdF9wLmNvbHVtbnMpKToKICAgICAgICAgICAgdmFsID0gcGl2b3RfcC52YWx1ZXNbaSwgal0KICAgICAgICAgICAgYXgyLnRleHQoaiwgaSwgZid7dmFsOi4zZn0nLCBoYT0nY2VudGVyJywgdmE9J2NlbnRlcicsCiAgICAgICAgICAgICAgICAgICAgIGZvbnRzaXplPTksIGNvbG9yPSdibGFjaycpCgogICAgZmlnLnN1cHRpdGxlKCdNb2RpZmllZCBNYW5uLUtlbmRhbGwgVHJlbmQgQW5hbHlzaXMg4oCUIFR1bmlzaWEgWm9uZXMgKDIwMDItMjAyNCknLAogICAgICAgICAgICAgICAgIGZvbnRzaXplPTEzKQogICAgcGx0LnRpZ2h0X2xheW91dCgpCiAgICBmaWcuc2F2ZWZpZyhvdXRfcGF0aCwgZHBpPTE1MCwgYmJveF9pbmNoZXM9J3RpZ2h0JykKICAgIHBsdC5jbG9zZShmaWcpCiAgICBsb2cuaW5mbyhmJyAgW09LXSB7b3V0X3BhdGh9JykKCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIE1BSU4KIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmRlZiBtYWluKCk6CiAgICBwcmludChTRVApCiAgICBwcmludCgnMDZfdHJlbmRfYW5hbHlzaXMucHknKQogICAgcHJpbnQoU0VQKQoKICAgICMgTG9hZCBmZWF0dXJlcwogICAgbG9nLmluZm8oJ1tTVEVQIDFdIENoYXJnZW1lbnQgZmVhdHVyZXNfbWFzdGVyLmNzdiAuLi4nKQogICAgbWFzdGVyX3BhdGggPSBPVVRfUFJPQyAvICdmZWF0dXJlc19tYXN0ZXIuY3N2JwogICAgaWYgbm90IG1hc3Rlcl9wYXRoLmV4aXN0cygpOgogICAgICAgIHJhaXNlIEZpbGVOb3RGb3VuZEVycm9yKCJmZWF0dXJlc19tYXN0ZXIuY3N2IG5vdCBmb3VuZC4gUnVuIDA0IGZpcnN0LiIpCgogICAgZGYgPSBwZC5yZWFkX2NzdihtYXN0ZXJfcGF0aCwgcGFyc2VfZGF0ZXM9Wyd0aW1lJ10sIGluZGV4X2NvbD0ndGltZScpCiAgICBkZi5pbmRleCA9IGRmLmluZGV4LnRvX3BlcmlvZCgnTScpLnRvX3RpbWVzdGFtcCgpCiAgICBsb2cuaW5mbyhmIiAgTG9hZGVkOiB7ZGYuc2hhcGV9IikKCiAgICAjIFJ1biBNTUsgdGVzdCBmb3IgZWFjaCB2YXJpYWJsZSB4IHpvbmUKICAgIGxvZy5pbmZvKCdbU1RFUCAyXSBNb2RpZmllZCBNYW5uLUtlbmRhbGwgdGVzdHMgLi4uJykKICAgIHJlc3VsdHMgPSBbXQogICAgem9uZV9zZXJpZXNfYnlfdmFyID0ge3Y6IHt9IGZvciB2IGluIFZBUklBQkxFU30KCiAgICBmb3Igem9uZSBpbiBaT05FUzoKICAgICAgICBkZl96ID0gZGZbZGZbJ3pvbmUnXSA9PSB6b25lXS5zb3J0X2luZGV4KCkKICAgICAgICBsb2cuaW5mbyhmJ1xuICAtLSBab25lOiB7em9uZS51cHBlcigpfSAoe2xlbihkZl96KX0gbW9udGhzKSAtLScpCgogICAgICAgIGZvciB2YXIgaW4gVkFSSUFCTEVTOgogICAgICAgICAgICBpZiB2YXIgbm90IGluIGRmX3ouY29sdW1uczoKICAgICAgICAgICAgICAgIGxvZy53YXJuaW5nKGYnICBWYXJpYWJsZSB7dmFyfSBub3QgZm91bmQgaW4gZmVhdHVyZXMnKQogICAgICAgICAgICAgICAgY29udGludWUKCiAgICAgICAgICAgIHMgPSBkZl96W3Zhcl0uZHJvcG5hKCkKICAgICAgICAgICAgaWYgbGVuKHMpIDwgMTA6CiAgICAgICAgICAgICAgICBsb2cud2FybmluZyhmJyAge3Zhcn06IGluc3VmZmljaWVudCBkYXRhICh7bGVuKHMpfSknKQogICAgICAgICAgICAgICAgY29udGludWUKCiAgICAgICAgICAgIHpvbmVfc2VyaWVzX2J5X3Zhclt2YXJdW3pvbmVdID0gcwoKICAgICAgICAgICAgbW1rID0gbW9kaWZpZWRfbWFubl9rZW5kYWxsKHMsIGFscGhhPUFMUEhBLCBtYXhfbGFnPU1BWF9MQUcpCiAgICAgICAgICAgIHJvdyA9IHsKICAgICAgICAgICAgICAgICd6b25lJyAgICAgICAgOiB6b25lLAogICAgICAgICAgICAgICAgJ3ZhcmlhYmxlJyAgICA6IHZhciwKICAgICAgICAgICAgICAgICduJyAgICAgICAgICAgOiBtbWtbJ24nXSwKICAgICAgICAgICAgICAgICd0YXUnICAgICAgICAgOiBtbWtbJ3RhdSddLAogICAgICAgICAgICAgICAgJ3pfc2NvcmUnICAgICA6IG1ta1snel9zY29yZSddLAogICAgICAgICAgICAgICAgJ3BfdmFsdWUnICAgICA6IG1ta1sncF92YWx1ZSddLAogICAgICAgICAgICAgICAgJ3Nlbl9zbG9wZScgICA6IG1ta1snc2VuX3Nsb3BlJ10sCiAgICAgICAgICAgICAgICAnc2VuX3Nsb3BlX3lyJzogbW1rWydzZW5fc2xvcGVfeXInXSwKICAgICAgICAgICAgICAgICdpbnRlcmNlcHQnICAgOiBtbWtbJ2ludGVyY2VwdCddLAogICAgICAgICAgICAgICAgJ25zX3JhdGlvJyAgICA6IG1ta1snbnNfcmF0aW8nXSwKICAgICAgICAgICAgICAgICdzaWduaWZpY2FudCcgOiBtbWtbJ3NpZ25pZmljYW50J10sCiAgICAgICAgICAgICAgICAndHJlbmQnICAgICAgIDogbW1rWyd0cmVuZCddLAogICAgICAgICAgICB9CiAgICAgICAgICAgIHJlc3VsdHMuYXBwZW5kKHJvdykKCiAgICAgICAgICAgIHNpZ19zdHIgPSAnKioqIFNJR05JRklDQU5UICoqKicgaWYgbW1rWydzaWduaWZpY2FudCddIGVsc2UgJ25vdCBzaWduaWZpY2FudCcKICAgICAgICAgICAgbG9nLmluZm8oZiIgIHt2YXI6MTJzfTogdGF1PXttbWtbJ3RhdSddOisuM2Z9LCAiCiAgICAgICAgICAgICAgICAgICAgIGYicD17bW1rWydwX3ZhbHVlJ106LjRmfSwgIgogICAgICAgICAgICAgICAgICAgICBmInNsb3BlPXttbWtbJ3Nlbl9zbG9wZV95ciddOisuNGZ9L3lyLCAiCiAgICAgICAgICAgICAgICAgICAgIGYie3NpZ19zdHJ9IikKCiAgICByZXN1bHRzX2RmID0gcGQuRGF0YUZyYW1lKHJlc3VsdHMpCgogICAgIyBTYXZlIHJlc3VsdHMKICAgIGxvZy5pbmZvKCdcbltTVEVQIDNdIFNhdXZlZ2FyZGUgcmVzdWx0YXRzIC4uLicpCiAgICByZXN1bHRzX2RmLnRvX2NzdihPVVRfUkVTIC8gJ3RyZW5kX3Jlc3VsdHMuY3N2JywgaW5kZXg9RmFsc2UpCiAgICBsb2cuaW5mbyhmJyAgW09LXSB7T1VUX1JFU30vdHJlbmRfcmVzdWx0cy5jc3YnKQoKICAgICMgU3VtbWFyeSB0YWJsZQogICAgc3VtbWFyeSA9IHJlc3VsdHNfZGZbcmVzdWx0c19kZlsnc2lnbmlmaWNhbnQnXSA9PSBUcnVlXVsKICAgICAgICBbJ3pvbmUnLCd2YXJpYWJsZScsJ3Nlbl9zbG9wZV95cicsJ3BfdmFsdWUnLCd0cmVuZCddCiAgICBdLnNvcnRfdmFsdWVzKFsndmFyaWFibGUnLCd6b25lJ10pCiAgICBzdW1tYXJ5LnRvX2NzdihPVVRfUkVTIC8gJ3RyZW5kX3N1bW1hcnkuY3N2JywgaW5kZXg9RmFsc2UpCiAgICBsb2cuaW5mbyhmJyAgW09LXSB7T1VUX1JFU30vdHJlbmRfc3VtbWFyeS5jc3YnKQoKICAgICMgUGxvdHMKICAgIGxvZy5pbmZvKCdbU1RFUCA0XSBHZW5lcmF0aW9uIGZpZ3VyZXMgLi4uJykKICAgIGZvciB2YXIgaW4gVkFSSUFCTEVTOgogICAgICAgIGlmIG5vdCB6b25lX3Nlcmllc19ieV92YXJbdmFyXToKICAgICAgICAgICAgY29udGludWUKICAgICAgICBsYWJlbCA9IFZBUl9MQUJFTFMuZ2V0KHZhciwgdmFyKQogICAgICAgIHBsb3RfdHJlbmRfdmFyaWFibGUoCiAgICAgICAgICAgIHZhciwgbGFiZWwsCiAgICAgICAgICAgIHpvbmVfc2VyaWVzX2J5X3Zhclt2YXJdLAogICAgICAgICAgICByZXN1bHRzX2RmLAogICAgICAgICAgICBPVVRfRklHIC8gZicwNl90cmVuZF97dmFyfS5wbmcnCiAgICAgICAgKQoKICAgIHBsb3RfdHJlbmRfc3VtbWFyeShyZXN1bHRzX2RmLCBPVVRfRklHIC8gJzA2X3RyZW5kX3N1bW1hcnkucG5nJykKCiAgICAjIFByaW50IHN1bW1hcnkKICAgIHByaW50KCdcbicgKyBTRVApCiAgICBwcmludCgnVFJFTkQgQU5BTFlTSVMgUkVTVUxUUycpCiAgICBwcmludChTRVApCiAgICBwcmludChyZXN1bHRzX2RmW1snem9uZScsJ3ZhcmlhYmxlJywndGF1JywncF92YWx1ZScsJ3Nlbl9zbG9wZV95cicsJ3RyZW5kJ10KICAgICAgICAgIF0udG9fc3RyaW5nKGluZGV4PUZhbHNlLCBmbG9hdF9mb3JtYXQ9J3s6LjRmfScuZm9ybWF0KSkKCiAgICBwcmludCgnXG4nICsgU0VQKQogICAgcHJpbnQoJ1NJR05JRklDQU5UIFRSRU5EUyAocCA8IDAuMDUpJykKICAgIHByaW50KFNFUCkKICAgIHNpZyA9IHJlc3VsdHNfZGZbcmVzdWx0c19kZlsnc2lnbmlmaWNhbnQnXSA9PSBUcnVlXQogICAgaWYgbGVuKHNpZykgPiAwOgogICAgICAgIHByaW50KHNpZ1tbJ3pvbmUnLCd2YXJpYWJsZScsJ3Nlbl9zbG9wZV95cicsJ3BfdmFsdWUnLCd0cmVuZCddCiAgICAgICAgICAgICAgXS50b19zdHJpbmcoaW5kZXg9RmFsc2UsIGZsb2F0X2Zvcm1hdD0nezouNGZ9Jy5mb3JtYXQpKQogICAgZWxzZToKICAgICAgICBwcmludCgnICBObyBzaWduaWZpY2FudCB0cmVuZHMgZGV0ZWN0ZWQnKQoKICAgIHByaW50KCdcbicgKyBTRVApCiAgICBwcmludCgnUkVTVU1FIDA2X3RyZW5kX2FuYWx5c2lzLnB5JykKICAgIHByaW50KFNFUCkKICAgIHByaW50KGYnICBWYXJpYWJsZXMgICA6IHtWQVJJQUJMRVN9JykKICAgIHByaW50KGYnICBab25lcyAgICAgICA6IHtaT05FU30nKQogICAgcHJpbnQoZicgIE1ldGhvZCAgICAgIDogTW9kaWZpZWQgTWFubi1LZW5kYWxsIChZdWUgJiBXYW5nIDIwMDIpJykKICAgIHByaW50KGYnICBBbHBoYSAgICAgICA6IHtBTFBIQX0nKQogICAgcHJpbnQoZicgIE1heCBsYWcgICAgIDoge01BWF9MQUd9JykKICAgIHByaW50KGYnICBTaWduaWZpY2FudCA6IHtsZW4oc2lnKX0ve2xlbihyZXN1bHRzX2RmKX0gdGVzdHMnKQogICAgcHJpbnQoKQogICAgcHJpbnQoJ091dHB1dHM6JykKICAgIHByaW50KGYnICB7T1VUX1JFU30vdHJlbmRfcmVzdWx0cy5jc3YnKQogICAgcHJpbnQoZicgIHtPVVRfUkVTfS90cmVuZF9zdW1tYXJ5LmNzdicpCiAgICBmb3IgdmFyIGluIFZBUklBQkxFUzoKICAgICAgICBwcmludChmJyAge09VVF9GSUd9LzA2X3RyZW5kX3t2YXJ9LnBuZycpCiAgICBwcmludChmJyAge09VVF9GSUd9LzA2X3RyZW5kX3N1bW1hcnkucG5nJykKICAgIHByaW50KCkKICAgIHByaW50KCdbRE9ORV0gUHJldCBwb3VyIDA3X3dhdGVyX3N0cmVzc19jbGFzc2lmaWNhdGlvbi5weScpCiAgICBwcmludChTRVApCgoKaWYgX19uYW1lX18gPT0gJ19fbWFpbl9fJzoKICAgIG1haW4oKQo=
+# ==============================================================================
+# 06_trend_analysis.py
+# Tunisia Groundwater Depletion Study
+# MODULE 5 — Trend Detection
+# ==============================================================================
+# Methodology (Section 2.6):
+#   Modified Mann-Kendall (MMK) test with autocorrelation correction (Yue 2002)
+#   + Sen's slope estimator for magnitude
+#   Applied to: GWSA, Precipitation, Temperature, NDVI
+#   Per zone (North, Central, South) and full period (2002-2024)
+#   Significance level: alpha=0.05
+#
+# Inputs:
+#   outputs/processed/features_master.csv
+#
+# Outputs:
+#   outputs/results/trend_results.csv
+#   outputs/results/trend_summary.csv
+#   outputs/figures/06_trend_gwsa.png
+#   outputs/figures/06_trend_precip.png
+#   outputs/figures/06_trend_ndvi.png
+#   outputs/figures/06_trend_summary.png
+# ==============================================================================
+
+import os
+import sys
+import logging
+import warnings
+import yaml
+import numpy as np
+import pandas as pd
+from pathlib import Path
+from scipy import stats
+
+warnings.filterwarnings('ignore')
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(BASE)
+
+with open('config.yaml', 'r', encoding='utf-8') as f:
+    CFG = yaml.safe_load(f)
+
+OUT_RES = Path(CFG['paths']['outputs']['results'])
+OUT_FIG = Path(CFG['paths']['outputs']['figures'])
+OUT_LOG = Path(CFG['paths']['outputs']['logs'])
+OUT_PROC = Path(CFG['paths']['outputs']['processed'])
+for p in [OUT_RES, OUT_FIG, OUT_LOG]:
+    p.mkdir(parents=True, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.FileHandler(OUT_LOG / '06_trend_analysis.log', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+log = logging.getLogger(__name__)
+SEP = '=' * 60
+
+ALPHA    = CFG['trend']['alpha']
+MAX_LAG  = CFG['trend']['max_lag']
+ZONES    = ['north', 'central', 'south']
+VARIABLES = ['gwsa', 'precip_mm', 't2m_c', 'ndvi']
+VAR_LABELS = {
+    'gwsa'     : 'GWSA (cm EWH)',
+    'precip_mm': 'Precipitation (mm/month)',
+    't2m_c'    : 'Temperature (C)',
+    'ndvi'     : 'NDVI',
+}
+
+
+# ==============================================================================
+# MODIFIED MANN-KENDALL TEST (Yue & Wang 2002)
+# ==============================================================================
+
+def autocorr(x, lag):
+    """Pearson autocorrelation at given lag."""
+    n = len(x)
+    if lag >= n:
+        return 0.0
+    x_mean = np.mean(x)
+    num = np.sum((x[:n-lag] - x_mean) * (x[lag:] - x_mean))
+    den = np.sum((x - x_mean)**2)
+    return num / den if den > 0 else 0.0
+
+
+def modified_mann_kendall(series, alpha=0.05, max_lag=12):
+    """
+    Modified Mann-Kendall test with autocorrelation correction (Yue & Wang 2002).
+
+    Returns dict with:
+        tau        : Kendall tau
+        p_value    : two-sided p-value (corrected)
+        z_score    : standardized test statistic (corrected)
+        sen_slope  : Sen's slope (units/month)
+        sen_slope_yr: Sen's slope (units/year)
+        intercept  : Sen's intercept
+        significant: bool (p < alpha)
+        trend      : 'increasing' | 'decreasing' | 'no trend'
+        n          : sample size
+        ns_ratio   : variance inflation factor (n/n*)
+    """
+    x = np.array(series.dropna(), dtype=float)
+    n = len(x)
+
+    if n < 10:
+        return {k: np.nan for k in ['tau','p_value','z_score','sen_slope',
+                                     'sen_slope_yr','intercept','ns_ratio','n']} | \
+               {'significant': False, 'trend': 'insufficient data'}
+
+    # Mann-Kendall S statistic
+    S = 0
+    for i in range(n - 1):
+        for j in range(i + 1, n):
+            S += np.sign(x[j] - x[i])
+
+    # Variance of S (basic)
+    var_S = n * (n - 1) * (2 * n + 5) / 18.0
+
+    # Kendall tau
+    n_pairs = n * (n - 1) / 2
+    tau = S / n_pairs if n_pairs > 0 else 0.0
+
+    # Autocorrelation correction (Yue & Wang 2002)
+    # Detrend series first (remove linear trend)
+    t = np.arange(n)
+    slope_pre, intercept_pre, _, _, _ = stats.linregress(t, x)
+    x_detrended = x - (slope_pre * t + intercept_pre)
+
+    # Compute autocorrelation coefficients rho_s(i) for i=1..max_lag
+    ns_ratio = 1.0
+    for lag in range(1, min(max_lag + 1, n // 4)):
+        rho = autocorr(x_detrended, lag)
+        ns_ratio += (2 * (n - lag) / n) * rho
+
+    ns_ratio = max(ns_ratio, 1.0)  # cannot be < 1
+    var_S_corrected = var_S * ns_ratio
+
+    # Z score
+    if S > 0:
+        z = (S - 1) / np.sqrt(var_S_corrected)
+    elif S < 0:
+        z = (S + 1) / np.sqrt(var_S_corrected)
+    else:
+        z = 0.0
+
+    p_value = 2 * (1 - stats.norm.cdf(abs(z)))
+
+    # Sen's slope
+    slopes = []
+    for i in range(n - 1):
+        for j in range(i + 1, n):
+            if (j - i) > 0:
+                slopes.append((x[j] - x[i]) / (j - i))
+    sen_slope = np.median(slopes) if slopes else 0.0
+    sen_slope_yr = sen_slope * 12  # monthly -> annual
+
+    # Sen's intercept (median-based)
+    intercept = np.median(x) - sen_slope * np.median(t)
+
+    significant = p_value < alpha
+    if significant:
+        trend = 'increasing' if S > 0 else 'decreasing'
+    else:
+        trend = 'no trend'
+
+    return {
+        'tau'         : tau,
+        'z_score'     : z,
+        'p_value'     : p_value,
+        'sen_slope'   : sen_slope,
+        'sen_slope_yr': sen_slope_yr,
+        'intercept'   : intercept,
+        'ns_ratio'    : ns_ratio,
+        'n'           : n,
+        'significant' : significant,
+        'trend'       : trend,
+    }
+
+
+# ==============================================================================
+# SEN'S TREND LINE
+# ==============================================================================
+
+def sen_trend_line(series, sen_slope, intercept):
+    """Compute Sen's trend line values for time series."""
+    t = np.arange(len(series))
+    return pd.Series(intercept + sen_slope * t, index=series.index)
+
+
+# ==============================================================================
+# PLOTTING
+# ==============================================================================
+
+def plot_trend_variable(var, var_label, zone_series, results_df, out_path):
+    """Figure 06x — Time series + trend line for one variable across 3 zones."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    colors = {'north': '#1f77b4', 'central': '#ff7f0e', 'south': '#2ca02c'}
+    fig, axes = plt.subplots(3, 1, figsize=(13, 10), sharex=True)
+
+    for ax, zone in zip(axes, ZONES):
+        s = zone_series[zone]
+        ax.plot(s.index, s.values, color=colors[zone], lw=0.9, alpha=0.7,
+                label=f'{zone.capitalize()} (observed)')
+
+        # 12-month rolling mean
+        roll = s.rolling(12, min_periods=6).mean()
+        ax.plot(roll.index, roll.values, color=colors[zone], lw=2.0, alpha=0.95,
+                label='12-month rolling mean')
+
+        # Trend line
+        row = results_df[(results_df['zone'] == zone) & (results_df['variable'] == var)]
+        if len(row) > 0:
+            row = row.iloc[0]
+            trend_line = sen_trend_line(s.dropna(), row['sen_slope'], row['intercept'])
+            ls = '-' if row['significant'] else '--'
+            color_t = 'red' if row['trend'] == 'decreasing' else \
+                      'green' if row['trend'] == 'increasing' else 'gray'
+            ax.plot(trend_line.index, trend_line.values, color=color_t, lw=2.5,
+                    linestyle=ls, label=f"Sen slope={row['sen_slope_yr']:.3f}/yr "
+                                       f"({'*' if row['significant'] else 'ns'})")
+
+        ax.set_ylabel(var_label, fontsize=9)
+        ax.legend(fontsize=8, loc='upper right')
+        ax.grid(True, alpha=0.25)
+        if var == 'gwsa':
+            ax.axhline(0, color='k', lw=0.5, linestyle=':')
+
+    axes[0].set_title(f'Trend Analysis — {var_label} by Zone (2002-2024)', fontsize=12)
+    axes[-1].set_xlabel('Date')
+    plt.tight_layout()
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    log.info(f'  [OK] {out_path}')
+
+
+def plot_trend_summary(results_df, out_path):
+    """Figure 06 summary — Heatmap of Sen slopes by zone x variable."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+
+    # Sen slope heatmap
+    pivot_slope = results_df.pivot(index='zone', columns='variable', values='sen_slope_yr')
+    pivot_sig   = results_df.pivot(index='zone', columns='variable', values='significant')
+
+    ax = axes[0]
+    vmax = max(abs(pivot_slope.values.max()), abs(pivot_slope.values.min()))
+    im = ax.imshow(pivot_slope.values, cmap='RdBu', vmin=-vmax, vmax=vmax, aspect='auto')
+    ax.set_xticks(range(len(pivot_slope.columns)))
+    ax.set_xticklabels([VAR_LABELS.get(c, c) for c in pivot_slope.columns],
+                       rotation=30, ha='right', fontsize=9)
+    ax.set_yticks(range(len(pivot_slope.index)))
+    ax.set_yticklabels([z.capitalize() for z in pivot_slope.index], fontsize=10)
+    plt.colorbar(im, ax=ax, label='Sen slope (units/year)')
+    ax.set_title("Sen's Slope (units/year)", fontsize=11)
+
+    # Add values + significance markers
+    for i in range(len(pivot_slope.index)):
+        for j in range(len(pivot_slope.columns)):
+            val = pivot_slope.values[i, j]
+            sig = pivot_sig.values[i, j]
+            marker = '*' if sig else ''
+            color  = 'white' if abs(val) > vmax * 0.5 else 'black'
+            ax.text(j, i, f'{val:.3f}{marker}', ha='center', va='center',
+                    fontsize=9, color=color, fontweight='bold')
+
+    # p-value heatmap
+    pivot_p = results_df.pivot(index='zone', columns='variable', values='p_value')
+    ax2 = axes[1]
+    im2 = ax2.imshow(pivot_p.values, cmap='YlOrRd_r', vmin=0, vmax=0.1, aspect='auto')
+    ax2.set_xticks(range(len(pivot_p.columns)))
+    ax2.set_xticklabels([VAR_LABELS.get(c, c) for c in pivot_p.columns],
+                        rotation=30, ha='right', fontsize=9)
+    ax2.set_yticks(range(len(pivot_p.index)))
+    ax2.set_yticklabels([z.capitalize() for z in pivot_p.index], fontsize=10)
+    plt.colorbar(im2, ax=ax2, label='p-value')
+    ax2.set_title('p-value (alpha=0.05, dashed line)', fontsize=11)
+
+    for i in range(len(pivot_p.index)):
+        for j in range(len(pivot_p.columns)):
+            val = pivot_p.values[i, j]
+            ax2.text(j, i, f'{val:.3f}', ha='center', va='center',
+                     fontsize=9, color='black')
+
+    fig.suptitle('Modified Mann-Kendall Trend Analysis — Tunisia Zones (2002-2024)',
+                 fontsize=13)
+    plt.tight_layout()
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    log.info(f'  [OK] {out_path}')
+
+
+# ==============================================================================
+# MAIN
+# ==============================================================================
+
+def main():
+    print(SEP)
+    print('06_trend_analysis.py')
+    print(SEP)
+
+    # Load features
+    log.info('[STEP 1] Chargement features_master.csv ...')
+    master_path = OUT_PROC / 'features_master.csv'
+    if not master_path.exists():
+        raise FileNotFoundError("features_master.csv not found. Run 04 first.")
+
+    df = pd.read_csv(master_path, parse_dates=['time'], index_col='time')
+    df.index = df.index.to_period('M').to_timestamp()
+    log.info(f"  Loaded: {df.shape}")
+
+    # Run MMK test for each variable x zone
+    log.info('[STEP 2] Modified Mann-Kendall tests ...')
+    results = []
+    zone_series_by_var = {v: {} for v in VARIABLES}
+
+    for zone in ZONES:
+        df_z = df[df['zone'] == zone].sort_index()
+        log.info(f'\n  -- Zone: {zone.upper()} ({len(df_z)} months) --')
+
+        for var in VARIABLES:
+            if var not in df_z.columns:
+                log.warning(f'  Variable {var} not found in features')
+                continue
+
+            s = df_z[var].dropna()
+            if len(s) < 10:
+                log.warning(f'  {var}: insufficient data ({len(s)})')
+                continue
+
+            zone_series_by_var[var][zone] = s
+
+            mmk = modified_mann_kendall(s, alpha=ALPHA, max_lag=MAX_LAG)
+            row = {
+                'zone'        : zone,
+                'variable'    : var,
+                'n'           : mmk['n'],
+                'tau'         : mmk['tau'],
+                'z_score'     : mmk['z_score'],
+                'p_value'     : mmk['p_value'],
+                'sen_slope'   : mmk['sen_slope'],
+                'sen_slope_yr': mmk['sen_slope_yr'],
+                'intercept'   : mmk['intercept'],
+                'ns_ratio'    : mmk['ns_ratio'],
+                'significant' : mmk['significant'],
+                'trend'       : mmk['trend'],
+            }
+            results.append(row)
+
+            sig_str = '*** SIGNIFICANT ***' if mmk['significant'] else 'not significant'
+            log.info(f"  {var:12s}: tau={mmk['tau']:+.3f}, "
+                     f"p={mmk['p_value']:.4f}, "
+                     f"slope={mmk['sen_slope_yr']:+.4f}/yr, "
+                     f"{sig_str}")
+
+    results_df = pd.DataFrame(results)
+
+    # Save results
+    log.info('\n[STEP 3] Sauvegarde resultats ...')
+    results_df.to_csv(OUT_RES / 'trend_results.csv', index=False)
+    log.info(f'  [OK] {OUT_RES}/trend_results.csv')
+
+    # Summary table
+    summary = results_df[results_df['significant'] == True][
+        ['zone','variable','sen_slope_yr','p_value','trend']
+    ].sort_values(['variable','zone'])
+    summary.to_csv(OUT_RES / 'trend_summary.csv', index=False)
+    log.info(f'  [OK] {OUT_RES}/trend_summary.csv')
+
+    # Plots
+    log.info('[STEP 4] Generation figures ...')
+    for var in VARIABLES:
+        if not zone_series_by_var[var]:
+            continue
+        label = VAR_LABELS.get(var, var)
+        plot_trend_variable(
+            var, label,
+            zone_series_by_var[var],
+            results_df,
+            OUT_FIG / f'06_trend_{var}.png'
+        )
+
+    plot_trend_summary(results_df, OUT_FIG / '06_trend_summary.png')
+
+    # Print summary
+    print('\n' + SEP)
+    print('TREND ANALYSIS RESULTS')
+    print(SEP)
+    print(results_df[['zone','variable','tau','p_value','sen_slope_yr','trend']
+          ].to_string(index=False, float_format='{:.4f}'.format))
+
+    print('\n' + SEP)
+    print('SIGNIFICANT TRENDS (p < 0.05)')
+    print(SEP)
+    sig = results_df[results_df['significant'] == True]
+    if len(sig) > 0:
+        print(sig[['zone','variable','sen_slope_yr','p_value','trend']
+              ].to_string(index=False, float_format='{:.4f}'.format))
+    else:
+        print('  No significant trends detected')
+
+    print('\n' + SEP)
+    print('RESUME 06_trend_analysis.py')
+    print(SEP)
+    print(f'  Variables   : {VARIABLES}')
+    print(f'  Zones       : {ZONES}')
+    print(f'  Method      : Modified Mann-Kendall (Yue & Wang 2002)')
+    print(f'  Alpha       : {ALPHA}')
+    print(f'  Max lag     : {MAX_LAG}')
+    print(f'  Significant : {len(sig)}/{len(results_df)} tests')
+    print()
+    print('Outputs:')
+    print(f'  {OUT_RES}/trend_results.csv')
+    print(f'  {OUT_RES}/trend_summary.csv')
+    for var in VARIABLES:
+        print(f'  {OUT_FIG}/06_trend_{var}.png')
+    print(f'  {OUT_FIG}/06_trend_summary.png')
+    print()
+    print('[DONE] Pret pour 07_water_stress_classification.py')
+    print(SEP)
+
+
+if __name__ == '__main__':
+    main()
