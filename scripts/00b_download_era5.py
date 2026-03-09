@@ -1,1 +1,69 @@
-IiIiCjAwYl9kb3dubG9hZF9lcmE1LnB5ClTDqWzDqWNoYXJnZW1lbnQgYXV0b21hdGlxdWUgRVJBNSB2aWEgQVBJIENEUwpUdW5pc2lhIEdyb3VuZHdhdGVyIFN0dWR5CiIiIgoKaW1wb3J0IGNkc2FwaQppbXBvcnQgb3MKaW1wb3J0IHlhbWwKCiMgQ29uZmlnCndpdGggb3BlbigiLi4vY29uZmlnLnlhbWwiLCAiciIsIGVuY29kaW5nPSJ1dGYtOCIpIGFzIGY6CiAgICBjZmcgPSB5YW1sLnNhZmVfbG9hZChmKQoKT1VUX0RJUiA9IGNmZ1sicGF0aHMiXVsiZGF0YSJdWyJlcmE1Il0Kb3MubWFrZWRpcnMoT1VUX0RJUiwgZXhpc3Rfb2s9VHJ1ZSkKCiMgQ2xpZW50IENEUwojIFByZXJlcXVpcyA6IGZpY2hpZXIgQzpcVXNlcnNcUlRYXC5jZHNhcGlyYyBjb250ZW5hbnQgOgojICAgdXJsOiBodHRwczovL2Nkcy5jbGltYXRlLmNvcGVybmljdXMuZXUvYXBpCiMgICBrZXk6IFRPTi1BUEktS0VZCgpjID0gY2RzYXBpLkNsaWVudCgKICAgIHVybD0iaHR0cHM6Ly9jZHMuY2xpbWF0ZS5jb3Blcm5pY3VzLmV1L2FwaSIsCiAgICBrZXk9ImJkNTJmMzVmLThjNDQtNDRjMy05NGM0LWUyNmY4N2QyYWIyZiIKKQoKVkFSSUFCTEVTID0gewogICAgInRvdGFsX3ByZWNpcGl0YXRpb24iOiAicHJlY2lwIiwKICAgICIybV90ZW1wZXJhdHVyZSI6ICAgICAgInQybSIKfQoKWUVBUlMgID0gW3N0cih5KSBmb3IgeSBpbiByYW5nZSgyMDAyLCAyMDI1KV0KTU9OVEhTID0gW2Yie206MDJkfSIgZm9yIG0gaW4gcmFuZ2UoMSwgMTMpXQoKQVJFQSA9IFsKICAgIGNmZ1sic3R1ZHlfYXJlYSJdWyJsYXRfbWF4Il0sICAjIE5vcnRoCiAgICBjZmdbInN0dWR5X2FyZWEiXVsibG9uX21pbiJdLCAgIyBXZXN0CiAgICBjZmdbInN0dWR5X2FyZWEiXVsibGF0X21pbiJdLCAgIyBTb3V0aAogICAgY2ZnWyJzdHVkeV9hcmVhIl1bImxvbl9tYXgiXSwgICMgRWFzdApdCgojIERvd25sb2FkCmZvciB2YXJfbG9uZywgdmFyX3Nob3J0IGluIFZBUklBQkxFUy5pdGVtcygpOgogICAgb3V0X2ZpbGUgPSBvcy5wYXRoLmpvaW4oT1VUX0RJUiwgZiJlcmE1X3t2YXJfc2hvcnR9X21vbnRobHlfMjAwMl8yMDI0Lm5jIikKCiAgICBpZiBvcy5wYXRoLmV4aXN0cyhvdXRfZmlsZSk6CiAgICAgICAgcHJpbnQoZiJbU0tJUF0ge291dF9maWxlfSBhbHJlYWR5IGV4aXN0cy4iKQogICAgICAgIGNvbnRpbnVlCgogICAgcHJpbnQoZiJbRE9XTkxPQURdIHt2YXJfbG9uZ30gLi4uIikKICAgIGMucmV0cmlldmUoCiAgICAgICAgInJlYW5hbHlzaXMtZXJhNS1zaW5nbGUtbGV2ZWxzLW1vbnRobHktbWVhbnMiLAogICAgICAgIHsKICAgICAgICAgICAgInByb2R1Y3RfdHlwZSI6ICJtb250aGx5X2F2ZXJhZ2VkX3JlYW5hbHlzaXMiLAogICAgICAgICAgICAidmFyaWFibGUiOiAgICAgW3Zhcl9sb25nXSwKICAgICAgICAgICAgInllYXIiOiAgICAgICAgIFlFQVJTLAogICAgICAgICAgICAibW9udGgiOiAgICAgICAgTU9OVEhTLAogICAgICAgICAgICAidGltZSI6ICAgICAgICAgIjAwOjAwIiwKICAgICAgICAgICAgImFyZWEiOiAgICAgICAgIEFSRUEsCiAgICAgICAgICAgICJmb3JtYXQiOiAgICAgICAibmV0Y2RmIiwKICAgICAgICAgICAgImdyaWQiOiAgICAgICAgIFswLjI1LCAwLjI1XSwKICAgICAgICB9LAogICAgICAgIG91dF9maWxlCiAgICApCiAgICBwcmludChmIltPS10gU2F2ZWQgdG8ge291dF9maWxlfSIpCgpwcmludCgiXG5bRE9ORV0gRVJBNSBkb3dubG9hZCBjb21wbGV0ZS4iKQpwcmludChmIkZpbGVzIHNhdmVkIGluOiB7T1VUX0RJUn0iKQ==
+"""
+00b_download_era5.py
+Téléchargement automatique ERA5 via API CDS
+Tunisia Groundwater Study
+"""
+
+import cdsapi
+import os
+import yaml
+
+# Config
+with open("../config.yaml", "r", encoding="utf-8") as f:
+    cfg = yaml.safe_load(f)
+
+OUT_DIR = cfg["paths"]["data"]["era5"]
+os.makedirs(OUT_DIR, exist_ok=True)
+
+# Client CDS
+# Prerequis : fichier C:\Users\RTX\.cdsapirc contenant :
+#   url: https://cds.climate.copernicus.eu/api
+#   key: TON-API-KEY
+
+c = cdsapi.Client(
+    url="https://cds.climate.copernicus.eu/api",
+    key="bd52f35f-8c44-44c3-94c4-e26f87d2ab2f"
+)
+
+VARIABLES = {
+    "total_precipitation": "precip",
+    "2m_temperature":      "t2m"
+}
+
+YEARS  = [str(y) for y in range(2002, 2025)]
+MONTHS = [f"{m:02d}" for m in range(1, 13)]
+
+AREA = [
+    cfg["study_area"]["lat_max"],  # North
+    cfg["study_area"]["lon_min"],  # West
+    cfg["study_area"]["lat_min"],  # South
+    cfg["study_area"]["lon_max"],  # East
+]
+
+# Download
+for var_long, var_short in VARIABLES.items():
+    out_file = os.path.join(OUT_DIR, f"era5_{var_short}_monthly_2002_2024.nc")
+
+    if os.path.exists(out_file):
+        print(f"[SKIP] {out_file} already exists.")
+        continue
+
+    print(f"[DOWNLOAD] {var_long} ...")
+    c.retrieve(
+        "reanalysis-era5-single-levels-monthly-means",
+        {
+            "product_type": "monthly_averaged_reanalysis",
+            "variable":     [var_long],
+            "year":         YEARS,
+            "month":        MONTHS,
+            "time":         "00:00",
+            "area":         AREA,
+            "format":       "netcdf",
+            "grid":         [0.25, 0.25],
+        },
+        out_file
+    )
+    print(f"[OK] Saved to {out_file}")
+
+print("\n[DONE] ERA5 download complete.")
+print(f"Files saved in: {OUT_DIR}")
