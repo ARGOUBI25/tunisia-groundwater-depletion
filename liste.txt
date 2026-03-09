@@ -1,0 +1,15 @@
+.gitignore
+.idea
+.wget-hsts
+config.yaml
+cookies.txt
+data
+etc
+include
+Lib
+liste.txt
+outputs
+pyvenv.cfg
+Scripts
+share
+wget.exe
