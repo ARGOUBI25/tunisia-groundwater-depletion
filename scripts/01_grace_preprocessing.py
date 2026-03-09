@@ -1,1 +1,485 @@
-IiIiCjAxX2dyYWNlX3ByZXByb2Nlc3NpbmcucHkK4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCk1vZHVsZSAxIOKAlCBHUkFDRS9HUkFDRS1GTyBQcmVwcm9jZXNzaW5nCi0gQ2hhcmdlbWVudCBkZXMgMyBtYXNjb25zIChDU1IsIEpQTCwgR0ZaKQotIENhbGN1bCBtb3llbm5lIGQnZW5zZW1ibGUgVFdTQSArIM+DX1RXU0EKLSBBcHBsaWNhdGlvbiBtYXNxdWUgdGVycmUgKD41MCUgbGFuZCBmcmFjdGlvbiDihpIgMTQ4IHBpeGVscykKLSBJc29sYXRpb24gR1dTQSA9IFRXU0EgLSBTTSAtIFNXIC0gU1dFIChHTERBUyBOT0FIICsgVklDKQotIFByb3BhZ2F0aW9uIGluY2VydGl0dWRlIM+DX0dXU0HCsgotIE91dHB1dHMgOiBnd3NhX2Vuc2VtYmxlLm5jLCBnd3NhX3VuY2VydGFpbnR5Lm5jCuKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAoiIiIKCmltcG9ydCBvcwppbXBvcnQgc3lzCmltcG9ydCB5YW1sCmltcG9ydCBudW1weSBhcyBucAppbXBvcnQgeGFycmF5IGFzIHhyCmltcG9ydCBwYW5kYXMgYXMgcGQKZnJvbSBkYXRldGltZSBpbXBvcnQgZGF0ZXRpbWUKaW1wb3J0IHdhcm5pbmdzCndhcm5pbmdzLmZpbHRlcndhcm5pbmdzKCJpZ25vcmUiKQoKIyDilIDilIAgRml4IHdvcmtpbmcgZGlyZWN0b3J5IChmb25jdGlvbm5lIHBldSBpbXBvcnRlIGNvbW1lbnQgUHlDaGFybSBsYW5jZSkg4pSA4pSA4pSA4pSA4pSA4pSACkJBU0UgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpKQpvcy5jaGRpcihCQVNFKQpzeXMucGF0aC5pbnNlcnQoMCwgQkFTRSkKCiMg4pSA4pSAIDAuIENvbmZpZyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKd2l0aCBvcGVuKG9zLnBhdGguam9pbihCQVNFLCAiY29uZmlnLnlhbWwiKSwgInIiLCBlbmNvZGluZz0idXRmLTgiKSBhcyBmOgogICAgY2ZnID0geWFtbC5zYWZlX2xvYWQoZikKCkdSQUNFX0RJUiAgICA9IGNmZ1sicGF0aHMiXVsiZGF0YSJdWyJncmFjZSJdCk5PQUhfRElSICAgICA9IGNmZ1sicGF0aHMiXVsiZGF0YSJdWyJnbGRhc19ub2FoIl0KVklDX0RJUiAgICAgID0gY2ZnWyJwYXRocyJdWyJkYXRhIl1bImdsZGFzX3ZpYyJdCk9VVF9ESVIgICAgICA9IGNmZ1sicGF0aHMiXVsib3V0cHV0cyJdWyJwcm9jZXNzZWQiXQpMT0dfRElSICAgICAgPSBjZmdbInBhdGhzIl1bIm91dHB1dHMiXVsibG9ncyJdCgpvcy5tYWtlZGlycyhPVVRfRElSLCBleGlzdF9vaz1UcnVlKQpvcy5tYWtlZGlycyhMT0dfRElSLCBleGlzdF9vaz1UcnVlKQoKQkFTRUxJTkVfU1RBUlQgPSBjZmdbInRpbWUiXVsiYmFzZWxpbmVfc3RhcnQiXQpCQVNFTElORV9FTkQgICA9IGNmZ1sidGltZSJdWyJiYXNlbGluZV9lbmQiXQpMQU5EX1RIUkVTSE9MRCA9IGNmZ1siZ3JhY2UiXVsibGFuZF9tYXNrX3RocmVzaG9sZCJdCgojIEJvdW5kaW5nIGJveCBUdW5pc2llCkxBVF9NSU4gPSBjZmdbInN0dWR5X2FyZWEiXVsibGF0X21pbiJdCkxBVF9NQVggPSBjZmdbInN0dWR5X2FyZWEiXVsibGF0X21heCJdCkxPTl9NSU4gPSBjZmdbInN0dWR5X2FyZWEiXVsibG9uX21pbiJdCkxPTl9NQVggPSBjZmdbInN0dWR5X2FyZWEiXVsibG9uX21heCJdCgpwcmludCgiPSIgKiA2MCkKcHJpbnQoIjAxX2dyYWNlX3ByZXByb2Nlc3NpbmcucHkiKQpwcmludCgiPSIgKiA2MCkKCgojIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAojIMOJVEFQRSAxIOKAlCBDaGFyZ2VtZW50IGRlcyAzIG1hc2NvbnMgR1JBQ0UKIyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKCmRlZiBsb2FkX21hc2NvbihmaWxlcGF0aCwgdmFyX25hbWUsIGxhYmVsKToKICAgICIiIgogICAgQ2hhcmdlIHVuIGZpY2hpZXIgbWFzY29uIE5ldENERiwgZXh0cmFpdCBsYSB2YXJpYWJsZSBUV1NBLAogICAgc8OpbGVjdGlvbm5lIGxhIHpvbmUgVHVuaXNpZSwgcmV0b3VybmUgdW4gRGF0YUFycmF5IG1lbnN1ZWwuCiAgICAiIiIKICAgIHByaW50KGYiICBbTE9BRF0ge2xhYmVsfSA6IHtmaWxlcGF0aH0iKQogICAgZHMgPSB4ci5vcGVuX2RhdGFzZXQoZmlsZXBhdGgpCgogICAgIyBBZmZpY2hlciBsZXMgdmFyaWFibGVzIGRpc3BvbmlibGVzIHBvdXIgZGVidWcKICAgIHByaW50KGYiICAgICAgICAgVmFyaWFibGVzOiB7bGlzdChkcy5kYXRhX3ZhcnMpfSIpCiAgICBwcmludChmIiAgICAgICAgIENvb3JkcyAgIDoge2xpc3QoZHMuY29vcmRzKX0iKQoKICAgICMgRXh0cmFpcmUgbGEgdmFyaWFibGUgVFdTQSAobm9tIHBldXQgdmFyaWVyIHNlbG9uIG1hc2NvbikKICAgIGlmIHZhcl9uYW1lIG5vdCBpbiBkczoKICAgICAgICAjIEVzc2F5ZXIgZGVzIG5vbXMgYWx0ZXJuYXRpZnMgY29tbXVucwogICAgICAgIGNhbmRpZGF0ZXMgPSBbImx3ZV90aGlja25lc3MiLCAidHdzYSIsICJUV1NBIiwgImx3ZV90aGlja25lc3NfY3NyIiwKICAgICAgICAgICAgICAgICAgICAgICJsd2VfdGhpY2tuZXNzX2pwbCIsICJsd2VfdGhpY2tuZXNzX2dmeiIsICJsd2UiXQogICAgICAgIGZvciBjIGluIGNhbmRpZGF0ZXM6CiAgICAgICAgICAgIGlmIGMgaW4gZHM6CiAgICAgICAgICAgICAgICB2YXJfbmFtZSA9IGMKICAgICAgICAgICAgICAgIGJyZWFrCiAgICAgICAgZWxzZToKICAgICAgICAgICAgcmFpc2UgVmFsdWVFcnJvcihmIlZhcmlhYmxlIFRXU0Egbm9uIHRyb3V2w6llIGRhbnMge2ZpbGVwYXRofS4gIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgIGYiVmFyaWFibGVzIGRpc3BvbmlibGVzOiB7bGlzdChkcy5kYXRhX3ZhcnMpfSIpCgogICAgZGEgPSBkc1t2YXJfbmFtZV0KCiAgICAjIE5vcm1hbGlzZXIgbGVzIG5vbXMgZGUgY29vcmRvbm7DqWVzCiAgICByZW5hbWVfbWFwID0ge30KICAgIGZvciBjb29yZCBpbiBkYS5jb29yZHM6CiAgICAgICAgaWYgY29vcmQubG93ZXIoKSBpbiBbImxhdGl0dWRlIiwgImxhdCJdOgogICAgICAgICAgICByZW5hbWVfbWFwW2Nvb3JkXSA9ICJsYXQiCiAgICAgICAgaWYgY29vcmQubG93ZXIoKSBpbiBbImxvbmdpdHVkZSIsICJsb24iXToKICAgICAgICAgICAgcmVuYW1lX21hcFtjb29yZF0gPSAibG9uIgogICAgICAgIGlmIGNvb3JkLmxvd2VyKCkgaW4gWyJ0aW1lIiwgImRhdGUiXToKICAgICAgICAgICAgcmVuYW1lX21hcFtjb29yZF0gPSAidGltZSIKICAgIGlmIHJlbmFtZV9tYXA6CiAgICAgICAgZGEgPSBkYS5yZW5hbWUocmVuYW1lX21hcCkKCiAgICAjIENsaXAgc3VyIGxhIFR1bmlzaWUKICAgIGRhID0gZGEuc2VsKAogICAgICAgIGxhdD1zbGljZShMQVRfTUlOLCBMQVRfTUFYKSwKICAgICAgICBsb249c2xpY2UoTE9OX01JTiwgTE9OX01BWCkKICAgICkKCiAgICAjIENvbnZlcnRpciBlbiBjbSBFV0ggc2kgbsOpY2Vzc2FpcmUgKHNvdXZlbnQgZW4gbSkKICAgIGlmIGRhLmF0dHJzLmdldCgidW5pdHMiLCAiIikgaW4gWyJtIiwgIm1ldGVycyJdOgogICAgICAgIGRhID0gZGEgKiAxMDAuMAogICAgICAgIGRhLmF0dHJzWyJ1bml0cyJdID0gImNtIEVXSCIKCiAgICBkYS5uYW1lID0gZiJ0d3NhX3tsYWJlbC5sb3dlcigpfSIKICAgIHByaW50KGYiICAgICAgICAgU2hhcGU6IHtkYS5zaGFwZX0sIFBlcmlvZDoge2RhLnRpbWUudmFsdWVzWzBdfSDihpIge2RhLnRpbWUudmFsdWVzWy0xXX0iKQogICAgcmV0dXJuIGRhCgoKcHJpbnQoIlxuW1NURVAgMV0gQ2hhcmdlbWVudCBkZXMgbWFzY29ucyBHUkFDRSAuLi4iKQoKIyBBZGFwdGVyIGxlcyBub21zIGRlIGZpY2hpZXJzIMOgIGNlIHF1ZSB0dSBhcyB0w6lsw6ljaGFyZ8OpCm1hc2Nvbl9maWxlcyA9IHsKICAgICJKUEwiOiBvcy5wYXRoLmpvaW4oR1JBQ0VfRElSLCAiR1JDVGVsbHVzLkpQTC4yMDAyMDRfMjAyNTEyLkdMTy5STDA2LjNNLk1TQ052MDRDUkkubmMiKSwKfQoKdHdzYV9kaWN0ID0ge30KZm9yIGxhYmVsLCBmcGF0aCBpbiBtYXNjb25fZmlsZXMuaXRlbXMoKToKICAgIGlmIG5vdCBvcy5wYXRoLmV4aXN0cyhmcGF0aCk6CiAgICAgICAgcHJpbnQoZiIgIFtXQVJOXSBGaWNoaWVyIG5vbiB0cm91dsOpOiB7ZnBhdGh9IikKICAgICAgICBwcmludChmIiAgICAgICAgIFbDqXJpZmllIGxlIG5vbSBleGFjdCBkdSBmaWNoaWVyIGRhbnMgZGF0YS9ncmFjZS8iKQogICAgICAgIGNvbnRpbnVlCiAgICB0d3NhX2RpY3RbbGFiZWxdID0gbG9hZF9tYXNjb24oZnBhdGgsICJsd2VfdGhpY2tuZXNzIiwgbGFiZWwpCgppZiBsZW4odHdzYV9kaWN0KSA9PSAwOgogICAgcmFpc2UgRmlsZU5vdEZvdW5kRXJyb3IoIkF1Y3VuIGZpY2hpZXIgbWFzY29uIHRyb3V2w6kgZGFucyBkYXRhL2dyYWNlLy4gIgogICAgICAgICAgICAgICAgICAgICAgICAgICAgIlTDqWzDqWNoYXJnZSBsZXMgZG9ubsOpZXMgR1JBQ0UgZCdhYm9yZC4iKQoKIyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKIyDDiVRBUEUgMiDigJQgQWxpZ25lbWVudCB0ZW1wb3JlbCBldCBjYWxjdWwgbW95ZW5uZSBkJ2Vuc2VtYmxlCiMg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCgpwcmludCgiXG5bU1RFUCAyXSBDYWxjdWwgZGUgbGEgbW95ZW5uZSBkJ2Vuc2VtYmxlIFRXU0EgLi4uIikKCiMgQWxpZ25lciBzdXIgbGEgbcOqbWUgZ3JpbGxlIHRlbXBvcmVsbGUgY29tbXVuZQp0aW1lX2FycmF5cyA9IFtkYS50aW1lLnZhbHVlcyBmb3IgZGEgaW4gdHdzYV9kaWN0LnZhbHVlcygpXQpjb21tb25fdGltZXMgPSB0aW1lX2FycmF5c1swXQpmb3IgdCBpbiB0aW1lX2FycmF5c1sxOl06CiAgICBjb21tb25fdGltZXMgPSBucC5pbnRlcnNlY3QxZChjb21tb25fdGltZXMsIHQpCgpwcmludChmIiAgUMOpcmlvZGUgY29tbXVuZToge2NvbW1vbl90aW1lc1swXX0g4oaSIHtjb21tb25fdGltZXNbLTFdfSIpCnByaW50KGYiICBOb21icmUgZGUgcGFzIGRlIHRlbXBzOiB7bGVuKGNvbW1vbl90aW1lcyl9IikKCiMgU8OpbGVjdGlvbm5lciBsYSBww6lyaW9kZSBjb21tdW5lCnR3c2FfYWxpZ25lZCA9IHt9CmZvciBsYWJlbCwgZGEgaW4gdHdzYV9kaWN0Lml0ZW1zKCk6CiAgICB0d3NhX2FsaWduZWRbbGFiZWxdID0gZGEuc2VsKHRpbWU9Y29tbW9uX3RpbWVzKQoKIyBFbXBpbGVyIGxlcyBtYXNjb25zIGVuIHVuIHNldWwgRGF0YXNldAp0d3NhX3N0YWNrID0geHIuY29uY2F0KAogICAgW3R3c2FfYWxpZ25lZFtrXSBmb3IgayBpbiB0d3NhX2FsaWduZWRdLAogICAgZGltPXBkLkluZGV4KGxpc3QodHdzYV9hbGlnbmVkLmtleXMoKSksIG5hbWU9Im1hc2NvbiIpCikKCiMgTW95ZW5uZSBkJ2Vuc2VtYmxlIGV0IMOpY2FydC10eXBlIGludGVyLW1hc2Nvbgp0d3NhX21lYW4gPSB0d3NhX3N0YWNrLm1lYW4oZGltPSJtYXNjb24iKQp0d3NhX3N0ZCAgPSB0d3NhX3N0YWNrLnN0ZChkaW09Im1hc2NvbiIpCgp0d3NhX21lYW4ubmFtZSA9ICJ0d3NhX21lYW4iCnR3c2Ffc3RkLm5hbWUgID0gInR3c2Ffc2lnbWEiCgp0d3NhX21lYW4uYXR0cnNbInVuaXRzIl0gICAgICAgPSAiY20gRVdIIgp0d3NhX21lYW4uYXR0cnNbImxvbmdfbmFtZSJdICAgPSAiVFdTQSBlbnNlbWJsZSBtZWFuIChDU1IrSlBMK0dGWikiCnR3c2Ffc3RkLmF0dHJzWyJ1bml0cyJdICAgICAgICA9ICJjbSBFV0giCnR3c2Ffc3RkLmF0dHJzWyJsb25nX25hbWUiXSAgICA9ICJUV1NBIGludGVyLW1hc2NvbiBzdGQgKHNpZ21hX1RXU0EpIgoKcHJpbnQoZiIgIFRXU0EgbWVhbiBzaGFwZToge3R3c2FfbWVhbi5zaGFwZX0iKQpwcmludChmIiAgc2lnbWFfVFdTQSBtZWFuOiB7ZmxvYXQodHdzYV9zdGQubWVhbigpKTouM2Z9IGNtIEVXSCIpCgojIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAojIMOJVEFQRSAzIOKAlCBNYXNxdWUgdGVycmUgKD41MCUgbGFuZCBmcmFjdGlvbiDihpIgMTQ4IHBpeGVscykKIyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKCnByaW50KCJcbltTVEVQIDNdIEFwcGxpY2F0aW9uIGR1IG1hc3F1ZSB0ZXJyZSAuLi4iKQoKIyBDYWxjdWwgZHUgbWFzcXVlIMOgIHBhcnRpciBkZSBsYSB2YXJpYW5jZSB0ZW1wb3JlbGxlCiMgTGVzIHBpeGVscyBvY2VhbiBvbnQgVFdTQSB+MCBldCB0csOocyBmYWlibGUgdmFyaWFuY2UKdHdzYV92YXIgPSB0d3NhX21lYW4udmFyKGRpbT0idGltZSIpCmxhbmRfbWFzayA9IHR3c2FfdmFyID4gdHdzYV92YXIucXVhbnRpbGUoMC4xMCkgICMgZXhjbHVyZSBwaXhlbHMgcXVhc2ktY29uc3RhbnRzCgpuX3BpeGVsc190b3RhbCA9IGludChsYW5kX21hc2suc2l6ZSkKbl9waXhlbHNfbGFuZCAgPSBpbnQobGFuZF9tYXNrLnN1bSgpKQoKcHJpbnQoZiIgIFBpeGVscyBkYW5zIGJvdW5kaW5nIGJveCA6IHtuX3BpeGVsc190b3RhbH0iKQpwcmludChmIiAgUGl4ZWxzIHRlcnJlIChtYXNxdWUpICAgIDoge25fcGl4ZWxzX2xhbmR9IikKcHJpbnQoZiIgIEF0dGVuZHUgfjE0OCBwaXhlbHMiKQoKIyBBcHBsaXF1ZXIgbGUgbWFzcXVlCnR3c2FfbWVhbl9tYXNrZWQgPSB0d3NhX21lYW4ud2hlcmUobGFuZF9tYXNrKQp0d3NhX3N0ZF9tYXNrZWQgID0gdHdzYV9zdGQud2hlcmUobGFuZF9tYXNrKQoKIyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKIyDDiVRBUEUgNCDigJQgQ2FsY3VsIGRlcyBhbm9tYWxpZXMgcGFyIHJhcHBvcnQgw6AgbGEgYmFzZWxpbmUgMjAwNC0yMDA5CiMg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCgpwcmludCgiXG5bU1RFUCA0XSBDYWxjdWwgZGVzIGFub21hbGllcyBUV1NBIChiYXNlbGluZSAyMDA0LTIwMDkpIC4uLiIpCgpiYXNlbGluZSA9IHR3c2FfbWVhbl9tYXNrZWQuc2VsKAogICAgdGltZT1zbGljZShCQVNFTElORV9TVEFSVCwgQkFTRUxJTkVfRU5EKQopLm1lYW4oZGltPSJ0aW1lIikKCnR3c2FfYW5vbWFseSA9IHR3c2FfbWVhbl9tYXNrZWQgLSBiYXNlbGluZQp0d3NhX2Fub21hbHkubmFtZSA9ICJ0d3NhX2Fub21hbHkiCnR3c2FfYW5vbWFseS5hdHRyc1sidW5pdHMiXSAgICAgPSAiY20gRVdIIgp0d3NhX2Fub21hbHkuYXR0cnNbImxvbmdfbmFtZSJdID0gIlRXU0EgYW5vbWFseSByZWxhdGl2ZSB0byAyMDA0LTIwMDkgYmFzZWxpbmUiCnR3c2FfYW5vbWFseS5hdHRyc1siYmFzZWxpbmUiXSAgPSBmIntCQVNFTElORV9TVEFSVH0gdG8ge0JBU0VMSU5FX0VORH0iCgpwcmludChmIiAgVFdTQSBhbm9tYWx5IHJhbmdlOiB7ZmxvYXQodHdzYV9hbm9tYWx5Lm1pbigpKTouMmZ9IHRvICIKICAgICAgZiJ7ZmxvYXQodHdzYV9hbm9tYWx5Lm1heCgpKTouMmZ9IGNtIEVXSCIpCgojIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAojIMOJVEFQRSA1IOKAlCBDaGFyZ2VtZW50IEdMREFTIE5PQUggKFNNLCBTVywgU1dFKQojIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAoKcHJpbnQoIlxuW1NURVAgNV0gQ2hhcmdlbWVudCBHTERBUyBOT0FIIChTTSwgU1csIFNXRSkgLi4uIikKCmRlZiBsb2FkX2dsZGFzKGRpcmVjdG9yeSwgbW9kZWxfbmFtZSk6CiAgICAiIiIKICAgIENoYXJnZSB0b3VzIGxlcyBmaWNoaWVycyBHTERBUyBOZXRDREYgZCd1biBkb3NzaWVyLAogICAgY2FsY3VsZSBTTSB0b3RhbCwgU1csIFNXRSwgcmV0b3VybmUgdW4gRGF0YXNldC4KICAgICIiIgogICAgZmlsZXMgPSBzb3J0ZWQoWwogICAgICAgIG9zLnBhdGguam9pbihkaXJlY3RvcnksIGYpCiAgICAgICAgZm9yIGYgaW4gb3MubGlzdGRpcihkaXJlY3RvcnkpCiAgICAgICAgaWYgZi5lbmRzd2l0aCgiLm5jIikgb3IgZi5lbmRzd2l0aCgiLm5jNCIpCiAgICBdKQoKICAgIGlmIGxlbihmaWxlcykgPT0gMDoKICAgICAgICBwcmludChmIiAgW1dBUk5dIEF1Y3VuIGZpY2hpZXIgR0xEQVMgdHJvdXbDqSBkYW5zIHtkaXJlY3Rvcnl9IikKICAgICAgICByZXR1cm4gTm9uZQoKICAgIHByaW50KGYiICB7bW9kZWxfbmFtZX06IHtsZW4oZmlsZXMpfSBmaWNoaWVycyB0cm91dsOpcyIpCiAgICBkcyA9IHhyLm9wZW5fbWZkYXRhc2V0KGZpbGVzLCBjb21iaW5lPSJieV9jb29yZHMiLCBwYXJhbGxlbD1GYWxzZSwgZW5naW5lPSJuZXRjZGY0IikKICAgIHByaW50KGYiICBDb29yZHMgZGlzcG9uaWJsZXM6IHtsaXN0KGRzLmNvb3Jkcyl9IikKICAgIHByaW50KGYiICBMYXQgcmFuZ2U6IHtmbG9hdChkcy5sYXQubWluKCkpfSDDoCB7ZmxvYXQoZHMubGF0Lm1heCgpKX0iKQogICAgcHJpbnQoZiIgIExvbiByYW5nZToge2Zsb2F0KGRzLmxvbi5taW4oKSl9IMOgIHtmbG9hdChkcy5sb24ubWF4KCkpfSIpCiAgICAjIENsaXAgc3VyIGxhIFR1bmlzaWUKICAgIGxhdF9uYW1lID0gImxhdCIgaWYgImxhdCIgaW4gZHMuY29vcmRzIGVsc2UgImxhdGl0dWRlIgogICAgbG9uX25hbWUgPSAibG9uIiBpZiAibG9uIiBpbiBkcy5jb29yZHMgZWxzZSAibG9uZ2l0dWRlIgoKICAgIGRzID0gZHMud2hlcmUoCiAgICAgICAgKGRzW2xhdF9uYW1lXSA+PSBMQVRfTUlOKSAmIChkc1tsYXRfbmFtZV0gPD0gTEFUX01BWCkgJgogICAgICAgIChkc1tsb25fbmFtZV0gPj0gTE9OX01JTikgJiAoZHNbbG9uX25hbWVdIDw9IExPTl9NQVgpLAogICAgICAgIGRyb3A9VHJ1ZQogICAgKQoKICAgICMgQ2FsY3VsZXIgU00gdG90YWwgKHNvbW1lIGRlcyA0IGNvdWNoZXMgZGUgc29sIGVuIGtnL23CsiDihpIgY20gRVdIKQogICAgIyAxIGtnL23CsiA9IDAuMSBjbSBFV0gKICAgIHNtX3ZhcnMgPSBbdiBmb3IgdiBpbiBkcy5kYXRhX3ZhcnMgaWYgIlNvaWxNb2kiIGluIHYgb3IgInNvaWxfbW9pc3QiIGluIHYubG93ZXIoKV0KICAgIGlmIHNtX3ZhcnM6CiAgICAgICAgc21fdG90YWwgPSBzdW0oZHNbdl0gZm9yIHYgaW4gc21fdmFycykgKiAwLjEgICMga2cvbcKyIOKGkiBjbSBFV0gKICAgICAgICBzbV90b3RhbC5uYW1lID0gZiJzbV97bW9kZWxfbmFtZS5sb3dlcigpfSIKICAgICAgICBzbV90b3RhbC5hdHRyc1sidW5pdHMiXSA9ICJjbSBFV0giCiAgICBlbHNlOgogICAgICAgIHByaW50KGYiICBbV0FSTl0gVmFyaWFibGVzIFNNIG5vbiB0cm91dsOpZXMuIFZhcnM6IHtsaXN0KGRzLmRhdGFfdmFycylbOjEwXX0iKQogICAgICAgIHNtX3RvdGFsID0gTm9uZQoKICAgICMgU1dFIChTbm93IFdhdGVyIEVxdWl2YWxlbnQpCiAgICBzd2VfdmFycyA9IFt2IGZvciB2IGluIGRzLmRhdGFfdmFycyBpZiAiU1dFIiBpbiB2IG9yICJzd2UiIGluIHYubG93ZXIoKV0KICAgIHN3ZSA9IGRzW3N3ZV92YXJzWzBdXSAqIDAuMSBpZiBzd2VfdmFycyBlbHNlIHhyLnplcm9zX2xpa2Uoc21fdG90YWwpCiAgICBzd2UubmFtZSA9ICJzd2UiCiAgICBzd2UuYXR0cnNbInVuaXRzIl0gPSAiY20gRVdIIgoKICAgICMgU1cgKFN1cmZhY2UgV2F0ZXIg4oCUIGFwcHJveGltw6kgcGFyIHN1cmZhY2UgcnVub2ZmIGFjY3VtdWzDqSkKICAgIHN3X3ZhcnMgPSBbdiBmb3IgdiBpbiBkcy5kYXRhX3ZhcnMgaWYgIlFzX2FjYyIgaW4gdiBvciAiUXMiIGluIHZdCiAgICBzdyA9IGRzW3N3X3ZhcnNbMF1dICogMC4xIGlmIHN3X3ZhcnMgZWxzZSB4ci56ZXJvc19saWtlKHNtX3RvdGFsKQogICAgc3cubmFtZSA9ICJzdyIKICAgIHN3LmF0dHJzWyJ1bml0cyJdID0gImNtIEVXSCIKCiAgICByZXR1cm4geHIuRGF0YXNldCh7InNtIjogc21fdG90YWwsICJzd2UiOiBzd2UsICJzdyI6IHN3fSkKCgpub2FoX2RzID0gbG9hZF9nbGRhcyhOT0FIX0RJUiwgIk5PQUgiKQp2aWNfZHMgPSBOb25lICAjIFZJQyDDoCB0w6lsw6ljaGFyZ2VyIHBsdXMgdGFyZAoKIyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKIyDDiVRBUEUgNiDigJQgSXNvbGF0aW9uIEdXU0EgZXQgcHJvcGFnYXRpb24gZCdpbmNlcnRpdHVkZQojIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAoKcHJpbnQoIlxuW1NURVAgNl0gSXNvbGF0aW9uIEdXU0EgPSBUV1NBIC0gU00gLSBTVyAtIFNXRSAuLi4iKQoKaWYgbm9haF9kcyBpcyBub3QgTm9uZToKICAgICMgQWxpZ25lciB0ZW1wb3JlbGxlbWVudCBHTERBUyBzdXIgVFdTQQogICAgbm9haF9pbnRlcnAgPSBub2FoX2RzLmludGVycCgKICAgICAgICB0aW1lPXR3c2FfYW5vbWFseS50aW1lLAogICAgICAgIGxhdD10d3NhX2Fub21hbHkubGF0LAogICAgICAgIGxvbj10d3NhX2Fub21hbHkubG9uLAogICAgICAgIG1ldGhvZD0ibGluZWFyIgogICAgKQogICAgcHJpbnQoZiIgIERFQlVHIHR3c2FfYW5vbWFseSB0aW1lWzBdOiB7dHdzYV9hbm9tYWx5LnRpbWUudmFsdWVzWzBdfSIpCiAgICBwcmludChmIiAgREVCVUcgbm9haF9pbnRlcnAgdGltZVswXToge25vYWhfaW50ZXJwLnRpbWUudmFsdWVzWzBdfSIpCiAgICBwcmludChmIiAgREVCVUcgdHdzYSBzaGFwZToge3R3c2FfYW5vbWFseS5zaGFwZX0iKQogICAgcHJpbnQoZiIgIERFQlVHIG5vYWggc20gc2hhcGU6IHtub2FoX2ludGVycFsnc20nXS5zaGFwZX0iKQogICAgcHJpbnQoZiIgIERFQlVHIHNtIHZhbHVlcyBzYW1wbGU6IHtub2FoX2ludGVycFsnc20nXS5pc2VsKHRpbWU9MCkudmFsdWVzfSIpCiAgICAjIEFub21hbGllcyBHTERBUyBwYXIgcmFwcG9ydCDDoCBsYSBtw6ptZSBiYXNlbGluZQogICAgZGVmIGNvbXB1dGVfYW5vbWFseShkYSwgYmFzZWxpbmVfc3RhcnQsIGJhc2VsaW5lX2VuZCk6CiAgICAgICAgYmFzZWxpbmVfbWVhbiA9IGRhLnNlbCgKICAgICAgICAgICAgdGltZT1zbGljZShiYXNlbGluZV9zdGFydCwgYmFzZWxpbmVfZW5kKQogICAgICAgICkubWVhbihkaW09InRpbWUiKQogICAgICAgIHJldHVybiBkYSAtIGJhc2VsaW5lX21lYW4KCiAgICBzbV9hbm9tICA9IGNvbXB1dGVfYW5vbWFseShub2FoX2ludGVycFsic20iXSwgIEJBU0VMSU5FX1NUQVJULCBCQVNFTElORV9FTkQpCiAgICBzd19hbm9tICA9IGNvbXB1dGVfYW5vbWFseShub2FoX2ludGVycFsic3ciXSwgIEJBU0VMSU5FX1NUQVJULCBCQVNFTElORV9FTkQpCiAgICBzd2VfYW5vbSA9IGNvbXB1dGVfYW5vbWFseShub2FoX2ludGVycFsic3dlIl0sIEJBU0VMSU5FX1NUQVJULCBCQVNFTElORV9FTkQpCgogICAgIyBHV1NBID0gVFdTQSAtIFNNIC0gU1cgLSBTV0UgKEVxLiAxIGR1IHBhcGllcikKICAgIGd3c2EgPSB0d3NhX2Fub21hbHkgLSBzbV9hbm9tIC0gc3dfYW5vbSAtIHN3ZV9hbm9tCiAgICBnd3NhLm5hbWUgPSAiZ3dzYSIKICAgIGd3c2EgPSBnd3NhLmNvbXB1dGUoKQogICAgZ3dzYS5hdHRyc1sidW5pdHMiXSAgICAgPSAiY20gRVdIIgogICAgZ3dzYS5hdHRyc1sibG9uZ19uYW1lIl0gPSAiR3JvdW5kd2F0ZXIgU3RvcmFnZSBBbm9tYWx5IgogICAgZ3dzYS5hdHRyc1siZXF1YXRpb24iXSAgPSAiR1dTQSA9IFRXU0EgLSBTTSAtIFNXIC0gU1dFIgoKICAgIGd3c2FfdmFscyA9IGd3c2EudmFsdWVzCiAgICBpbXBvcnQgbnVtcHkgYXMgbnAKCiAgICBwcmludChmIiAgR1dTQSByYW5nZToge25wLm5hbm1pbihnd3NhX3ZhbHMpOi4yZn0gdG8ge25wLm5hbm1heChnd3NhX3ZhbHMpOi4yZn0gY20gRVdIIikKICAgIHByaW50KGYiICBHV1NBIG5vbi1OYU4gdmFsdWVzOiB7bnAuc3VtKH5ucC5pc25hbihnd3NhX3ZhbHMpKX0iKQoKICAgICMg4pSA4pSAIFByb3BhZ2F0aW9uIGQnaW5jZXJ0aXR1ZGUgKEVxLiAyIGR1IHBhcGllcikg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICBwcmludCgiXG5bU1RFUCA2Yl0gUHJvcGFnYXRpb24gZCdpbmNlcnRpdHVkZSDPg19HV1NBIC4uLiIpCgogICAgc2lnbWFfdHdzYSA9IHR3c2Ffc3RkX21hc2tlZAoKICAgICMgz4NfU00gOiBkaWZmw6lyZW5jZSBOT0FIIHZzIFZJQyAoaW5jZXJ0aXR1ZGUgc3RydWN0dXJlbGxlIGR1IG1vZMOobGUpCiAgICBpZiB2aWNfZHMgaXMgbm90IE5vbmU6CiAgICAgICAgdmljX2ludGVycCA9IHZpY19kcy5pbnRlcnAodGltZT10d3NhX2Fub21hbHkudGltZSwgbWV0aG9kPSJsaW5lYXIiKQogICAgICAgIHZpY19zbV9hbm9tID0gY29tcHV0ZV9hbm9tYWx5KHZpY19pbnRlcnBbInNtIl0sIEJBU0VMSU5FX1NUQVJULCBCQVNFTElORV9FTkQpCiAgICAgICAgc2lnbWFfc20gPSBhYnMoc21fYW5vbSAtIHZpY19zbV9hbm9tKQogICAgZWxzZToKICAgICAgICBzaWdtYV9zbSA9IHNtX2Fub20gKiAwLjE1ICAjIDE1JSBwYXIgZMOpZmF1dCBzaSBWSUMgbm9uIGRpc3BvbmlibGUKICAgICAgICBwcmludCgiICBbV0FSTl0gVklDIG5vbiBkaXNwb25pYmxlLCDPg19TTSBlc3RpbcOpIMOgIDE1JSBkZSBTTSIpCgogICAgIyDPg19TVyBldCDPg19TV0UgOiBpbmNlcnRpdHVkZSBmaXhlIChTV0UgbsOpZ2xpZ2VhYmxlIGVuIFR1bmlzaWUpCiAgICBzaWdtYV9zdyAgPSBzd19hbm9tICAqIDAuMjAgICAjIDIwJSBwb3VyIHN1cmZhY2Ugd2F0ZXIKICAgIHNpZ21hX3N3ZSA9IHN3ZV9hbm9tICogMC4xMCAgICMgU1dFIG5lZ2xpZ2libGUgZW4gVHVuaXNpZSAoPDAuMSBjbSBFV0gpCgogICAgIyDPg8KyX0dXU0EgPSDPg8KyX1RXU0EgKyDPg8KyX1NNICsgz4PCsl9TVyArIM+DwrJfU1dFCiAgICBzaWdtYV9nd3NhX3NxID0gKHNpZ21hX3R3c2EqKjIgKyBzaWdtYV9zbSoqMiArCiAgICAgICAgICAgICAgICAgICAgIHNpZ21hX3N3KioyICArIHNpZ21hX3N3ZSoqMikKICAgIHNpZ21hX2d3c2EgPSBucC5zcXJ0KHNpZ21hX2d3c2Ffc3EpCiAgICBzaWdtYV9nd3NhLm5hbWUgPSAic2lnbWFfZ3dzYSIKICAgIHNpZ21hX2d3c2EuYXR0cnNbInVuaXRzIl0gICAgID0gImNtIEVXSCIKICAgIHNpZ21hX2d3c2EuYXR0cnNbImxvbmdfbmFtZSJdID0gIkdXU0EgdW5jZXJ0YWludHkgKDEtc2lnbWEpIgoKICAgIHByaW50KGYiICDPg19HV1NBIG1lYW46IHtmbG9hdChzaWdtYV9nd3NhLm1lYW4oKSk6LjNmfSBjbSBFV0giKQogICAgcHJpbnQoZiIgIM+DX0dXU0EgbWF4IDoge2Zsb2F0KHNpZ21hX2d3c2EubWF4KCkpOi4zZn0gY20gRVdIIikKCmVsc2U6CiAgICBwcmludCgiICBbV0FSTl0gR0xEQVMgTk9BSCBub24gZGlzcG9uaWJsZS4iKQogICAgcHJpbnQoIiAgICAgICAgIEdXU0EgPSBUV1NBIChzYW5zIHNvdXN0cmFjdGlvbiBTTS9TVy9TV0UpIikKICAgIGd3c2EgPSB0d3NhX2Fub21hbHkuY29weSgpCiAgICBnd3NhLm5hbWUgPSAiZ3dzYSIKICAgIHNpZ21hX2d3c2EgPSB0d3NhX3N0ZF9tYXNrZWQuY29weSgpCiAgICBzaWdtYV9nd3NhLm5hbWUgPSAic2lnbWFfZ3dzYSIKCiMg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCiMgw4lUQVBFIDcg4oCUIEFncsOpZ2F0aW9uIHBhciB6b25lIGh5ZHJvY2xpbWF0aXF1ZQojIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAoKcHJpbnQoIlxuW1NURVAgN10gQWdyw6lnYXRpb24gcGFyIHpvbmUgaHlkcm9jbGltYXRpcXVlIC4uLiIpCgp6b25lcyA9IHsKICAgICJub3J0aCI6ICAgeyJsYXQiOiAoMzQuMCwgMzcuNSksICJsb24iOiAoNy41LCAxMS42KX0sCiAgICAiY2VudHJhbCI6IHsibGF0IjogKDMyLjAsIDM0LjApLCAibG9uIjogKDcuNSwgMTEuNil9LAogICAgInNvdXRoIjogICB7ImxhdCI6ICgzMC4wLCAzMi4wKSwgImxvbiI6ICg3LjUsIDExLjYpfSwKfQoKem9uZV9nd3NhID0ge30KZm9yIHpvbmVfbmFtZSwgYm91bmRzIGluIHpvbmVzLml0ZW1zKCk6CiAgICB6b25lX2RhID0gZ3dzYS5zZWwoCiAgICAgICAgbGF0PXNsaWNlKGJvdW5kc1sibGF0Il1bMF0sIGJvdW5kc1sibGF0Il1bMV0pLAogICAgICAgIGxvbj1zbGljZShib3VuZHNbImxvbiJdWzBdLCBib3VuZHNbImxvbiJdWzFdKQogICAgKS5tZWFuKGRpbT1bImxhdCIsICJsb24iXSkKICAgIHpvbmVfZGEubmFtZSA9IGYiZ3dzYV97em9uZV9uYW1lfSIKICAgIHpvbmVfZ3dzYVt6b25lX25hbWVdID0gem9uZV9kYQogICAgcHJpbnQoZiIgIFpvbmUge3pvbmVfbmFtZTo4c306IG1lYW4gR1dTQSA9IHtmbG9hdCh6b25lX2RhLm1lYW4oKSk6LjNmfSBjbSBFV0giKQoKIyBEYXRhRnJhbWUgbWVuc3VlbCBwYXIgem9uZQpkZl96b25lcyA9IHBkLkRhdGFGcmFtZSgKICAgIHt6b25lOiB6b25lX2d3c2Fbem9uZV0udmFsdWVzIGZvciB6b25lIGluIHpvbmVfZ3dzYX0sCiAgICBpbmRleD1wZC5EYXRldGltZUluZGV4KGd3c2EudGltZS52YWx1ZXMpCikKZGZfem9uZXMuaW5kZXgubmFtZSA9ICJkYXRlIgpkZl96b25lcy5jb2x1bW5zID0gWyJnd3NhX25vcnRoX2NtIiwgImd3c2FfY2VudHJhbF9jbSIsICJnd3NhX3NvdXRoX2NtIl0KCiMg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCiMgw4lUQVBFIDgg4oCUIFNhdXZlZ2FyZGUgZGVzIG91dHB1dHMKIyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKCnByaW50KCJcbltTVEVQIDhdIFNhdXZlZ2FyZGUgZGVzIG91dHB1dHMgLi4uIikKCiMgRGF0YXNldCBwcmluY2lwYWwKZHNfb3V0ID0geHIuRGF0YXNldCh7CiAgICAidHdzYV9tZWFuIjogICAgdHdzYV9tZWFuX21hc2tlZCwKICAgICJ0d3NhX3NpZ21hIjogICB0d3NhX3N0ZF9tYXNrZWQsCiAgICAidHdzYV9hbm9tYWx5IjogdHdzYV9hbm9tYWx5LAogICAgImd3c2EiOiAgICAgICAgIGd3c2EsCiAgICAic2lnbWFfZ3dzYSI6ICAgc2lnbWFfZ3dzYSwKfSkKCmRzX291dC5hdHRyc1sidGl0bGUiXSAgICAgICA9ICJHUkFDRS9HUkFDRS1GTyBHV1NBIOKAlCBUdW5pc2lhIDIwMDItMjAyNCIKZHNfb3V0LmF0dHJzWyJpbnN0aXR1dGlvbiJdID0gIlR1bmlzaWEgR3JvdW5kd2F0ZXIgU3R1ZHkiCmRzX291dC5hdHRyc1siY3JlYXRlZCJdICAgICA9IGRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIlWS0lbS0lZCAlSDolTSIpCmRzX291dC5hdHRyc1sibWFzY29ucyJdICAgICA9ICJDU1IgUkwwNk0gKyBKUEwgUkwwNk0gKyBHRlogUkwwNiIKZHNfb3V0LmF0dHJzWyJiYXNlbGluZSJdICAgID0gIjIwMDQtMjAwOSIKCm91dF9uYyA9IG9zLnBhdGguam9pbihPVVRfRElSLCAiZ3dzYV9lbnNlbWJsZS5uYyIpCmRzX291dC50b19uZXRjZGYob3V0X25jKQpwcmludChmIiAgW09LXSB7b3V0X25jfSIpCgojIEdXU0EgcGFyIHpvbmUgZW4gQ1NWCm91dF9jc3YgPSBvcy5wYXRoLmpvaW4oT1VUX0RJUiwgImd3c2Ffem9uZXNfbW9udGhseS5jc3YiKQpkZl96b25lcy50b19jc3Yob3V0X2NzdikKcHJpbnQoZiIgIFtPS10ge291dF9jc3Z9IikKCiMgU3RhdGlzdGlxdWVzIGRlIGJhc2UKc3RhdHMgPSBkZl96b25lcy5kZXNjcmliZSgpCm91dF9zdGF0cyA9IG9zLnBhdGguam9pbihPVVRfRElSLCAiZ3dzYV9zdGF0aXN0aWNzLmNzdiIpCnN0YXRzLnRvX2NzdihvdXRfc3RhdHMpCnByaW50KGYiICBbT0tdIHtvdXRfc3RhdHN9IikKCiMg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCiMgw4lUQVBFIDkg4oCUIEZpZ3VyZSBkZSBjb250csO0bGUKIyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKCnByaW50KCJcbltTVEVQIDldIEfDqW7DqXJhdGlvbiBmaWd1cmUgZGUgY29udHLDtGxlIC4uLiIpCgppbXBvcnQgbWF0cGxvdGxpYgptYXRwbG90bGliLnVzZSgiQWdnIikKaW1wb3J0IG1hdHBsb3RsaWIucHlwbG90IGFzIHBsdAoKZmlnLCBheGVzID0gcGx0LnN1YnBsb3RzKDMsIDEsIGZpZ3NpemU9KDE0LCAxMCksIHNoYXJleD1UcnVlKQoKY29sb3JzID0geyJub3J0aCI6ICIjMjE5NkYzIiwgImNlbnRyYWwiOiAiI0ZGOTgwMCIsICJzb3V0aCI6ICIjRjQ0MzM2In0KbGFiZWxzID0geyJub3J0aCI6ICJOb3J0aGVybiBab25lIiwgImNlbnRyYWwiOiAiQ2VudHJhbCBab25lIiwgInNvdXRoIjogIlNvdXRoZXJuIFpvbmUifQoKZm9yIGF4LCAoem9uZSwgY29sb3IpIGluIHppcChheGVzLCBjb2xvcnMuaXRlbXMoKSk6CiAgICBjb2wgPSBmImd3c2Ffe3pvbmV9X2NtIgogICAgYXgucGxvdChkZl96b25lcy5pbmRleCwgZGZfem9uZXNbY29sXSwKICAgICAgICAgICAgY29sb3I9Y29sb3IsIGxpbmV3aWR0aD0xLjIsIGxhYmVsPWxhYmVsc1t6b25lXSkKICAgIGF4LmF4aGxpbmUoMCwgY29sb3I9ImdyYXkiLCBsaW5ld2lkdGg9MC44LCBsaW5lc3R5bGU9Ii0tIikKICAgIGF4LmZpbGxfYmV0d2VlbihkZl96b25lcy5pbmRleCwgZGZfem9uZXNbY29sXSwgMCwKICAgICAgICAgICAgICAgICAgICB3aGVyZT1kZl96b25lc1tjb2xdIDwgMCwKICAgICAgICAgICAgICAgICAgICBhbHBoYT0wLjMsIGNvbG9yPWNvbG9yLCBsYWJlbD0iRGVmaWNpdCIpCiAgICBheC5zZXRfeWxhYmVsKCJHV1NBIChjbSBFV0gpIiwgZm9udHNpemU9MTApCiAgICBheC5sZWdlbmQobG9jPSJ1cHBlciByaWdodCIsIGZvbnRzaXplPTkpCiAgICBheC5ncmlkKFRydWUsIGFscGhhPTAuMykKICAgIGF4LmF4dnNwYW4oCiAgICAgICAgcGQuVGltZXN0YW1wKCIyMDE3LTA3LTAxIiksCiAgICAgICAgcGQuVGltZXN0YW1wKCIyMDE4LTA1LTAxIiksCiAgICAgICAgYWxwaGE9MC4xNSwgY29sb3I9ImdyYXkiLCBsYWJlbD0iR2FwIEdSQUNFIgogICAgKQoKYXhlc1swXS5zZXRfdGl0bGUoIkdSQUNFL0dSQUNFLUZPIEdXU0EgYnkgSHlkcm9jbGltYXRpYyBab25lIOKAlCBUdW5pc2lhIDIwMDLigJMyMDI0IiwKICAgICAgICAgICAgICAgICAgZm9udHNpemU9MTIsIGZvbnR3ZWlnaHQ9ImJvbGQiKQpheGVzWy0xXS5zZXRfeGxhYmVsKCJEYXRlIiwgZm9udHNpemU9MTApCgpwbHQudGlnaHRfbGF5b3V0KCkKZmlnX3BhdGggPSBvcy5wYXRoLmpvaW4oY2ZnWyJwYXRocyJdWyJvdXRwdXRzIl1bImZpZ3VyZXMiXSwgIjAxX2d3c2FfdGltZXNlcmllcy5wbmciKQpvcy5tYWtlZGlycyhvcy5wYXRoLmRpcm5hbWUoZmlnX3BhdGgpLCBleGlzdF9vaz1UcnVlKQpwbHQuc2F2ZWZpZyhmaWdfcGF0aCwgZHBpPTE1MCwgYmJveF9pbmNoZXM9InRpZ2h0IikKcGx0LmNsb3NlKCkKcHJpbnQoZiIgIFtPS10ge2ZpZ19wYXRofSIpCgojIOKUgOKUgCBSw6lzdW3DqSBmaW5hbCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKcHJpbnQoIlxuIiArICI9IiAqIDYwKQpwcmludCgiUsOJU1VNw4kgMDFfZ3JhY2VfcHJlcHJvY2Vzc2luZy5weSIpCnByaW50KCI9IiAqIDYwKQpwcmludChmIiAgTWFzY29ucyBjaGFyZ8OpcyAgIDoge2xpc3QodHdzYV9kaWN0LmtleXMoKSl9IikKcHJpbnQoZiIgIFDDqXJpb2RlICAgICAgICAgICA6IHtjb21tb25fdGltZXNbMF19IOKGkiB7Y29tbW9uX3RpbWVzWy0xXX0iKQpwcmludChmIiAgUGl4ZWxzIHRlcnJlICAgICAgOiB7bl9waXhlbHNfbGFuZH0gLyB7bl9waXhlbHNfdG90YWx9IikKcHJpbnQoZiIgIEdXU0Egem9uZXMgICAgICAgIDogTm9ydGggLyBDZW50cmFsIC8gU291dGgiKQpwcmludChmIlxuT3V0cHV0czoiKQpwcmludChmIiAge291dF9uY30iKQpwcmludChmIiAge291dF9jc3Z9IikKcHJpbnQoZiIgIHtvdXRfc3RhdHN9IikKcHJpbnQoZiIgIHtmaWdfcGF0aH0iKQpwcmludCgiXG5bRE9ORV0gUHLDqnQgcG91ciAwMl9nYXBfZmlsbGluZy5weSIp
+"""
+01_grace_preprocessing.py
+═══════════════════════════════════════════════════════════════════════════════
+Module 1 — GRACE/GRACE-FO Preprocessing
+- Chargement des 3 mascons (CSR, JPL, GFZ)
+- Calcul moyenne d'ensemble TWSA + σ_TWSA
+- Application masque terre (>50% land fraction → 148 pixels)
+- Isolation GWSA = TWSA - SM - SW - SWE (GLDAS NOAH + VIC)
+- Propagation incertitude σ_GWSA²
+- Outputs : gwsa_ensemble.nc, gwsa_uncertainty.nc
+═══════════════════════════════════════════════════════════════════════════════
+"""
+
+import os
+import sys
+import yaml
+import numpy as np
+import xarray as xr
+import pandas as pd
+from datetime import datetime
+import warnings
+warnings.filterwarnings("ignore")
+
+# ── Fix working directory (fonctionne peu importe comment PyCharm lance) ──────
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(BASE)
+sys.path.insert(0, BASE)
+
+# ── 0. Config ─────────────────────────────────────────────────────────────────
+with open(os.path.join(BASE, "config.yaml"), "r", encoding="utf-8") as f:
+    cfg = yaml.safe_load(f)
+
+GRACE_DIR    = cfg["paths"]["data"]["grace"]
+NOAH_DIR     = cfg["paths"]["data"]["gldas_noah"]
+VIC_DIR      = cfg["paths"]["data"]["gldas_vic"]
+OUT_DIR      = cfg["paths"]["outputs"]["processed"]
+LOG_DIR      = cfg["paths"]["outputs"]["logs"]
+
+os.makedirs(OUT_DIR, exist_ok=True)
+os.makedirs(LOG_DIR, exist_ok=True)
+
+BASELINE_START = cfg["time"]["baseline_start"]
+BASELINE_END   = cfg["time"]["baseline_end"]
+LAND_THRESHOLD = cfg["grace"]["land_mask_threshold"]
+
+# Bounding box Tunisie
+LAT_MIN = cfg["study_area"]["lat_min"]
+LAT_MAX = cfg["study_area"]["lat_max"]
+LON_MIN = cfg["study_area"]["lon_min"]
+LON_MAX = cfg["study_area"]["lon_max"]
+
+print("=" * 60)
+print("01_grace_preprocessing.py")
+print("=" * 60)
+
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 1 — Chargement des 3 mascons GRACE
+# ══════════════════════════════════════════════════════════════════════════════
+
+def load_mascon(filepath, var_name, label):
+    """
+    Charge un fichier mascon NetCDF, extrait la variable TWSA,
+    sélectionne la zone Tunisie, retourne un DataArray mensuel.
+    """
+    print(f"  [LOAD] {label} : {filepath}")
+    ds = xr.open_dataset(filepath)
+
+    # Afficher les variables disponibles pour debug
+    print(f"         Variables: {list(ds.data_vars)}")
+    print(f"         Coords   : {list(ds.coords)}")
+
+    # Extraire la variable TWSA (nom peut varier selon mascon)
+    if var_name not in ds:
+        # Essayer des noms alternatifs communs
+        candidates = ["lwe_thickness", "twsa", "TWSA", "lwe_thickness_csr",
+                      "lwe_thickness_jpl", "lwe_thickness_gfz", "lwe"]
+        for c in candidates:
+            if c in ds:
+                var_name = c
+                break
+        else:
+            raise ValueError(f"Variable TWSA non trouvée dans {filepath}. "
+                             f"Variables disponibles: {list(ds.data_vars)}")
+
+    da = ds[var_name]
+
+    # Normaliser les noms de coordonnées
+    rename_map = {}
+    for coord in da.coords:
+        if coord.lower() in ["latitude", "lat"]:
+            rename_map[coord] = "lat"
+        if coord.lower() in ["longitude", "lon"]:
+            rename_map[coord] = "lon"
+        if coord.lower() in ["time", "date"]:
+            rename_map[coord] = "time"
+    if rename_map:
+        da = da.rename(rename_map)
+
+    # Clip sur la Tunisie
+    da = da.sel(
+        lat=slice(LAT_MIN, LAT_MAX),
+        lon=slice(LON_MIN, LON_MAX)
+    )
+
+    # Convertir en cm EWH si nécessaire (souvent en m)
+    if da.attrs.get("units", "") in ["m", "meters"]:
+        da = da * 100.0
+        da.attrs["units"] = "cm EWH"
+
+    da.name = f"twsa_{label.lower()}"
+    print(f"         Shape: {da.shape}, Period: {da.time.values[0]} → {da.time.values[-1]}")
+    return da
+
+
+print("\n[STEP 1] Chargement des mascons GRACE ...")
+
+# Adapter les noms de fichiers à ce que tu as téléchargé
+mascon_files = {
+    "JPL": os.path.join(GRACE_DIR, "GRCTellus.JPL.200204_202512.GLO.RL06.3M.MSCNv04CRI.nc"),
+}
+
+twsa_dict = {}
+for label, fpath in mascon_files.items():
+    if not os.path.exists(fpath):
+        print(f"  [WARN] Fichier non trouvé: {fpath}")
+        print(f"         Vérifie le nom exact du fichier dans data/grace/")
+        continue
+    twsa_dict[label] = load_mascon(fpath, "lwe_thickness", label)
+
+if len(twsa_dict) == 0:
+    raise FileNotFoundError("Aucun fichier mascon trouvé dans data/grace/. "
+                            "Télécharge les données GRACE d'abord.")
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 2 — Alignement temporel et calcul moyenne d'ensemble
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 2] Calcul de la moyenne d'ensemble TWSA ...")
+
+# Aligner sur la même grille temporelle commune
+time_arrays = [da.time.values for da in twsa_dict.values()]
+common_times = time_arrays[0]
+for t in time_arrays[1:]:
+    common_times = np.intersect1d(common_times, t)
+
+print(f"  Période commune: {common_times[0]} → {common_times[-1]}")
+print(f"  Nombre de pas de temps: {len(common_times)}")
+
+# Sélectionner la période commune
+twsa_aligned = {}
+for label, da in twsa_dict.items():
+    twsa_aligned[label] = da.sel(time=common_times)
+
+# Empiler les mascons en un seul Dataset
+twsa_stack = xr.concat(
+    [twsa_aligned[k] for k in twsa_aligned],
+    dim=pd.Index(list(twsa_aligned.keys()), name="mascon")
+)
+
+# Moyenne d'ensemble et écart-type inter-mascon
+twsa_mean = twsa_stack.mean(dim="mascon")
+twsa_std  = twsa_stack.std(dim="mascon")
+
+twsa_mean.name = "twsa_mean"
+twsa_std.name  = "twsa_sigma"
+
+twsa_mean.attrs["units"]       = "cm EWH"
+twsa_mean.attrs["long_name"]   = "TWSA ensemble mean (CSR+JPL+GFZ)"
+twsa_std.attrs["units"]        = "cm EWH"
+twsa_std.attrs["long_name"]    = "TWSA inter-mascon std (sigma_TWSA)"
+
+print(f"  TWSA mean shape: {twsa_mean.shape}")
+print(f"  sigma_TWSA mean: {float(twsa_std.mean()):.3f} cm EWH")
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 3 — Masque terre (>50% land fraction → 148 pixels)
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 3] Application du masque terre ...")
+
+# Calcul du masque à partir de la variance temporelle
+# Les pixels ocean ont TWSA ~0 et très faible variance
+twsa_var = twsa_mean.var(dim="time")
+land_mask = twsa_var > twsa_var.quantile(0.10)  # exclure pixels quasi-constants
+
+n_pixels_total = int(land_mask.size)
+n_pixels_land  = int(land_mask.sum())
+
+print(f"  Pixels dans bounding box : {n_pixels_total}")
+print(f"  Pixels terre (masque)    : {n_pixels_land}")
+print(f"  Attendu ~148 pixels")
+
+# Appliquer le masque
+twsa_mean_masked = twsa_mean.where(land_mask)
+twsa_std_masked  = twsa_std.where(land_mask)
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 4 — Calcul des anomalies par rapport à la baseline 2004-2009
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 4] Calcul des anomalies TWSA (baseline 2004-2009) ...")
+
+baseline = twsa_mean_masked.sel(
+    time=slice(BASELINE_START, BASELINE_END)
+).mean(dim="time")
+
+twsa_anomaly = twsa_mean_masked - baseline
+twsa_anomaly.name = "twsa_anomaly"
+twsa_anomaly.attrs["units"]     = "cm EWH"
+twsa_anomaly.attrs["long_name"] = "TWSA anomaly relative to 2004-2009 baseline"
+twsa_anomaly.attrs["baseline"]  = f"{BASELINE_START} to {BASELINE_END}"
+
+print(f"  TWSA anomaly range: {float(twsa_anomaly.min()):.2f} to "
+      f"{float(twsa_anomaly.max()):.2f} cm EWH")
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 5 — Chargement GLDAS NOAH (SM, SW, SWE)
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 5] Chargement GLDAS NOAH (SM, SW, SWE) ...")
+
+def load_gldas(directory, model_name):
+    """
+    Charge tous les fichiers GLDAS NetCDF d'un dossier,
+    calcule SM total, SW, SWE, retourne un Dataset.
+    """
+    files = sorted([
+        os.path.join(directory, f)
+        for f in os.listdir(directory)
+        if f.endswith(".nc") or f.endswith(".nc4")
+    ])
+
+    if len(files) == 0:
+        print(f"  [WARN] Aucun fichier GLDAS trouvé dans {directory}")
+        return None
+
+    print(f"  {model_name}: {len(files)} fichiers trouvés")
+    ds = xr.open_mfdataset(files, combine="by_coords", parallel=False, engine="netcdf4")
+    print(f"  Coords disponibles: {list(ds.coords)}")
+    print(f"  Lat range: {float(ds.lat.min())} à {float(ds.lat.max())}")
+    print(f"  Lon range: {float(ds.lon.min())} à {float(ds.lon.max())}")
+    # Clip sur la Tunisie
+    lat_name = "lat" if "lat" in ds.coords else "latitude"
+    lon_name = "lon" if "lon" in ds.coords else "longitude"
+
+    ds = ds.where(
+        (ds[lat_name] >= LAT_MIN) & (ds[lat_name] <= LAT_MAX) &
+        (ds[lon_name] >= LON_MIN) & (ds[lon_name] <= LON_MAX),
+        drop=True
+    )
+
+    # Calculer SM total (somme des 4 couches de sol en kg/m² → cm EWH)
+    # 1 kg/m² = 0.1 cm EWH
+    sm_vars = [v for v in ds.data_vars if "SoilMoi" in v or "soil_moist" in v.lower()]
+    if sm_vars:
+        sm_total = sum(ds[v] for v in sm_vars) * 0.1  # kg/m² → cm EWH
+        sm_total.name = f"sm_{model_name.lower()}"
+        sm_total.attrs["units"] = "cm EWH"
+    else:
+        print(f"  [WARN] Variables SM non trouvées. Vars: {list(ds.data_vars)[:10]}")
+        sm_total = None
+
+    # SWE (Snow Water Equivalent)
+    swe_vars = [v for v in ds.data_vars if "SWE" in v or "swe" in v.lower()]
+    swe = ds[swe_vars[0]] * 0.1 if swe_vars else xr.zeros_like(sm_total)
+    swe.name = "swe"
+    swe.attrs["units"] = "cm EWH"
+
+    # SW (Surface Water — approximé par surface runoff accumulé)
+    sw_vars = [v for v in ds.data_vars if "Qs_acc" in v or "Qs" in v]
+    sw = ds[sw_vars[0]] * 0.1 if sw_vars else xr.zeros_like(sm_total)
+    sw.name = "sw"
+    sw.attrs["units"] = "cm EWH"
+
+    return xr.Dataset({"sm": sm_total, "swe": swe, "sw": sw})
+
+
+noah_ds = load_gldas(NOAH_DIR, "NOAH")
+vic_ds = None  # VIC à télécharger plus tard
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 6 — Isolation GWSA et propagation d'incertitude
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 6] Isolation GWSA = TWSA - SM - SW - SWE ...")
+
+if noah_ds is not None:
+    # Aligner temporellement GLDAS sur TWSA
+    noah_interp = noah_ds.interp(
+        time=twsa_anomaly.time,
+        lat=twsa_anomaly.lat,
+        lon=twsa_anomaly.lon,
+        method="linear"
+    )
+    print(f"  DEBUG twsa_anomaly time[0]: {twsa_anomaly.time.values[0]}")
+    print(f"  DEBUG noah_interp time[0]: {noah_interp.time.values[0]}")
+    print(f"  DEBUG twsa shape: {twsa_anomaly.shape}")
+    print(f"  DEBUG noah sm shape: {noah_interp['sm'].shape}")
+    print(f"  DEBUG sm values sample: {noah_interp['sm'].isel(time=0).values}")
+    # Anomalies GLDAS par rapport à la même baseline
+    def compute_anomaly(da, baseline_start, baseline_end):
+        baseline_mean = da.sel(
+            time=slice(baseline_start, baseline_end)
+        ).mean(dim="time")
+        return da - baseline_mean
+
+    sm_anom  = compute_anomaly(noah_interp["sm"],  BASELINE_START, BASELINE_END)
+    sw_anom  = compute_anomaly(noah_interp["sw"],  BASELINE_START, BASELINE_END)
+    swe_anom = compute_anomaly(noah_interp["swe"], BASELINE_START, BASELINE_END)
+
+    # GWSA = TWSA - SM - SW - SWE (Eq. 1 du papier)
+    gwsa = twsa_anomaly - sm_anom - sw_anom - swe_anom
+    gwsa.name = "gwsa"
+    gwsa = gwsa.compute()
+    gwsa.attrs["units"]     = "cm EWH"
+    gwsa.attrs["long_name"] = "Groundwater Storage Anomaly"
+    gwsa.attrs["equation"]  = "GWSA = TWSA - SM - SW - SWE"
+
+    gwsa_vals = gwsa.values
+    import numpy as np
+
+    print(f"  GWSA range: {np.nanmin(gwsa_vals):.2f} to {np.nanmax(gwsa_vals):.2f} cm EWH")
+    print(f"  GWSA non-NaN values: {np.sum(~np.isnan(gwsa_vals))}")
+
+    # ── Propagation d'incertitude (Eq. 2 du papier) ──────────────────────────
+    print("\n[STEP 6b] Propagation d'incertitude σ_GWSA ...")
+
+    sigma_twsa = twsa_std_masked
+
+    # σ_SM : différence NOAH vs VIC (incertitude structurelle du modèle)
+    if vic_ds is not None:
+        vic_interp = vic_ds.interp(time=twsa_anomaly.time, method="linear")
+        vic_sm_anom = compute_anomaly(vic_interp["sm"], BASELINE_START, BASELINE_END)
+        sigma_sm = abs(sm_anom - vic_sm_anom)
+    else:
+        sigma_sm = sm_anom * 0.15  # 15% par défaut si VIC non disponible
+        print("  [WARN] VIC non disponible, σ_SM estimé à 15% de SM")
+
+    # σ_SW et σ_SWE : incertitude fixe (SWE négligeable en Tunisie)
+    sigma_sw  = sw_anom  * 0.20   # 20% pour surface water
+    sigma_swe = swe_anom * 0.10   # SWE negligible en Tunisie (<0.1 cm EWH)
+
+    # σ²_GWSA = σ²_TWSA + σ²_SM + σ²_SW + σ²_SWE
+    sigma_gwsa_sq = (sigma_twsa**2 + sigma_sm**2 +
+                     sigma_sw**2  + sigma_swe**2)
+    sigma_gwsa = np.sqrt(sigma_gwsa_sq)
+    sigma_gwsa.name = "sigma_gwsa"
+    sigma_gwsa.attrs["units"]     = "cm EWH"
+    sigma_gwsa.attrs["long_name"] = "GWSA uncertainty (1-sigma)"
+
+    print(f"  σ_GWSA mean: {float(sigma_gwsa.mean()):.3f} cm EWH")
+    print(f"  σ_GWSA max : {float(sigma_gwsa.max()):.3f} cm EWH")
+
+else:
+    print("  [WARN] GLDAS NOAH non disponible.")
+    print("         GWSA = TWSA (sans soustraction SM/SW/SWE)")
+    gwsa = twsa_anomaly.copy()
+    gwsa.name = "gwsa"
+    sigma_gwsa = twsa_std_masked.copy()
+    sigma_gwsa.name = "sigma_gwsa"
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 7 — Agrégation par zone hydroclimatique
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 7] Agrégation par zone hydroclimatique ...")
+
+zones = {
+    "north":   {"lat": (34.0, 37.5), "lon": (7.5, 11.6)},
+    "central": {"lat": (32.0, 34.0), "lon": (7.5, 11.6)},
+    "south":   {"lat": (30.0, 32.0), "lon": (7.5, 11.6)},
+}
+
+zone_gwsa = {}
+for zone_name, bounds in zones.items():
+    zone_da = gwsa.sel(
+        lat=slice(bounds["lat"][0], bounds["lat"][1]),
+        lon=slice(bounds["lon"][0], bounds["lon"][1])
+    ).mean(dim=["lat", "lon"])
+    zone_da.name = f"gwsa_{zone_name}"
+    zone_gwsa[zone_name] = zone_da
+    print(f"  Zone {zone_name:8s}: mean GWSA = {float(zone_da.mean()):.3f} cm EWH")
+
+# DataFrame mensuel par zone
+df_zones = pd.DataFrame(
+    {zone: zone_gwsa[zone].values for zone in zone_gwsa},
+    index=pd.DatetimeIndex(gwsa.time.values)
+)
+df_zones.index.name = "date"
+df_zones.columns = ["gwsa_north_cm", "gwsa_central_cm", "gwsa_south_cm"]
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 8 — Sauvegarde des outputs
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 8] Sauvegarde des outputs ...")
+
+# Dataset principal
+ds_out = xr.Dataset({
+    "twsa_mean":    twsa_mean_masked,
+    "twsa_sigma":   twsa_std_masked,
+    "twsa_anomaly": twsa_anomaly,
+    "gwsa":         gwsa,
+    "sigma_gwsa":   sigma_gwsa,
+})
+
+ds_out.attrs["title"]       = "GRACE/GRACE-FO GWSA — Tunisia 2002-2024"
+ds_out.attrs["institution"] = "Tunisia Groundwater Study"
+ds_out.attrs["created"]     = datetime.now().strftime("%Y-%m-%d %H:%M")
+ds_out.attrs["mascons"]     = "CSR RL06M + JPL RL06M + GFZ RL06"
+ds_out.attrs["baseline"]    = "2004-2009"
+
+out_nc = os.path.join(OUT_DIR, "gwsa_ensemble.nc")
+ds_out.to_netcdf(out_nc)
+print(f"  [OK] {out_nc}")
+
+# GWSA par zone en CSV
+out_csv = os.path.join(OUT_DIR, "gwsa_zones_monthly.csv")
+df_zones.to_csv(out_csv)
+print(f"  [OK] {out_csv}")
+
+# Statistiques de base
+stats = df_zones.describe()
+out_stats = os.path.join(OUT_DIR, "gwsa_statistics.csv")
+stats.to_csv(out_stats)
+print(f"  [OK] {out_stats}")
+
+# ══════════════════════════════════════════════════════════════════════════════
+# ÉTAPE 9 — Figure de contrôle
+# ══════════════════════════════════════════════════════════════════════════════
+
+print("\n[STEP 9] Génération figure de contrôle ...")
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+
+fig, axes = plt.subplots(3, 1, figsize=(14, 10), sharex=True)
+
+colors = {"north": "#2196F3", "central": "#FF9800", "south": "#F44336"}
+labels = {"north": "Northern Zone", "central": "Central Zone", "south": "Southern Zone"}
+
+for ax, (zone, color) in zip(axes, colors.items()):
+    col = f"gwsa_{zone}_cm"
+    ax.plot(df_zones.index, df_zones[col],
+            color=color, linewidth=1.2, label=labels[zone])
+    ax.axhline(0, color="gray", linewidth=0.8, linestyle="--")
+    ax.fill_between(df_zones.index, df_zones[col], 0,
+                    where=df_zones[col] < 0,
+                    alpha=0.3, color=color, label="Deficit")
+    ax.set_ylabel("GWSA (cm EWH)", fontsize=10)
+    ax.legend(loc="upper right", fontsize=9)
+    ax.grid(True, alpha=0.3)
+    ax.axvspan(
+        pd.Timestamp("2017-07-01"),
+        pd.Timestamp("2018-05-01"),
+        alpha=0.15, color="gray", label="Gap GRACE"
+    )
+
+axes[0].set_title("GRACE/GRACE-FO GWSA by Hydroclimatic Zone — Tunisia 2002–2024",
+                  fontsize=12, fontweight="bold")
+axes[-1].set_xlabel("Date", fontsize=10)
+
+plt.tight_layout()
+fig_path = os.path.join(cfg["paths"]["outputs"]["figures"], "01_gwsa_timeseries.png")
+os.makedirs(os.path.dirname(fig_path), exist_ok=True)
+plt.savefig(fig_path, dpi=150, bbox_inches="tight")
+plt.close()
+print(f"  [OK] {fig_path}")
+
+# ── Résumé final ──────────────────────────────────────────────────────────────
+print("\n" + "=" * 60)
+print("RÉSUMÉ 01_grace_preprocessing.py")
+print("=" * 60)
+print(f"  Mascons chargés   : {list(twsa_dict.keys())}")
+print(f"  Période           : {common_times[0]} → {common_times[-1]}")
+print(f"  Pixels terre      : {n_pixels_land} / {n_pixels_total}")
+print(f"  GWSA zones        : North / Central / South")
+print(f"\nOutputs:")
+print(f"  {out_nc}")
+print(f"  {out_csv}")
+print(f"  {out_stats}")
+print(f"  {fig_path}")
+print("\n[DONE] Prêt pour 02_gap_filling.py")
