@@ -1,1 +1,95 @@
-IiIiCjAwZF9kb3dubG9hZF9nbGRhc19taXNzaW5nLnB5ClTDqWzDqWNoYXJnZSB1bmlxdWVtZW50IGxlcyBmaWNoaWVycyBHTERBUyBtYW5xdWFudHMgKDIwMDItMjAyNCkKIiIiCgppbXBvcnQgb3MKaW1wb3J0IHJlcXVlc3RzCmltcG9ydCB0aW1lCgpOT0FIX0RJUiAgID0gciJDOlxVc2Vyc1xSVFhcRGVza3RvcFxUdW5pc2lhX0dXXGRhdGFcZ2xkYXNcbm9haCIKVVNFUk5BTUUgICA9ICJhcmdvdWJpIgpQQVNTV09SRCAgID0gIkxYcz0lNz1iLEwhdmcuaCIKCiMg4pSA4pSAIElkZW50aWZpZXIgbGVzIGZpY2hpZXJzIG1hbnF1YW50cyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKbWlzc2luZyA9IFtdCmZvciB5ZWFyIGluIHJhbmdlKDIwMDIsIDIwMjUpOgogICAgZm9yIG1vbnRoIGluIHJhbmdlKDEsIDEzKToKICAgICAgICBmbmFtZSA9IGYiR0xEQVNfTk9BSDAyNV9NLkF7eWVhcn17bW9udGg6MDJkfS4wMjEubmM0LlNVQi5uYzQiCiAgICAgICAgZnBhdGggPSBvcy5wYXRoLmpvaW4oTk9BSF9ESVIsIGZuYW1lKQogICAgICAgIGlmIG5vdCBvcy5wYXRoLmV4aXN0cyhmcGF0aCkgb3Igb3MucGF0aC5nZXRzaXplKGZwYXRoKSA8IDEwMDAwOgogICAgICAgICAgICBtaXNzaW5nLmFwcGVuZCgoeWVhciwgbW9udGgsIGZuYW1lKSkKCnByaW50KGYiRmljaGllcnMgbWFucXVhbnRzIDoge2xlbihtaXNzaW5nKX0iKQoKaWYgbGVuKG1pc3NpbmcpID09IDA6CiAgICBwcmludCgiVG91cyBsZXMgZmljaGllcnMgc29udCBwcsOpc2VudHMgISIpCiAgICBleGl0KCkKCiMg4pSA4pSAIENvbnN0cnVpcmUgbGVzIFVSTHMgcG91ciBsZXMgZmljaGllcnMgbWFucXVhbnRzIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApCQVNFX1VSTCA9ICgKICAgICJodHRwczovL2h5ZHJvMS5nZXNkaXNjLmVvc2Rpcy5uYXNhLmdvdi9kYWFjLWJpbi9PVEYvSFRUUF9zZXJ2aWNlcy5jZ2kiCiAgICAiP0ZJTEVOQU1FPSUyRmRhdGElMkZHTERBUyUyRkdMREFTX05PQUgwMjVfTS4yLjElMkZ7eWVhcn0lMkYiCiAgICAiR0xEQVNfTk9BSDAyNV9NLkF7eWVhcn17bW9udGg6MDJkfS4wMjEubmM0IgogICAgIiZWQVJJQUJMRVM9UXNfYWNjJTJDU29pbE1vaTBfMTBjbV9pbnN0JTJDU29pbE1vaTEwXzQwY21faW5zdCIKICAgICIlMkNTb2lsTW9pMTAwXzIwMGNtX2luc3QlMkNTb2lsTW9pNDBfMTAwY21faW5zdCUyQ1NXRV9pbnN0IgogICAgIiZEQVRBU0VUX1ZFUlNJT049Mi4xJlNFUlZJQ0U9TDM0UlNfTERBUyZGT1JNQVQ9Ym1NMEx3JlZFUlNJT049MS4wMiIKICAgICImQkJPWD0yOS42MDElMkM2Ljk2NSUyQzM3Ljk1JTJDMTIuNDU4JlNIT1JUTkFNRT1HTERBU19OT0FIMDI1X00iCiAgICAiJkxBQkVMPUdMREFTX05PQUgwMjVfTS5Be3llYXJ9e21vbnRoOjAyZH0uMDIxLm5jNC5TVUIubmM0IgopCgojIOKUgOKUgCBTZXNzaW9uIGF1dGhlbnRpZmnDqWUg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACnNlc3Npb24gPSByZXF1ZXN0cy5TZXNzaW9uKCkKc2Vzc2lvbi5hdXRoID0gKFVTRVJOQU1FLCBQQVNTV09SRCkKc2Vzc2lvbi5oZWFkZXJzLnVwZGF0ZSh7IlVzZXItQWdlbnQiOiAiTW96aWxsYS81LjAifSkKCiMgTG9naW4gaW5pdGlhbApzZXNzaW9uLmdldCgiaHR0cHM6Ly91cnMuZWFydGhkYXRhLm5hc2EuZ292IiwgYWxsb3dfcmVkaXJlY3RzPVRydWUpCgpzdWNjZXNzID0gMApmYWlsZWQgID0gW10KCmZvciBpLCAoeWVhciwgbW9udGgsIGZuYW1lKSBpbiBlbnVtZXJhdGUobWlzc2luZywgMSk6CiAgICB1cmwgICAgICA9IEJBU0VfVVJMLmZvcm1hdCh5ZWFyPXllYXIsIG1vbnRoPW1vbnRoKQogICAgb3V0X3BhdGggPSBvcy5wYXRoLmpvaW4oTk9BSF9ESVIsIGZuYW1lKQoKICAgIHByaW50KGYiW3tpOjAyZH0ve2xlbihtaXNzaW5nKX1dIHtmbmFtZX0gLi4uIiwgZW5kPSIgIiwgZmx1c2g9VHJ1ZSkKCiAgICB0cnk6CiAgICAgICAgIyBQYXVzZSBlbnRyZSByZXF1w6p0ZXMgcG91ciDDqXZpdGVyIGxlIGJsb2NhZ2UgTkFTQQogICAgICAgIHRpbWUuc2xlZXAoMikKCiAgICAgICAgcmVzcCA9IHNlc3Npb24uZ2V0KHVybCwgYWxsb3dfcmVkaXJlY3RzPVRydWUsIHRpbWVvdXQ9MTIwKQoKICAgICAgICAjIFbDqXJpZmllciBjb250ZW51CiAgICAgICAgaWYgbGVuKHJlc3AuY29udGVudCkgPCAxMDAwMDoKICAgICAgICAgICAgcHJpbnQoZiJQRVRJVCAoe2xlbihyZXNwLmNvbnRlbnQpfSBieXRlcykgLSByZXRyeSBkYW5zIDMwcyIpCiAgICAgICAgICAgIHRpbWUuc2xlZXAoMzApCiAgICAgICAgICAgIHJlc3AgPSBzZXNzaW9uLmdldCh1cmwsIGFsbG93X3JlZGlyZWN0cz1UcnVlLCB0aW1lb3V0PTEyMCkKCiAgICAgICAgaWYgbGVuKHJlc3AuY29udGVudCkgPCAxMDAwMDoKICAgICAgICAgICAgcHJpbnQoZiJFQ0hFQyAoe2xlbihyZXNwLmNvbnRlbnQpfSBieXRlcykiKQogICAgICAgICAgICBmYWlsZWQuYXBwZW5kKGZuYW1lKQogICAgICAgICAgICBjb250aW51ZQoKICAgICAgICB3aXRoIG9wZW4ob3V0X3BhdGgsICJ3YiIpIGFzIGY6CiAgICAgICAgICAgIGYud3JpdGUocmVzcC5jb250ZW50KQoKICAgICAgICBwcmludChmIk9LICh7bGVuKHJlc3AuY29udGVudCkvLzEwMjR9IEtCKSIpCiAgICAgICAgc3VjY2VzcyArPSAxCgogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgIHByaW50KGYiRVJSRVVSOiB7ZX0iKQogICAgICAgIGZhaWxlZC5hcHBlbmQoZm5hbWUpCiAgICAgICAgdGltZS5zbGVlcCgxMCkKCiMg4pSA4pSAIFLDqXN1bcOpIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApwcmludCgiXG4iICsgIj0iICogNTApCnByaW50KGYiVMOpbMOpY2hhcmfDqXMgOiB7c3VjY2Vzc30ve2xlbihtaXNzaW5nKX0iKQppZiBmYWlsZWQ6CiAgICBwcmludChmIsOJY2hlY3MgICAgICA6IHtsZW4oZmFpbGVkKX0iKQogICAgZm9yIGYgaW4gZmFpbGVkOgogICAgICAgIHByaW50KGYiICB7Zn0iKQplbHNlOgogICAgcHJpbnQoIlRvdXMgbGVzIGZpY2hpZXJzIG1hbnF1YW50cyB0w6lsw6ljaGFyZ8OpcyAhIikKcHJpbnQoIj0iICogNTApCg==
+"""
+00d_download_gldas_missing.py
+Télécharge uniquement les fichiers GLDAS manquants (2002-2024)
+"""
+
+import os
+import requests
+import time
+
+NOAH_DIR   = r"C:\Users\RTX\Desktop\Tunisia_GW\data\gldas\noah"
+USERNAME   = "argoubi"
+PASSWORD   = "LXs=%7=b,L!vg.h"
+
+# ── Identifier les fichiers manquants ─────────────────────────────────────────
+missing = []
+for year in range(2002, 2025):
+    for month in range(1, 13):
+        fname = f"GLDAS_NOAH025_M.A{year}{month:02d}.021.nc4.SUB.nc4"
+        fpath = os.path.join(NOAH_DIR, fname)
+        if not os.path.exists(fpath) or os.path.getsize(fpath) < 10000:
+            missing.append((year, month, fname))
+
+print(f"Fichiers manquants : {len(missing)}")
+
+if len(missing) == 0:
+    print("Tous les fichiers sont présents !")
+    exit()
+
+# ── Construire les URLs pour les fichiers manquants ───────────────────────────
+BASE_URL = (
+    "https://hydro1.gesdisc.eosdis.nasa.gov/daac-bin/OTF/HTTP_services.cgi"
+    "?FILENAME=%2Fdata%2FGLDAS%2FGLDAS_NOAH025_M.2.1%2F{year}%2F"
+    "GLDAS_NOAH025_M.A{year}{month:02d}.021.nc4"
+    "&VARIABLES=Qs_acc%2CSoilMoi0_10cm_inst%2CSoilMoi10_40cm_inst"
+    "%2CSoilMoi100_200cm_inst%2CSoilMoi40_100cm_inst%2CSWE_inst"
+    "&DATASET_VERSION=2.1&SERVICE=L34RS_LDAS&FORMAT=bmM0Lw&VERSION=1.02"
+    "&BBOX=29.601%2C6.965%2C37.95%2C12.458&SHORTNAME=GLDAS_NOAH025_M"
+    "&LABEL=GLDAS_NOAH025_M.A{year}{month:02d}.021.nc4.SUB.nc4"
+)
+
+# ── Session authentifiée ──────────────────────────────────────────────────────
+session = requests.Session()
+session.auth = (USERNAME, PASSWORD)
+session.headers.update({"User-Agent": "Mozilla/5.0"})
+
+# Login initial
+session.get("https://urs.earthdata.nasa.gov", allow_redirects=True)
+
+success = 0
+failed  = []
+
+for i, (year, month, fname) in enumerate(missing, 1):
+    url      = BASE_URL.format(year=year, month=month)
+    out_path = os.path.join(NOAH_DIR, fname)
+
+    print(f"[{i:02d}/{len(missing)}] {fname} ...", end=" ", flush=True)
+
+    try:
+        # Pause entre requêtes pour éviter le blocage NASA
+        time.sleep(2)
+
+        resp = session.get(url, allow_redirects=True, timeout=120)
+
+        # Vérifier contenu
+        if len(resp.content) < 10000:
+            print(f"PETIT ({len(resp.content)} bytes) - retry dans 30s")
+            time.sleep(30)
+            resp = session.get(url, allow_redirects=True, timeout=120)
+
+        if len(resp.content) < 10000:
+            print(f"ECHEC ({len(resp.content)} bytes)")
+            failed.append(fname)
+            continue
+
+        with open(out_path, "wb") as f:
+            f.write(resp.content)
+
+        print(f"OK ({len(resp.content)//1024} KB)")
+        success += 1
+
+    except Exception as e:
+        print(f"ERREUR: {e}")
+        failed.append(fname)
+        time.sleep(10)
+
+# ── Résumé ────────────────────────────────────────────────────────────────────
+print("\n" + "=" * 50)
+print(f"Téléchargés : {success}/{len(missing)}")
+if failed:
+    print(f"Échecs      : {len(failed)}")
+    for f in failed:
+        print(f"  {f}")
+else:
+    print("Tous les fichiers manquants téléchargés !")
+print("=" * 50)
