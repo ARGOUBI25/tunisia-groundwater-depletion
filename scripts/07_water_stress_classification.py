@@ -1,1 +1,467 @@
-IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyAwN193YXRlcl9zdHJlc3NfY2xhc3NpZmljYXRpb24ucHkKIyBUdW5pc2lhIEdyb3VuZHdhdGVyIERlcGxldGlvbiBTdHVkeQojIE1PRFVMRSA2IOKAlCBXYXRlciBTdHJlc3MgQ2xhc3NpZmljYXRpb24KIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBNZXRob2RvbG9neSAoU2VjdGlvbiAyLjcpOgojICAgU3RlcCAxOiBLLU1lYW5zIChrPTQpIGV4cGxvcmF0b3J5IGNsdXN0ZXJpbmcgb24gYW5vbWFseSBmZWF0dXJlcwojICAgICAgICAgICBCb290c3RyYXAgY29uZmlkZW5jZSBpbnRlcnZhbHMgKG49MTAwMCkKIyAgIFN0ZXAgMjogUmFuZG9tIEZvcmVzdCBjbGFzc2lmaWVyIChwcmltYXJ5KSB0cmFpbmVkIG9uIEstTWVhbnMgbGFiZWxzCiMgICAgICAgICAgIExPT0NWIHZhbGlkYXRpb24gfCBGZWF0dXJlczogZ3dzYV9hbm9tYWx5LCBwcmVjaXBfYW5vbWFseSwKIyAgICAgICAgICAgdDJtX2Fub21hbHksIG5kdmlfYW5vbWFseSwgc3BpMywgc3BpMTIsIGd3c2FfbGFnMSwgZ3dzYV9yb2xsMTIKIyAgIENsYXNzZXM6IDA9TG93LCAxPU1vZGVyYXRlLCAyPUhpZ2gsIDM9Q3JpdGljYWwgc3RyZXNzCiMKIyBJbnB1dHM6CiMgICBvdXRwdXRzL3Byb2Nlc3NlZC9mZWF0dXJlc19tYXN0ZXIuY3N2CiMKIyBPdXRwdXRzOgojICAgb3V0cHV0cy9wcm9jZXNzZWQvd2F0ZXJfc3RyZXNzX2xhYmVscy5jc3YKIyAgIG91dHB1dHMvcHJvY2Vzc2VkL3dhdGVyX3N0cmVzc19jbGFzc2lmaWVkLmNzdgojICAgb3V0cHV0cy9tb2RlbHMvcmZfc3RyZXNzX2NsYXNzaWZpZXIucGtsCiMgICBvdXRwdXRzL3Jlc3VsdHMvc3RyZXNzX2NsYXNzaWZpY2F0aW9uX21ldHJpY3MuY3N2CiMgICBvdXRwdXRzL2ZpZ3VyZXMvMDdfc3RyZXNzX3RpbWVzZXJpZXMucG5nCiMgICBvdXRwdXRzL2ZpZ3VyZXMvMDdfc3RyZXNzX21hcF9beWVhcl0ucG5nCiMgICBvdXRwdXRzL2ZpZ3VyZXMvMDdfa21lYW5zX2NsdXN0ZXJzLnBuZwojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKaW1wb3J0IG9zCmltcG9ydCBzeXMKaW1wb3J0IGxvZ2dpbmcKaW1wb3J0IHdhcm5pbmdzCmltcG9ydCB5YW1sCmltcG9ydCBudW1weSBhcyBucAppbXBvcnQgcGFuZGFzIGFzIHBkCmltcG9ydCBwaWNrbGUKZnJvbSBwYXRobGliIGltcG9ydCBQYXRoCgp3YXJuaW5ncy5maWx0ZXJ3YXJuaW5ncygnaWdub3JlJykKaW1wb3J0IGlvCnN5cy5zdGRvdXQgPSBpby5UZXh0SU9XcmFwcGVyKHN5cy5zdGRvdXQuYnVmZmVyLCBlbmNvZGluZz0ndXRmLTgnLCBlcnJvcnM9J3JlcGxhY2UnKQoKQkFTRSA9IG9zLnBhdGguZGlybmFtZShvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5hYnNwYXRoKF9fZmlsZV9fKSkpCm9zLmNoZGlyKEJBU0UpCgp3aXRoIG9wZW4oJ2NvbmZpZy55YW1sJywgJ3InLCBlbmNvZGluZz0ndXRmLTgnKSBhcyBmOgogICAgQ0ZHID0geWFtbC5zYWZlX2xvYWQoZikKCk9VVF9QUk9DID0gUGF0aChDRkdbJ3BhdGhzJ11bJ291dHB1dHMnXVsncHJvY2Vzc2VkJ10pCk9VVF9NT0QgID0gUGF0aChDRkdbJ3BhdGhzJ11bJ291dHB1dHMnXVsnbW9kZWxzJ10pCk9VVF9SRVMgID0gUGF0aChDRkdbJ3BhdGhzJ11bJ291dHB1dHMnXVsncmVzdWx0cyddKQpPVVRfRklHICA9IFBhdGgoQ0ZHWydwYXRocyddWydvdXRwdXRzJ11bJ2ZpZ3VyZXMnXSkKT1VUX0xPRyAgPSBQYXRoKENGR1sncGF0aHMnXVsnb3V0cHV0cyddWydsb2dzJ10pCmZvciBwIGluIFtPVVRfUFJPQywgT1VUX01PRCwgT1VUX1JFUywgT1VUX0ZJRywgT1VUX0xPR106CiAgICBwLm1rZGlyKHBhcmVudHM9VHJ1ZSwgZXhpc3Rfb2s9VHJ1ZSkKCmxvZ2dpbmcuYmFzaWNDb25maWcoCiAgICBsZXZlbD1sb2dnaW5nLklORk8sCiAgICBmb3JtYXQ9JyUoYXNjdGltZSlzIFslKGxldmVsbmFtZSlzXSAlKG1lc3NhZ2UpcycsCiAgICBoYW5kbGVycz1bCiAgICAgICAgbG9nZ2luZy5GaWxlSGFuZGxlcihPVVRfTE9HIC8gJzA3X3dhdGVyX3N0cmVzcy5sb2cnLCBlbmNvZGluZz0ndXRmLTgnKSwKICAgICAgICBsb2dnaW5nLlN0cmVhbUhhbmRsZXIoc3lzLnN0ZG91dCkKICAgIF0KKQpsb2cgPSBsb2dnaW5nLmdldExvZ2dlcihfX25hbWVfXykKU0VQID0gJz0nICogNjAKCksgICAgICAgICAgID0gQ0ZHWydjbGFzc2lmaWNhdGlvbiddWydrbWVhbnMnXVsnayddCk5fQk9PVFNUUkFQID0gQ0ZHWydjbGFzc2lmaWNhdGlvbiddWydrbWVhbnMnXVsnbl9ib290c3RyYXAnXQpMQUJFTFMgICAgICA9IENGR1snY2xhc3NpZmljYXRpb24nXVsna21lYW5zJ11bJ2xhYmVscyddClpPTkVTICAgICAgID0gWydub3J0aCcsICdjZW50cmFsJywgJ3NvdXRoJ10KUkFORE9NX1NUQVRFID0gQ0ZHWydyYW5kb21fc3RhdGUnXQoKIyBDbGFzc2lmaWNhdGlvbiBmZWF0dXJlcwpDTEFTU19GRUFUVVJFUyA9IFsKICAgICdnd3NhX2Fub21hbHknLCAncHJlY2lwX2Fub21hbHknLCAndDJtX2Fub21hbHknLCAnbmR2aV9hbm9tYWx5JywKICAgICdzcGkzJywgJ3NwaTEyJywgJ2d3c2FfbGFnMScsICdnd3NhX3JvbGwxMicKXQoKU1RSRVNTX0NPTE9SUyA9IHsKICAgIDA6ICcjMmVjYzcxJywgICMgbG93IOKAlCBncmVlbgogICAgMTogJyNmMzljMTInLCAgIyBtb2RlcmF0ZSDigJQgb3JhbmdlCiAgICAyOiAnI2U3NGMzYycsICAjIGhpZ2gg4oCUIHJlZAogICAgMzogJyM4ZTQ0YWQnLCAgIyBjcml0aWNhbCDigJQgcHVycGxlCn0KCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIERBVEEgTE9BRElORwojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKZGVmIGxvYWRfZmVhdHVyZXMoKToKICAgIHBhdGggPSBPVVRfUFJPQyAvICdmZWF0dXJlc19tYXN0ZXIuY3N2JwogICAgaWYgbm90IHBhdGguZXhpc3RzKCk6CiAgICAgICAgcmFpc2UgRmlsZU5vdEZvdW5kRXJyb3IoImZlYXR1cmVzX21hc3Rlci5jc3Ygbm90IGZvdW5kLiBSdW4gMDQgZmlyc3QuIikKICAgIGRmID0gcGQucmVhZF9jc3YocGF0aCwgcGFyc2VfZGF0ZXM9Wyd0aW1lJ10sIGluZGV4X2NvbD0ndGltZScpCiAgICBkZi5pbmRleCA9IGRmLmluZGV4LnRvX3BlcmlvZCgnTScpLnRvX3RpbWVzdGFtcCgpCiAgICByZXR1cm4gZGYKCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIEstTUVBTlMgQ0xVU1RFUklORwojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKZGVmIGdldF9mZWF0dXJlX21hdHJpeChkZik6CiAgICAiIiJFeHRyYWN0IGFuZCBzdGFuZGFyZGl6ZSBjbGFzc2lmaWNhdGlvbiBmZWF0dXJlcy4iIiIKICAgIGZyb20gc2tsZWFybi5wcmVwcm9jZXNzaW5nIGltcG9ydCBTdGFuZGFyZFNjYWxlcgogICAgY29scyA9IFtjIGZvciBjIGluIENMQVNTX0ZFQVRVUkVTIGlmIGMgaW4gZGYuY29sdW1uc10KICAgIFggPSBkZltjb2xzICsgWyd6b25lJ11dLmRyb3BuYShzdWJzZXQ9Y29scykuY29weSgpCiAgICB6b25lX2NvbCA9IFgucG9wKCd6b25lJykKICAgIHNjYWxlciA9IFN0YW5kYXJkU2NhbGVyKCkKICAgIFhfc2NhbGVkID0gc2NhbGVyLmZpdF90cmFuc2Zvcm0oWCkKICAgIHJldHVybiBYLCBYX3NjYWxlZCwgc2NhbGVyLCBjb2xzLCB6b25lX2NvbAoKCmRlZiBydW5fa21lYW5zKFhfc2NhbGVkLCBrPTQsIG5faW5pdD0yMCk6CiAgICAiIiJSdW4gSy1NZWFucyBjbHVzdGVyaW5nLiIiIgogICAgZnJvbSBza2xlYXJuLmNsdXN0ZXIgaW1wb3J0IEtNZWFucwogICAga20gPSBLTWVhbnMobl9jbHVzdGVycz1rLCBuX2luaXQ9bl9pbml0LCByYW5kb21fc3RhdGU9UkFORE9NX1NUQVRFKQogICAgbGFiZWxzID0ga20uZml0X3ByZWRpY3QoWF9zY2FsZWQpCiAgICByZXR1cm4ga20sIGxhYmVscwoKCmRlZiBvcmRlcl9jbHVzdGVyc19ieV9zdHJlc3MoZGZfZmVhdCwgbGFiZWxzLCBnd3NhX2NvbD0nZ3dzYV9hbm9tYWx5Jyk6CiAgICAiIiIKICAgIFJlLW9yZGVyIGNsdXN0ZXIgbGFiZWxzIHNvIHRoYXQ6CiAgICAwID0gaGlnaGVzdCBHV1NBIGFub21hbHkgKGxlYXN0IHN0cmVzcykKICAgIDMgPSBsb3dlc3QgR1dTQSBhbm9tYWx5IChtb3N0IHN0cmVzcykKICAgICIiIgogICAgY2x1c3Rlcl9tZWFucyA9IHt9CiAgICBmb3IgYyBpbiByYW5nZShLKToKICAgICAgICBtYXNrID0gbGFiZWxzID09IGMKICAgICAgICBpZiBtYXNrLnN1bSgpID4gMCBhbmQgZ3dzYV9jb2wgaW4gZGZfZmVhdC5jb2x1bW5zOgogICAgICAgICAgICBjbHVzdGVyX21lYW5zW2NdID0gZGZfZmVhdFtnd3NhX2NvbF1bbWFza10ubWVhbigpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgY2x1c3Rlcl9tZWFuc1tjXSA9IDAuMAoKICAgICMgU29ydCBieSBHV1NBIG1lYW4gZGVzY2VuZGluZyAoaGlnaGVzdCA9IGxlYXN0IHN0cmVzcyA9IDApCiAgICBzb3J0ZWRfY2x1c3RlcnMgPSBzb3J0ZWQoY2x1c3Rlcl9tZWFucywga2V5PWxhbWJkYSB4OiAtY2x1c3Rlcl9tZWFuc1t4XSkKICAgIG1hcHBpbmcgPSB7b2xkOiBuZXcgZm9yIG5ldywgb2xkIGluIGVudW1lcmF0ZShzb3J0ZWRfY2x1c3RlcnMpfQogICAgcmV0dXJuIG5wLmFycmF5KFttYXBwaW5nW2xdIGZvciBsIGluIGxhYmVsc10pLCBtYXBwaW5nCgoKZGVmIGJvb3RzdHJhcF9jbHVzdGVyX3N0YWJpbGl0eShYX3NjYWxlZCwgaz00LCBuX2Jvb3RzdHJhcD0yMDApOgogICAgIiIiCiAgICBCb290c3RyYXAgY2x1c3RlciBzdGFiaWxpdHk6IG1lYXN1cmUgSmFjY2FyZCBzaW1pbGFyaXR5IGFjcm9zcyBib290c3RyYXAgc2FtcGxlcy4KICAgIFJldHVybnMgbWVhbiBKYWNjYXJkIHNpbWlsYXJpdHkgKGhpZ2hlciA9IG1vcmUgc3RhYmxlKS4KICAgICIiIgogICAgZnJvbSBza2xlYXJuLmNsdXN0ZXIgaW1wb3J0IEtNZWFucwogICAgZnJvbSBza2xlYXJuLm1ldHJpY3MgaW1wb3J0IGFkanVzdGVkX3JhbmRfc2NvcmUKCiAgICBuID0gbGVuKFhfc2NhbGVkKQogICAgcmVmX2ttID0gS01lYW5zKG5fY2x1c3RlcnM9aywgbl9pbml0PTEwLCByYW5kb21fc3RhdGU9UkFORE9NX1NUQVRFKQogICAgcmVmX2xhYmVscyA9IHJlZl9rbS5maXRfcHJlZGljdChYX3NjYWxlZCkKCiAgICBhcmlfc2NvcmVzID0gW10KICAgIHJuZyA9IG5wLnJhbmRvbS5SYW5kb21TdGF0ZShSQU5ET01fU1RBVEUpCiAgICBuX2Jvb3QgPSBtaW4obl9ib290c3RyYXAsIDIwMCkgICMgY2FwIGZvciBzcGVlZAoKICAgIGZvciBfIGluIHJhbmdlKG5fYm9vdCk6CiAgICAgICAgaWR4ID0gcm5nLmNob2ljZShuLCBzaXplPW4sIHJlcGxhY2U9VHJ1ZSkKICAgICAgICBYX2Jvb3QgPSBYX3NjYWxlZFtpZHhdCiAgICAgICAga21fYm9vdCA9IEtNZWFucyhuX2NsdXN0ZXJzPWssIG5faW5pdD01LCByYW5kb21fc3RhdGU9cm5nLnJhbmRpbnQoMTAwMDApKQogICAgICAgIGxhYmVsc19ib290ID0ga21fYm9vdC5maXRfcHJlZGljdChYX2Jvb3QpCiAgICAgICAgYXJpID0gYWRqdXN0ZWRfcmFuZF9zY29yZShyZWZfbGFiZWxzW2lkeF0sIGxhYmVsc19ib290KQogICAgICAgIGFyaV9zY29yZXMuYXBwZW5kKGFyaSkKCiAgICByZXR1cm4gbnAubWVhbihhcmlfc2NvcmVzKSwgbnAuc3RkKGFyaV9zY29yZXMpCgoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBSQU5ET00gRk9SRVNUIENMQVNTSUZJRVIKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmRlZiB0cmFpbl9yZl9jbGFzc2lmaWVyKFgsIHksIGZlYXRfY29scyk6CiAgICAiIiJUcmFpbiBSRiBjbGFzc2lmaWVyIHdpdGggY3Jvc3MtdmFsaWRhdGlvbi4iIiIKICAgIGZyb20gc2tsZWFybi5lbnNlbWJsZSBpbXBvcnQgUmFuZG9tRm9yZXN0Q2xhc3NpZmllcgogICAgZnJvbSBza2xlYXJuLm1vZGVsX3NlbGVjdGlvbiBpbXBvcnQgY3Jvc3NfdmFsX3Njb3JlLCBTdHJhdGlmaWVkS0ZvbGQKICAgIGZyb20gc2tsZWFybi5tZXRyaWNzIGltcG9ydCBjbGFzc2lmaWNhdGlvbl9yZXBvcnQsIGNvbmZ1c2lvbl9tYXRyaXgKCiAgICByZiA9IFJhbmRvbUZvcmVzdENsYXNzaWZpZXIoCiAgICAgICAgbl9lc3RpbWF0b3JzPTIwMCwKICAgICAgICBtYXhfZGVwdGg9MTAsCiAgICAgICAgbWluX3NhbXBsZXNfbGVhZj0yLAogICAgICAgIGNsYXNzX3dlaWdodD0nYmFsYW5jZWQnLAogICAgICAgIHJhbmRvbV9zdGF0ZT1SQU5ET01fU1RBVEUsCiAgICAgICAgbl9qb2JzPS0xCiAgICApCgogICAgIyBTdHJhdGlmaWVkIEstRm9sZCBDViAoNSBmb2xkcykKICAgIGN2ID0gU3RyYXRpZmllZEtGb2xkKG5fc3BsaXRzPTUsIHNodWZmbGU9VHJ1ZSwgcmFuZG9tX3N0YXRlPVJBTkRPTV9TVEFURSkKICAgIGN2X3Njb3JlcyA9IGNyb3NzX3ZhbF9zY29yZShyZiwgWCwgeSwgY3Y9Y3YsIHNjb3Jpbmc9J2YxX21hY3JvJykKICAgIGxvZy5pbmZvKGYiICBDViBGMS1tYWNybzoge2N2X3Njb3Jlcy5tZWFuKCk6LjNmfSArLy0ge2N2X3Njb3Jlcy5zdGQoKTouM2Z9IikKCiAgICAjIEZpdCBvbiBmdWxsIGRhdGEKICAgIHJmLmZpdChYLCB5KQogICAgeV9wcmVkID0gcmYucHJlZGljdChYKQoKICAgIHJlcG9ydCA9IGNsYXNzaWZpY2F0aW9uX3JlcG9ydCh5LCB5X3ByZWQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdGFyZ2V0X25hbWVzPVtMQUJFTFNbaV0gZm9yIGkgaW4gcmFuZ2UoSyldLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG91dHB1dF9kaWN0PVRydWUpCiAgICBsb2cuaW5mbyhmIiAgVHJhaW4gYWNjdXJhY3k6IHtyZXBvcnRbJ2FjY3VyYWN5J106LjNmfSIpCiAgICBsb2cuaW5mbyhmIiAgRjEgcGVyIGNsYXNzOiAiICsKICAgICAgICAgICAgICIsICIuam9pbihmIntMQUJFTFNbaV19PXtyZXBvcnRbTEFCRUxTW2ldXVsnZjEtc2NvcmUnXTouM2Z9IgogICAgICAgICAgICAgICAgICAgICAgIGZvciBpIGluIHJhbmdlKEspIGlmIExBQkVMU1tpXSBpbiByZXBvcnQpKQoKICAgIHJldHVybiByZiwgY3Zfc2NvcmVzLCByZXBvcnQKCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIFBMT1RUSU5HCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpkZWYgcGxvdF9zdHJlc3NfdGltZXNlcmllcyhkZl9jbGFzc2lmaWVkLCBvdXRfcGF0aCk6CiAgICAiIiJGaWd1cmUgMDdhIOKAlCBXYXRlciBzdHJlc3MgY2xhc3MgdGltZSBzZXJpZXMgcGVyIHpvbmUuIiIiCiAgICBpbXBvcnQgbWF0cGxvdGxpYgogICAgbWF0cGxvdGxpYi51c2UoJ0FnZycpCiAgICBpbXBvcnQgbWF0cGxvdGxpYi5weXBsb3QgYXMgcGx0CiAgICBpbXBvcnQgbWF0cGxvdGxpYi5wYXRjaGVzIGFzIG1wYXRjaGVzCgogICAgZmlnLCBheGVzID0gcGx0LnN1YnBsb3RzKDMsIDEsIGZpZ3NpemU9KDE0LCAxMCksIHNoYXJleD1UcnVlKQoKICAgIGZvciBheCwgem9uZSBpbiB6aXAoYXhlcywgWk9ORVMpOgogICAgICAgIGRmX3ogPSBkZl9jbGFzc2lmaWVkW2RmX2NsYXNzaWZpZWRbJ3pvbmUnXSA9PSB6b25lXS5zb3J0X2luZGV4KCkKICAgICAgICBpZiAnc3RyZXNzX2NsYXNzJyBub3QgaW4gZGZfei5jb2x1bW5zOgogICAgICAgICAgICBjb250aW51ZQoKICAgICAgICAjIENvbG9yZWQgYXJlYSBjaGFydAogICAgICAgIGZvciBjbHMgaW4gcmFuZ2UoSyk6CiAgICAgICAgICAgIG1hc2sgPSBkZl96WydzdHJlc3NfY2xhc3MnXSA9PSBjbHMKICAgICAgICAgICAgaWYgbWFzay5hbnkoKToKICAgICAgICAgICAgICAgIGF4LmZpbGxfYmV0d2VlbihkZl96LmluZGV4LCAwLCAxLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdoZXJlPW1hc2sudmFsdWVzLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yPVNUUkVTU19DT0xPUlNbY2xzXSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBhbHBoYT0wLjYsIHN0ZXA9J21pZCcpCgogICAgICAgICMgR1dTQSBvdmVybGF5CiAgICAgICAgaWYgJ2d3c2EnIGluIGRmX3ouY29sdW1uczoKICAgICAgICAgICAgYXgyID0gYXgudHdpbngoKQogICAgICAgICAgICBheDIucGxvdChkZl96LmluZGV4LCBkZl96Wydnd3NhJ10sICdrLScsIGx3PTEuMCwgYWxwaGE9MC43KQogICAgICAgICAgICBheDIuc2V0X3lsYWJlbCgnR1dTQSAoY20gRVdIKScsIGZvbnRzaXplPTgpCiAgICAgICAgICAgIGF4Mi5heGhsaW5lKDAsIGNvbG9yPSdrJywgbHc9MC41LCBsaW5lc3R5bGU9JzonKQoKICAgICAgICBheC5zZXRfeWxpbSgwLCAxKQogICAgICAgIGF4LnNldF95dGlja3MoW10pCiAgICAgICAgYXguc2V0X3lsYWJlbCh6b25lLmNhcGl0YWxpemUoKSwgZm9udHNpemU9MTAsIHJvdGF0aW9uPTAsIGxhYmVscGFkPTQwKQogICAgICAgIGF4LmdyaWQoRmFsc2UpCgogICAgIyBMZWdlbmQKICAgIHBhdGNoZXMgPSBbbXBhdGNoZXMuUGF0Y2goY29sb3I9U1RSRVNTX0NPTE9SU1tpXSwgbGFiZWw9TEFCRUxTW2ldLmNhcGl0YWxpemUoKSkKICAgICAgICAgICAgICAgZm9yIGkgaW4gcmFuZ2UoSyldCiAgICBheGVzWzBdLmxlZ2VuZChoYW5kbGVzPXBhdGNoZXMsIGxvYz0ndXBwZXIgcmlnaHQnLCBmb250c2l6ZT05LCBuY29sPTQpCiAgICBheGVzWzBdLnNldF90aXRsZSgnV2F0ZXIgU3RyZXNzIENsYXNzaWZpY2F0aW9uIOKAlCBUdW5pc2lhIFpvbmVzICgyMDAyLTIwMjQpJywgZm9udHNpemU9MTIpCiAgICBheGVzWy0xXS5zZXRfeGxhYmVsKCdEYXRlJykKICAgIHBsdC50aWdodF9sYXlvdXQoKQogICAgZmlnLnNhdmVmaWcob3V0X3BhdGgsIGRwaT0xNTAsIGJib3hfaW5jaGVzPSd0aWdodCcpCiAgICBwbHQuY2xvc2UoZmlnKQogICAgbG9nLmluZm8oZicgIFtPS10ge291dF9wYXRofScpCgoKZGVmIHBsb3Rfa21lYW5zX3NjYXR0ZXIoWF9kZiwgbGFiZWxzLCBmZWF0X2NvbHMsIG91dF9wYXRoKToKICAgICIiIkZpZ3VyZSAwN2Ig4oCUIEstTWVhbnMgY2x1c3RlciBzY2F0dGVyIChHV1NBIGFub21hbHkgdnMgUHJlY2lwIGFub21hbHkpLiIiIgogICAgaW1wb3J0IG1hdHBsb3RsaWIKICAgIG1hdHBsb3RsaWIudXNlKCdBZ2cnKQogICAgaW1wb3J0IG1hdHBsb3RsaWIucHlwbG90IGFzIHBsdAoKICAgIGZpZywgYXhlcyA9IHBsdC5zdWJwbG90cygxLCAyLCBmaWdzaXplPSgxMiwgNSkpCgogICAgeHZhciA9ICdnd3NhX2Fub21hbHknIGlmICdnd3NhX2Fub21hbHknIGluIGZlYXRfY29scyBlbHNlIGZlYXRfY29sc1swXQogICAgeXZhciA9ICdwcmVjaXBfYW5vbWFseScgaWYgJ3ByZWNpcF9hbm9tYWx5JyBpbiBmZWF0X2NvbHMgZWxzZSBmZWF0X2NvbHNbMV0KCiAgICBheCA9IGF4ZXNbMF0KICAgIGZvciBjbHMgaW4gcmFuZ2UoSyk6CiAgICAgICAgbWFzayA9IGxhYmVscyA9PSBjbHMKICAgICAgICBpZiBtYXNrLnN1bSgpID4gMCBhbmQgeHZhciBpbiBYX2RmLmNvbHVtbnMgYW5kIHl2YXIgaW4gWF9kZi5jb2x1bW5zOgogICAgICAgICAgICBheC5zY2F0dGVyKFhfZGZbeHZhcl1bbWFza10sIFhfZGZbeXZhcl1bbWFza10sCiAgICAgICAgICAgICAgICAgICAgICAgY29sb3I9U1RSRVNTX0NPTE9SU1tjbHNdLCBhbHBoYT0wLjUsIHM9MjAsCiAgICAgICAgICAgICAgICAgICAgICAgbGFiZWw9TEFCRUxTW2Nsc10uY2FwaXRhbGl6ZSgpKQogICAgYXguc2V0X3hsYWJlbCh4dmFyLnJlcGxhY2UoJ18nLCAnICcpLnRpdGxlKCkpCiAgICBheC5zZXRfeWxhYmVsKHl2YXIucmVwbGFjZSgnXycsICcgJykudGl0bGUoKSkKICAgIGF4LnNldF90aXRsZSgnSy1NZWFucyBDbHVzdGVycyAoaz00KScsIGZvbnRzaXplPTExKQogICAgYXgubGVnZW5kKGZvbnRzaXplPTkpCiAgICBheC5ncmlkKFRydWUsIGFscGhhPTAuMykKCiAgICAjIENsYXNzIGRpc3RyaWJ1dGlvbiBvdmVyIHRpbWUKICAgIGF4MiA9IGF4ZXNbMV0KICAgIGRmX3Bsb3QgPSBYX2RmLmNvcHkoKQogICAgZGZfcGxvdFsnc3RyZXNzX2NsYXNzJ10gPSBsYWJlbHMKICAgIGRmX3Bsb3RbJ3llYXInXSA9IGRmX3Bsb3QuaW5kZXgueWVhcgogICAgY291bnRzID0gZGZfcGxvdC5ncm91cGJ5KFsneWVhcicsJ3N0cmVzc19jbGFzcyddKS5zaXplKCkudW5zdGFjayhmaWxsX3ZhbHVlPTApCiAgICBjb3VudHNfcGN0ID0gY291bnRzLmRpdihjb3VudHMuc3VtKGF4aXM9MSksIGF4aXM9MCkgKiAxMDAKCiAgICBib3R0b20gPSBucC56ZXJvcyhsZW4oY291bnRzX3BjdCkpCiAgICBmb3IgY2xzIGluIHJhbmdlKEspOgogICAgICAgIGlmIGNscyBpbiBjb3VudHNfcGN0LmNvbHVtbnM6CiAgICAgICAgICAgIGF4Mi5iYXIoY291bnRzX3BjdC5pbmRleCwgY291bnRzX3BjdFtjbHNdLAogICAgICAgICAgICAgICAgICAgIGJvdHRvbT1ib3R0b20sIGNvbG9yPVNUUkVTU19DT0xPUlNbY2xzXSwKICAgICAgICAgICAgICAgICAgICBsYWJlbD1MQUJFTFNbY2xzXS5jYXBpdGFsaXplKCksIGFscGhhPTAuOCkKICAgICAgICAgICAgYm90dG9tICs9IGNvdW50c19wY3RbY2xzXS52YWx1ZXMKCiAgICBheDIuc2V0X3hsYWJlbCgnWWVhcicpCiAgICBheDIuc2V0X3lsYWJlbCgnJSBvZiB6b25lLW1vbnRocycpCiAgICBheDIuc2V0X3RpdGxlKCdBbm51YWwgU3RyZXNzIERpc3RyaWJ1dGlvbicsIGZvbnRzaXplPTExKQogICAgYXgyLmxlZ2VuZChmb250c2l6ZT05LCBsb2M9J3VwcGVyIGxlZnQnKQoKICAgIHBsdC50aWdodF9sYXlvdXQoKQogICAgZmlnLnNhdmVmaWcob3V0X3BhdGgsIGRwaT0xNTAsIGJib3hfaW5jaGVzPSd0aWdodCcpCiAgICBwbHQuY2xvc2UoZmlnKQogICAgbG9nLmluZm8oZicgIFtPS10ge291dF9wYXRofScpCgoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBNQUlOCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpkZWYgbWFpbigpOgogICAgcHJpbnQoU0VQKQogICAgcHJpbnQoJzA3X3dhdGVyX3N0cmVzc19jbGFzc2lmaWNhdGlvbi5weScpCiAgICBwcmludChTRVApCgogICAgIyBMb2FkIGZlYXR1cmVzCiAgICBsb2cuaW5mbygnW1NURVAgMV0gQ2hhcmdlbWVudCBmZWF0dXJlcyAuLi4nKQogICAgZGYgPSBsb2FkX2ZlYXR1cmVzKCkKICAgIGxvZy5pbmZvKGYiICBMb2FkZWQ6IHtkZi5zaGFwZX0iKQoKICAgICMgR2V0IGZlYXR1cmUgbWF0cml4CiAgICBsb2cuaW5mbygnW1NURVAgMl0gUHJlcGFyYXRpb24gZmVhdHVyZSBtYXRyaXggLi4uJykKICAgIFhfZGYsIFhfc2NhbGVkLCBzY2FsZXIsIGZlYXRfY29scywgem9uZV9jb2wgPSBnZXRfZmVhdHVyZV9tYXRyaXgoZGYpCiAgICBsb2cuaW5mbyhmIiAgRmVhdHVyZXM6IHtmZWF0X2NvbHN9IikKICAgIGxvZy5pbmZvKGYiICBTYW1wbGVzOiB7bGVuKFhfZGYpfSAoYWZ0ZXIgZHJvcHBpbmcgTmFOKSIpCgogICAgIyBLLU1lYW5zIGNsdXN0ZXJpbmcKICAgIGxvZy5pbmZvKGYnW1NURVAgM10gSy1NZWFucyBjbHVzdGVyaW5nIChrPXtLfSkgLi4uJykKICAgIGttLCByYXdfbGFiZWxzID0gcnVuX2ttZWFucyhYX3NjYWxlZCwgaz1LKQogICAgb3JkZXJlZF9sYWJlbHMsIGNsdXN0ZXJfbWFwcGluZyA9IG9yZGVyX2NsdXN0ZXJzX2J5X3N0cmVzcyhYX2RmLCByYXdfbGFiZWxzKQogICAgbG9nLmluZm8oZiIgIENsdXN0ZXIgbWFwcGluZyAocmF3LT5zdHJlc3MpOiB7Y2x1c3Rlcl9tYXBwaW5nfSIpCgogICAgIyBDbGFzcyBkaXN0cmlidXRpb24KICAgIHVuaXF1ZSwgY291bnRzID0gbnAudW5pcXVlKG9yZGVyZWRfbGFiZWxzLCByZXR1cm5fY291bnRzPVRydWUpCiAgICBmb3IgdSwgYyBpbiB6aXAodW5pcXVlLCBjb3VudHMpOgogICAgICAgIGxvZy5pbmZvKGYiICBDbGFzcyB7dX0gKHtMQUJFTFNbdV19KToge2N9IHNhbXBsZXMgKHsxMDAqYy9sZW4ob3JkZXJlZF9sYWJlbHMpOi4xZn0lKSIpCgogICAgIyBCb290c3RyYXAgc3RhYmlsaXR5CiAgICBsb2cuaW5mbyhmJ1tTVEVQIDRdIEJvb3RzdHJhcCBzdGFiaWxpdHkgKG49e21pbihOX0JPT1RTVFJBUCwgMjAwKX0pIC4uLicpCiAgICBhcmlfbWVhbiwgYXJpX3N0ZCA9IGJvb3RzdHJhcF9jbHVzdGVyX3N0YWJpbGl0eShYX3NjYWxlZCwgaz1LLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG5fYm9vdHN0cmFwPW1pbihOX0JPT1RTVFJBUCwgMjAwKSkKICAgIGxvZy5pbmZvKGYiICBBUkk6IHthcmlfbWVhbjouM2Z9ICsvLSB7YXJpX3N0ZDouM2Z9ICg+MC42ID0gc3RhYmxlKSIpCgogICAgIyBBZGQgbGFiZWxzIHRvIGRhdGFmcmFtZQogICAgWF9kZlsnc3RyZXNzX2NsYXNzJ10gPSBvcmRlcmVkX2xhYmVscwogICAgWF9kZlsnc3RyZXNzX2xhYmVsJ10gPSBbTEFCRUxTW2xdIGZvciBsIGluIG9yZGVyZWRfbGFiZWxzXQogICAgWF9kZlsiem9uZSJdID0gem9uZV9jb2wudmFsdWVzCgogICAgIyBSRiBjbGFzc2lmaWVyCiAgICBsb2cuaW5mbygnW1NURVAgNV0gUmFuZG9tIEZvcmVzdCBjbGFzc2lmaWVyIC4uLicpCiAgICByZiwgY3Zfc2NvcmVzLCByZXBvcnQgPSB0cmFpbl9yZl9jbGFzc2lmaWVyKFhfc2NhbGVkLCBvcmRlcmVkX2xhYmVscywgZmVhdF9jb2xzKQoKICAgICMgU2F2ZSBSRiBtb2RlbAogICAgbW9kZWxfcGF0aCA9IE9VVF9NT0QgLyAncmZfc3RyZXNzX2NsYXNzaWZpZXIucGtsJwogICAgd2l0aCBvcGVuKG1vZGVsX3BhdGgsICd3YicpIGFzIGY6CiAgICAgICAgcGlja2xlLmR1bXAoewogICAgICAgICAgICAnbW9kZWwnOiByZiwgJ3NjYWxlcic6IHNjYWxlciwKICAgICAgICAgICAgJ2ZlYXRfY29scyc6IGZlYXRfY29scywgJ2xhYmVscyc6IExBQkVMUwogICAgICAgIH0sIGYpCiAgICBsb2cuaW5mbyhmJyAgW09LXSB7bW9kZWxfcGF0aH0nKQoKICAgICMgRmVhdHVyZSBpbXBvcnRhbmNlCiAgICBpbXBvcnRhbmNlcyA9IGRpY3QoemlwKGZlYXRfY29scywgcmYuZmVhdHVyZV9pbXBvcnRhbmNlc18pKQogICAgbG9nLmluZm8oJyAgRmVhdHVyZSBpbXBvcnRhbmNlczonKQogICAgZm9yIGtfZmVhdCwgdiBpbiBzb3J0ZWQoaW1wb3J0YW5jZXMuaXRlbXMoKSwga2V5PWxhbWJkYSB4OiAteFsxXSk6CiAgICAgICAgbG9nLmluZm8oZicgICAge2tfZmVhdH06IHt2Oi4zZn0nKQoKICAgICMgTWVyZ2UgYmFjayB1c2luZyBwb3NpdGlvbmFsIGluZGV4IG9uIFhfZGYgKHJlc2V0IHRvIGF2b2lkIGR1cGxpY2F0ZSB0aW1lc3RhbXAgaXNzdWUpCiAgICBYX2RmX3Jlc2V0ID0gWF9kZi5yZXNldF9pbmRleCgpICAjICd0aW1lJyBiZWNvbWVzIGEgY29sdW1uCiAgICBYX2RmX3Jlc2V0WydzdHJlc3NfY2xhc3MnXSA9IG9yZGVyZWRfbGFiZWxzCiAgICBYX2RmX3Jlc2V0WydzdHJlc3NfbGFiZWwnXSA9IFtMQUJFTFNbbF0gZm9yIGwgaW4gb3JkZXJlZF9sYWJlbHNdCgogICAgIyBSZWJ1aWxkIGRmX2NsYXNzaWZpZWQgZnJvbSBYX2RmX3Jlc2V0CiAgICBkZl9jbGFzc2lmaWVkID0gZGYuY29weSgpLnJlc2V0X2luZGV4KCkKICAgICMgTWF0Y2ggb24gdGltZSArIHpvbmUKICAgIGRmX2NsYXNzaWZpZWQgPSBkZl9jbGFzc2lmaWVkLm1lcmdlKAogICAgICAgIFhfZGZfcmVzZXRbWyd0aW1lJywnem9uZScsJ3N0cmVzc19jbGFzcycsJ3N0cmVzc19sYWJlbCddXSwKICAgICAgICBvbj1bJ3RpbWUnLCd6b25lJ10sIGhvdz0nbGVmdCcKICAgICkKICAgIGRmX2NsYXNzaWZpZWQgPSBkZl9jbGFzc2lmaWVkLnNldF9pbmRleCgndGltZScpCgogICAgIyBGaWxsIHJlbWFpbmluZyBOYU4gd2l0aCBSRiBwcmVkaWN0aW9uCiAgICBuYW5fbWFzayA9IGRmX2NsYXNzaWZpZWRbJ3N0cmVzc19jbGFzcyddLmlzbmEoKQogICAgaWYgbmFuX21hc2suc3VtKCkgPiAwOgogICAgICAgIFhfbmFuID0gZGZfY2xhc3NpZmllZC5sb2NbbmFuX21hc2ssIFtjIGZvciBjIGluIGZlYXRfY29scyBpZiBjIGluIGRmX2NsYXNzaWZpZWQuY29sdW1uc11dLmZpbGxuYSgwKQogICAgICAgIFhfbmFuX3NjYWxlZCA9IHNjYWxlci50cmFuc2Zvcm0oWF9uYW4pCiAgICAgICAgcHJlZF9sYWJlbHMgPSByZi5wcmVkaWN0KFhfbmFuX3NjYWxlZCkKICAgICAgICBkZl9jbGFzc2lmaWVkLmxvY1tuYW5fbWFzaywgJ3N0cmVzc19jbGFzcyddID0gcHJlZF9sYWJlbHMKICAgICAgICBkZl9jbGFzc2lmaWVkLmxvY1tuYW5fbWFzaywgJ3N0cmVzc19sYWJlbCddID0gW0xBQkVMU1tsXSBmb3IgbCBpbiBwcmVkX2xhYmVsc10KCiAgICBkZl9jbGFzc2lmaWVkWydzdHJlc3NfY2xhc3MnXSA9IGRmX2NsYXNzaWZpZWRbJ3N0cmVzc19jbGFzcyddLmZpbGxuYSgwKS5hc3R5cGUoaW50KQoKICAgICMgU2F2ZQogICAgbG9nLmluZm8oJ1tTVEVQIDZdIFNhdXZlZ2FyZGUgcmVzdWx0YXRzIC4uLicpCiAgICBkZl9jbGFzc2lmaWVkW1snem9uZScsJ2d3c2EnLCdnd3NhX2Fub21hbHknLCdzdHJlc3NfY2xhc3MnLCdzdHJlc3NfbGFiZWwnXV0udG9fY3N2KAogICAgICAgIE9VVF9QUk9DIC8gJ3dhdGVyX3N0cmVzc19jbGFzc2lmaWVkLmNzdicKICAgICkKICAgIGxvZy5pbmZvKGYnICBbT0tdIHtPVVRfUFJPQ30vd2F0ZXJfc3RyZXNzX2NsYXNzaWZpZWQuY3N2JykKCiAgICBYX2RmLnRvX2NzdihPVVRfUFJPQyAvICd3YXRlcl9zdHJlc3NfbGFiZWxzLmNzdicpCiAgICBsb2cuaW5mbyhmJyAgW09LXSB7T1VUX1BST0N9L3dhdGVyX3N0cmVzc19sYWJlbHMuY3N2JykKCiAgICAjIE1ldHJpY3MKICAgIG1ldHJpY3MgPSB7CiAgICAgICAgJ2snOiBLLAogICAgICAgICduX3NhbXBsZXMnOiBsZW4oWF9kZiksCiAgICAgICAgJ2FyaV9tZWFuJzogYXJpX21lYW4sCiAgICAgICAgJ2FyaV9zdGQnOiBhcmlfc3RkLAogICAgICAgICdjdl9mMV9tYWNyb19tZWFuJzogY3Zfc2NvcmVzLm1lYW4oKSwKICAgICAgICAnY3ZfZjFfbWFjcm9fc3RkJzogY3Zfc2NvcmVzLnN0ZCgpLAogICAgICAgICdyZl90cmFpbl9hY2N1cmFjeSc6IHJlcG9ydFsnYWNjdXJhY3knXSwKICAgIH0KICAgIGZvciBpIGluIHJhbmdlKEspOgogICAgICAgIGxhYmVsID0gTEFCRUxTW2ldCiAgICAgICAgaWYgbGFiZWwgaW4gcmVwb3J0OgogICAgICAgICAgICBtZXRyaWNzW2YnZjFfe2xhYmVsfSddID0gcmVwb3J0W2xhYmVsXVsnZjEtc2NvcmUnXQogICAgICAgICAgICBtZXRyaWNzW2Ynbl97bGFiZWx9J10gID0gaW50KHJlcG9ydFtsYWJlbF1bJ3N1cHBvcnQnXSkKCiAgICBwZC5EYXRhRnJhbWUoW21ldHJpY3NdKS50b19jc3YoT1VUX1JFUyAvICdzdHJlc3NfY2xhc3NpZmljYXRpb25fbWV0cmljcy5jc3YnLCBpbmRleD1GYWxzZSkKICAgIGxvZy5pbmZvKGYnICBbT0tdIHtPVVRfUkVTfS9zdHJlc3NfY2xhc3NpZmljYXRpb25fbWV0cmljcy5jc3YnKQoKICAgICMgRmlndXJlcwogICAgbG9nLmluZm8oJ1tTVEVQIDddIEdlbmVyYXRpb24gZmlndXJlcyAuLi4nKQogICAgcGxvdF9zdHJlc3NfdGltZXNlcmllcyhkZl9jbGFzc2lmaWVkLCBPVVRfRklHIC8gJzA3X3N0cmVzc190aW1lc2VyaWVzLnBuZycpCiAgICBwbG90X2ttZWFuc19zY2F0dGVyKFhfZGYsIG9yZGVyZWRfbGFiZWxzLCBmZWF0X2NvbHMsIE9VVF9GSUcgLyAnMDdfa21lYW5zX2NsdXN0ZXJzLnBuZycpCgogICAgIyBTdW1tYXJ5CiAgICBwcmludCgnXG4nICsgU0VQKQogICAgcHJpbnQoJ1dBVEVSIFNUUkVTUyBDTEFTU0lGSUNBVElPTiBTVU1NQVJZJykKICAgIHByaW50KFNFUCkKICAgIHByaW50KGYnICBLLU1lYW5zIGs9e0t9LCBCb290c3RyYXAgQVJJPXthcmlfbWVhbjouM2Z9ICsvLSB7YXJpX3N0ZDouM2Z9JykKICAgIHByaW50KGYnICBSRiBDViBGMS1tYWNybz17Y3Zfc2NvcmVzLm1lYW4oKTouM2Z9ICsvLSB7Y3Zfc2NvcmVzLnN0ZCgpOi4zZn0nKQogICAgcHJpbnQoZicgIFJGIFRyYWluIGFjY3VyYWN5PXtyZXBvcnRbImFjY3VyYWN5Il06LjNmfScpCiAgICBwcmludCgpCiAgICBwcmludCgnICBDbGFzcyBkaXN0cmlidXRpb24gKGFsbCB6b25lcyk6JykKICAgIGZvciBpIGluIHJhbmdlKEspOgogICAgICAgIG4gPSAob3JkZXJlZF9sYWJlbHMgPT0gaSkuc3VtKCkKICAgICAgICBwcmludChmJyAgICB7aX0gKHtMQUJFTFNbaV06MTBzfSk6IHtuOjRkfSAoezEwMCpuL2xlbihvcmRlcmVkX2xhYmVscyk6LjFmfSUpJykKICAgIHByaW50KCkKICAgIHByaW50KCcgIFN0cmVzcyBieSB6b25lIChtb3N0IHJlY2VudCAyNCBtb250aHMpOicpCiAgICByZWNlbnQgPSBkZl9jbGFzc2lmaWVkW2RmX2NsYXNzaWZpZWQuaW5kZXggPj0gZGZfY2xhc3NpZmllZC5pbmRleC5tYXgoKSAtCiAgICAgICAgICAgICAgICAgICAgICAgICAgIHBkLkRhdGVPZmZzZXQobW9udGhzPTI0KV0KICAgIGZvciB6b25lIGluIFpPTkVTOgogICAgICAgIHJ6ID0gcmVjZW50W3JlY2VudFsnem9uZSddID09IHpvbmVdCiAgICAgICAgaWYgbGVuKHJ6KSA+IDA6CiAgICAgICAgICAgIGRvbSA9IHJ6WydzdHJlc3NfbGFiZWwnXS52YWx1ZV9jb3VudHMoKS5pbmRleFswXQogICAgICAgICAgICBoaWdoID0gKHJ6WydzdHJlc3NfY2xhc3MnXSA+PSAyKS5tZWFuKCkgKiAxMDAKICAgICAgICAgICAgcHJpbnQoZicgICAge3pvbmU6OHN9OiBkb21pbmFudD17ZG9tfSwgaGlnaC9jcml0aWNhbD17aGlnaDouMGZ9JScpCgogICAgcHJpbnQoKQogICAgcHJpbnQoJ091dHB1dHM6JykKICAgIHByaW50KGYnICB7T1VUX1BST0N9L3dhdGVyX3N0cmVzc19jbGFzc2lmaWVkLmNzdicpCiAgICBwcmludChmJyAge09VVF9QUk9DfS93YXRlcl9zdHJlc3NfbGFiZWxzLmNzdicpCiAgICBwcmludChmJyAge09VVF9NT0R9L3JmX3N0cmVzc19jbGFzc2lmaWVyLnBrbCcpCiAgICBwcmludChmJyAge09VVF9SRVN9L3N0cmVzc19jbGFzc2lmaWNhdGlvbl9tZXRyaWNzLmNzdicpCiAgICBwcmludChmJyAge09VVF9GSUd9LzA3X3N0cmVzc190aW1lc2VyaWVzLnBuZycpCiAgICBwcmludChmJyAge09VVF9GSUd9LzA3X2ttZWFuc19jbHVzdGVycy5wbmcnKQogICAgcHJpbnQoKQogICAgcHJpbnQoJ1tET05FXSBQcmV0IHBvdXIgMDhfZ3dzYV9wcmVkaWN0aW9uLnB5JykKICAgIHByaW50KFNFUCkKCgppZiBfX25hbWVfXyA9PSAnX19tYWluX18nOgogICAgbWFpbigp
+# ==============================================================================
+# 07_water_stress_classification.py
+# Tunisia Groundwater Depletion Study
+# MODULE 6 — Water Stress Classification
+# ==============================================================================
+# Methodology (Section 2.7):
+#   Step 1: K-Means (k=4) exploratory clustering on anomaly features
+#           Bootstrap confidence intervals (n=1000)
+#   Step 2: Random Forest classifier (primary) trained on K-Means labels
+#           LOOCV validation | Features: gwsa_anomaly, precip_anomaly,
+#           t2m_anomaly, ndvi_anomaly, spi3, spi12, gwsa_lag1, gwsa_roll12
+#   Classes: 0=Low, 1=Moderate, 2=High, 3=Critical stress
+#
+# Inputs:
+#   outputs/processed/features_master.csv
+#
+# Outputs:
+#   outputs/processed/water_stress_labels.csv
+#   outputs/processed/water_stress_classified.csv
+#   outputs/models/rf_stress_classifier.pkl
+#   outputs/results/stress_classification_metrics.csv
+#   outputs/figures/07_stress_timeseries.png
+#   outputs/figures/07_stress_map_[year].png
+#   outputs/figures/07_kmeans_clusters.png
+# ==============================================================================
+
+import os
+import sys
+import logging
+import warnings
+import yaml
+import numpy as np
+import pandas as pd
+import pickle
+from pathlib import Path
+
+warnings.filterwarnings('ignore')
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(BASE)
+
+with open('config.yaml', 'r', encoding='utf-8') as f:
+    CFG = yaml.safe_load(f)
+
+OUT_PROC = Path(CFG['paths']['outputs']['processed'])
+OUT_MOD  = Path(CFG['paths']['outputs']['models'])
+OUT_RES  = Path(CFG['paths']['outputs']['results'])
+OUT_FIG  = Path(CFG['paths']['outputs']['figures'])
+OUT_LOG  = Path(CFG['paths']['outputs']['logs'])
+for p in [OUT_PROC, OUT_MOD, OUT_RES, OUT_FIG, OUT_LOG]:
+    p.mkdir(parents=True, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.FileHandler(OUT_LOG / '07_water_stress.log', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+log = logging.getLogger(__name__)
+SEP = '=' * 60
+
+K           = CFG['classification']['kmeans']['k']
+N_BOOTSTRAP = CFG['classification']['kmeans']['n_bootstrap']
+LABELS      = CFG['classification']['kmeans']['labels']
+ZONES       = ['north', 'central', 'south']
+RANDOM_STATE = CFG['random_state']
+
+# Classification features
+CLASS_FEATURES = [
+    'gwsa_anomaly', 'precip_anomaly', 't2m_anomaly', 'ndvi_anomaly',
+    'spi3', 'spi12', 'gwsa_lag1', 'gwsa_roll12'
+]
+
+STRESS_COLORS = {
+    0: '#2ecc71',  # low — green
+    1: '#f39c12',  # moderate — orange
+    2: '#e74c3c',  # high — red
+    3: '#8e44ad',  # critical — purple
+}
+
+
+# ==============================================================================
+# DATA LOADING
+# ==============================================================================
+
+def load_features():
+    path = OUT_PROC / 'features_master.csv'
+    if not path.exists():
+        raise FileNotFoundError("features_master.csv not found. Run 04 first.")
+    df = pd.read_csv(path, parse_dates=['time'], index_col='time')
+    df.index = df.index.to_period('M').to_timestamp()
+    return df
+
+
+# ==============================================================================
+# K-MEANS CLUSTERING
+# ==============================================================================
+
+def get_feature_matrix(df):
+    """Extract and standardize classification features."""
+    from sklearn.preprocessing import StandardScaler
+    cols = [c for c in CLASS_FEATURES if c in df.columns]
+    X = df[cols + ['zone']].dropna(subset=cols).copy()
+    zone_col = X.pop('zone')
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+    return X, X_scaled, scaler, cols, zone_col
+
+
+def run_kmeans(X_scaled, k=4, n_init=20):
+    """Run K-Means clustering."""
+    from sklearn.cluster import KMeans
+    km = KMeans(n_clusters=k, n_init=n_init, random_state=RANDOM_STATE)
+    labels = km.fit_predict(X_scaled)
+    return km, labels
+
+
+def order_clusters_by_stress(df_feat, labels, gwsa_col='gwsa_anomaly'):
+    """
+    Re-order cluster labels so that:
+    0 = highest GWSA anomaly (least stress)
+    3 = lowest GWSA anomaly (most stress)
+    """
+    cluster_means = {}
+    for c in range(K):
+        mask = labels == c
+        if mask.sum() > 0 and gwsa_col in df_feat.columns:
+            cluster_means[c] = df_feat[gwsa_col][mask].mean()
+        else:
+            cluster_means[c] = 0.0
+
+    # Sort by GWSA mean descending (highest = least stress = 0)
+    sorted_clusters = sorted(cluster_means, key=lambda x: -cluster_means[x])
+    mapping = {old: new for new, old in enumerate(sorted_clusters)}
+    return np.array([mapping[l] for l in labels]), mapping
+
+
+def bootstrap_cluster_stability(X_scaled, k=4, n_bootstrap=200):
+    """
+    Bootstrap cluster stability: measure Jaccard similarity across bootstrap samples.
+    Returns mean Jaccard similarity (higher = more stable).
+    """
+    from sklearn.cluster import KMeans
+    from sklearn.metrics import adjusted_rand_score
+
+    n = len(X_scaled)
+    ref_km = KMeans(n_clusters=k, n_init=10, random_state=RANDOM_STATE)
+    ref_labels = ref_km.fit_predict(X_scaled)
+
+    ari_scores = []
+    rng = np.random.RandomState(RANDOM_STATE)
+    n_boot = min(n_bootstrap, 200)  # cap for speed
+
+    for _ in range(n_boot):
+        idx = rng.choice(n, size=n, replace=True)
+        X_boot = X_scaled[idx]
+        km_boot = KMeans(n_clusters=k, n_init=5, random_state=rng.randint(10000))
+        labels_boot = km_boot.fit_predict(X_boot)
+        ari = adjusted_rand_score(ref_labels[idx], labels_boot)
+        ari_scores.append(ari)
+
+    return np.mean(ari_scores), np.std(ari_scores)
+
+
+# ==============================================================================
+# RANDOM FOREST CLASSIFIER
+# ==============================================================================
+
+def train_rf_classifier(X, y, feat_cols):
+    """Train RF classifier with cross-validation."""
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.model_selection import cross_val_score, StratifiedKFold
+    from sklearn.metrics import classification_report, confusion_matrix
+
+    rf = RandomForestClassifier(
+        n_estimators=200,
+        max_depth=10,
+        min_samples_leaf=2,
+        class_weight='balanced',
+        random_state=RANDOM_STATE,
+        n_jobs=-1
+    )
+
+    # Stratified K-Fold CV (5 folds)
+    cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)
+    cv_scores = cross_val_score(rf, X, y, cv=cv, scoring='f1_macro')
+    log.info(f"  CV F1-macro: {cv_scores.mean():.3f} +/- {cv_scores.std():.3f}")
+
+    # Fit on full data
+    rf.fit(X, y)
+    y_pred = rf.predict(X)
+
+    report = classification_report(y, y_pred,
+                                   target_names=[LABELS[i] for i in range(K)],
+                                   output_dict=True)
+    log.info(f"  Train accuracy: {report['accuracy']:.3f}")
+    log.info(f"  F1 per class: " +
+             ", ".join(f"{LABELS[i]}={report[LABELS[i]]['f1-score']:.3f}"
+                       for i in range(K) if LABELS[i] in report))
+
+    return rf, cv_scores, report
+
+
+# ==============================================================================
+# PLOTTING
+# ==============================================================================
+
+def plot_stress_timeseries(df_classified, out_path):
+    """Figure 07a — Water stress class time series per zone."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    import matplotlib.patches as mpatches
+
+    fig, axes = plt.subplots(3, 1, figsize=(14, 10), sharex=True)
+
+    for ax, zone in zip(axes, ZONES):
+        df_z = df_classified[df_classified['zone'] == zone].sort_index()
+        if 'stress_class' not in df_z.columns:
+            continue
+
+        # Colored area chart
+        for cls in range(K):
+            mask = df_z['stress_class'] == cls
+            if mask.any():
+                ax.fill_between(df_z.index, 0, 1,
+                                where=mask.values,
+                                color=STRESS_COLORS[cls],
+                                alpha=0.6, step='mid')
+
+        # GWSA overlay
+        if 'gwsa' in df_z.columns:
+            ax2 = ax.twinx()
+            ax2.plot(df_z.index, df_z['gwsa'], 'k-', lw=1.0, alpha=0.7)
+            ax2.set_ylabel('GWSA (cm EWH)', fontsize=8)
+            ax2.axhline(0, color='k', lw=0.5, linestyle=':')
+
+        ax.set_ylim(0, 1)
+        ax.set_yticks([])
+        ax.set_ylabel(zone.capitalize(), fontsize=10, rotation=0, labelpad=40)
+        ax.grid(False)
+
+    # Legend
+    patches = [mpatches.Patch(color=STRESS_COLORS[i], label=LABELS[i].capitalize())
+               for i in range(K)]
+    axes[0].legend(handles=patches, loc='upper right', fontsize=9, ncol=4)
+    axes[0].set_title('Water Stress Classification — Tunisia Zones (2002-2024)', fontsize=12)
+    axes[-1].set_xlabel('Date')
+    plt.tight_layout()
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    log.info(f'  [OK] {out_path}')
+
+
+def plot_kmeans_scatter(X_df, labels, feat_cols, out_path):
+    """Figure 07b — K-Means cluster scatter (GWSA anomaly vs Precip anomaly)."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+    xvar = 'gwsa_anomaly' if 'gwsa_anomaly' in feat_cols else feat_cols[0]
+    yvar = 'precip_anomaly' if 'precip_anomaly' in feat_cols else feat_cols[1]
+
+    ax = axes[0]
+    for cls in range(K):
+        mask = labels == cls
+        if mask.sum() > 0 and xvar in X_df.columns and yvar in X_df.columns:
+            ax.scatter(X_df[xvar][mask], X_df[yvar][mask],
+                       color=STRESS_COLORS[cls], alpha=0.5, s=20,
+                       label=LABELS[cls].capitalize())
+    ax.set_xlabel(xvar.replace('_', ' ').title())
+    ax.set_ylabel(yvar.replace('_', ' ').title())
+    ax.set_title('K-Means Clusters (k=4)', fontsize=11)
+    ax.legend(fontsize=9)
+    ax.grid(True, alpha=0.3)
+
+    # Class distribution over time
+    ax2 = axes[1]
+    df_plot = X_df.copy()
+    df_plot['stress_class'] = labels
+    df_plot['year'] = df_plot.index.year
+    counts = df_plot.groupby(['year','stress_class']).size().unstack(fill_value=0)
+    counts_pct = counts.div(counts.sum(axis=1), axis=0) * 100
+
+    bottom = np.zeros(len(counts_pct))
+    for cls in range(K):
+        if cls in counts_pct.columns:
+            ax2.bar(counts_pct.index, counts_pct[cls],
+                    bottom=bottom, color=STRESS_COLORS[cls],
+                    label=LABELS[cls].capitalize(), alpha=0.8)
+            bottom += counts_pct[cls].values
+
+    ax2.set_xlabel('Year')
+    ax2.set_ylabel('% of zone-months')
+    ax2.set_title('Annual Stress Distribution', fontsize=11)
+    ax2.legend(fontsize=9, loc='upper left')
+
+    plt.tight_layout()
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    log.info(f'  [OK] {out_path}')
+
+
+# ==============================================================================
+# MAIN
+# ==============================================================================
+
+def main():
+    print(SEP)
+    print('07_water_stress_classification.py')
+    print(SEP)
+
+    # Load features
+    log.info('[STEP 1] Chargement features ...')
+    df = load_features()
+    log.info(f"  Loaded: {df.shape}")
+
+    # Get feature matrix
+    log.info('[STEP 2] Preparation feature matrix ...')
+    X_df, X_scaled, scaler, feat_cols, zone_col = get_feature_matrix(df)
+    log.info(f"  Features: {feat_cols}")
+    log.info(f"  Samples: {len(X_df)} (after dropping NaN)")
+
+    # K-Means clustering
+    log.info(f'[STEP 3] K-Means clustering (k={K}) ...')
+    km, raw_labels = run_kmeans(X_scaled, k=K)
+    ordered_labels, cluster_mapping = order_clusters_by_stress(X_df, raw_labels)
+    log.info(f"  Cluster mapping (raw->stress): {cluster_mapping}")
+
+    # Class distribution
+    unique, counts = np.unique(ordered_labels, return_counts=True)
+    for u, c in zip(unique, counts):
+        log.info(f"  Class {u} ({LABELS[u]}): {c} samples ({100*c/len(ordered_labels):.1f}%)")
+
+    # Bootstrap stability
+    log.info(f'[STEP 4] Bootstrap stability (n={min(N_BOOTSTRAP, 200)}) ...')
+    ari_mean, ari_std = bootstrap_cluster_stability(X_scaled, k=K,
+                                                     n_bootstrap=min(N_BOOTSTRAP, 200))
+    log.info(f"  ARI: {ari_mean:.3f} +/- {ari_std:.3f} (>0.6 = stable)")
+
+    # Add labels to dataframe
+    X_df['stress_class'] = ordered_labels
+    X_df['stress_label'] = [LABELS[l] for l in ordered_labels]
+    X_df["zone"] = zone_col.values
+
+    # RF classifier
+    log.info('[STEP 5] Random Forest classifier ...')
+    rf, cv_scores, report = train_rf_classifier(X_scaled, ordered_labels, feat_cols)
+
+    # Save RF model
+    model_path = OUT_MOD / 'rf_stress_classifier.pkl'
+    with open(model_path, 'wb') as f:
+        pickle.dump({
+            'model': rf, 'scaler': scaler,
+            'feat_cols': feat_cols, 'labels': LABELS
+        }, f)
+    log.info(f'  [OK] {model_path}')
+
+    # Feature importance
+    importances = dict(zip(feat_cols, rf.feature_importances_))
+    log.info('  Feature importances:')
+    for k_feat, v in sorted(importances.items(), key=lambda x: -x[1]):
+        log.info(f'    {k_feat}: {v:.3f}')
+
+    # Merge back using positional index on X_df (reset to avoid duplicate timestamp issue)
+    X_df_reset = X_df.reset_index()  # 'time' becomes a column
+    X_df_reset['stress_class'] = ordered_labels
+    X_df_reset['stress_label'] = [LABELS[l] for l in ordered_labels]
+
+    # Rebuild df_classified from X_df_reset
+    df_classified = df.copy().reset_index()
+    # Match on time + zone
+    df_classified = df_classified.merge(
+        X_df_reset[['time','zone','stress_class','stress_label']],
+        on=['time','zone'], how='left'
+    )
+    df_classified = df_classified.set_index('time')
+
+    # Fill remaining NaN with RF prediction
+    nan_mask = df_classified['stress_class'].isna()
+    if nan_mask.sum() > 0:
+        X_nan = df_classified.loc[nan_mask, [c for c in feat_cols if c in df_classified.columns]].fillna(0)
+        X_nan_scaled = scaler.transform(X_nan)
+        pred_labels = rf.predict(X_nan_scaled)
+        df_classified.loc[nan_mask, 'stress_class'] = pred_labels
+        df_classified.loc[nan_mask, 'stress_label'] = [LABELS[l] for l in pred_labels]
+
+    df_classified['stress_class'] = df_classified['stress_class'].fillna(0).astype(int)
+
+    # Save
+    log.info('[STEP 6] Sauvegarde resultats ...')
+    df_classified[['zone','gwsa','gwsa_anomaly','stress_class','stress_label']].to_csv(
+        OUT_PROC / 'water_stress_classified.csv'
+    )
+    log.info(f'  [OK] {OUT_PROC}/water_stress_classified.csv')
+
+    X_df.to_csv(OUT_PROC / 'water_stress_labels.csv')
+    log.info(f'  [OK] {OUT_PROC}/water_stress_labels.csv')
+
+    # Metrics
+    metrics = {
+        'k': K,
+        'n_samples': len(X_df),
+        'ari_mean': ari_mean,
+        'ari_std': ari_std,
+        'cv_f1_macro_mean': cv_scores.mean(),
+        'cv_f1_macro_std': cv_scores.std(),
+        'rf_train_accuracy': report['accuracy'],
+    }
+    for i in range(K):
+        label = LABELS[i]
+        if label in report:
+            metrics[f'f1_{label}'] = report[label]['f1-score']
+            metrics[f'n_{label}']  = int(report[label]['support'])
+
+    pd.DataFrame([metrics]).to_csv(OUT_RES / 'stress_classification_metrics.csv', index=False)
+    log.info(f'  [OK] {OUT_RES}/stress_classification_metrics.csv')
+
+    # Figures
+    log.info('[STEP 7] Generation figures ...')
+    plot_stress_timeseries(df_classified, OUT_FIG / '07_stress_timeseries.png')
+    plot_kmeans_scatter(X_df, ordered_labels, feat_cols, OUT_FIG / '07_kmeans_clusters.png')
+
+    # Summary
+    print('\n' + SEP)
+    print('WATER STRESS CLASSIFICATION SUMMARY')
+    print(SEP)
+    print(f'  K-Means k={K}, Bootstrap ARI={ari_mean:.3f} +/- {ari_std:.3f}')
+    print(f'  RF CV F1-macro={cv_scores.mean():.3f} +/- {cv_scores.std():.3f}')
+    print(f'  RF Train accuracy={report["accuracy"]:.3f}')
+    print()
+    print('  Class distribution (all zones):')
+    for i in range(K):
+        n = (ordered_labels == i).sum()
+        print(f'    {i} ({LABELS[i]:10s}): {n:4d} ({100*n/len(ordered_labels):.1f}%)')
+    print()
+    print('  Stress by zone (most recent 24 months):')
+    recent = df_classified[df_classified.index >= df_classified.index.max() -
+                           pd.DateOffset(months=24)]
+    for zone in ZONES:
+        rz = recent[recent['zone'] == zone]
+        if len(rz) > 0:
+            dom = rz['stress_label'].value_counts().index[0]
+            high = (rz['stress_class'] >= 2).mean() * 100
+            print(f'    {zone:8s}: dominant={dom}, high/critical={high:.0f}%')
+
+    print()
+    print('Outputs:')
+    print(f'  {OUT_PROC}/water_stress_classified.csv')
+    print(f'  {OUT_PROC}/water_stress_labels.csv')
+    print(f'  {OUT_MOD}/rf_stress_classifier.pkl')
+    print(f'  {OUT_RES}/stress_classification_metrics.csv')
+    print(f'  {OUT_FIG}/07_stress_timeseries.png')
+    print(f'  {OUT_FIG}/07_kmeans_clusters.png')
+    print()
+    print('[DONE] Pret pour 08_gwsa_prediction.py')
+    print(SEP)
+
+
+if __name__ == '__main__':
+    main()
