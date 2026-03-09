@@ -1,1 +1,257 @@
-IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyAwMGZfZG93bmxvYWRfbW9kaXNfbmR2aS5weQojIERvd25sb2FkIE1PRElTIE1PRDEzQTMgdjYuMSBORFZJIGZvciBUdW5pc2lhICgyMDAyLTIwMjQpCiMgUmVzb2x1dGlvbjogMSBrbSwgbW9udGhseQojIE1ldGhvZDogTkFTQSBBcHBFRUFSUyBBUEkgKGFyZWEgc2FtcGxlKQojCiMgUFJFUkVRVUlTSVRFOgojICAgcGlwIGluc3RhbGwgcmVxdWVzdHMKIyAgIE5BU0EgRWFydGhkYXRhIGFjY291bnQ6IGh0dHBzOi8vdXJzLmVhcnRoZGF0YS5uYXNhLmdvdi91c2Vycy9uZXcKIyAgIChzYW1lIGFjY291bnQgYXMgR0xEQVMvR1JBQ0UpCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgppbXBvcnQgb3MKaW1wb3J0IHN5cwppbXBvcnQgdGltZQppbXBvcnQganNvbgppbXBvcnQgbG9nZ2luZwppbXBvcnQgZ2V0cGFzcwpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKCkJBU0UgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpKQpvcy5jaGRpcihCQVNFKQpzeXMucGF0aC5pbnNlcnQoMCwgQkFTRSkKCmltcG9ydCB5YW1sCmltcG9ydCByZXF1ZXN0cwoKd2l0aCBvcGVuKCdjb25maWcueWFtbCcsICdyJywgZW5jb2Rpbmc9J3V0Zi04JykgYXMgZjoKICAgIENGRyA9IHlhbWwuc2FmZV9sb2FkKGYpCgpPVVRfTU9ESVMgPSBQYXRoKENGR1sncGF0aHMnXVsnZGF0YSddWydtb2RpcyddKQpPVVRfTU9ESVMubWtkaXIocGFyZW50cz1UcnVlLCBleGlzdF9vaz1UcnVlKQoKTE9HX0RJUiA9IFBhdGgoQ0ZHWydwYXRocyddWydvdXRwdXRzJ11bJ2xvZ3MnXSkKTE9HX0RJUi5ta2RpcihwYXJlbnRzPVRydWUsIGV4aXN0X29rPVRydWUpCgpsb2dnaW5nLmJhc2ljQ29uZmlnKAogICAgbGV2ZWw9bG9nZ2luZy5JTkZPLAogICAgZm9ybWF0PSclKGFzY3RpbWUpcyBbJShsZXZlbG5hbWUpc10gJShtZXNzYWdlKXMnLAogICAgaGFuZGxlcnM9WwogICAgICAgIGxvZ2dpbmcuRmlsZUhhbmRsZXIoTE9HX0RJUiAvICcwMGZfZG93bmxvYWRfbW9kaXMubG9nJywgZW5jb2Rpbmc9J3V0Zi04JyksCiAgICAgICAgbG9nZ2luZy5TdHJlYW1IYW5kbGVyKHN5cy5zdGRvdXQpCiAgICBdCikKbG9nID0gbG9nZ2luZy5nZXRMb2dnZXIoX19uYW1lX18pCgpBUFBFRUFSU19VUkwgPSAnaHR0cHM6Ly9hcHBlZWFycy5lYXJ0aGRhdGFjbG91ZC5uYXNhLmdvdi9hcGkvJwoKIyBUdW5pc2lhIGJvdW5kaW5nIGJveApMQVRfTUlOLCBMQVRfTUFYID0gIDMwLjAsIDM3LjUKTE9OX01JTiwgTE9OX01BWCA9ICAgNy41LCAxMS42CgpTVEFSVF9EQVRFID0gJzAxLTAxLTIwMDInCkVORF9EQVRFICAgPSAnMTItMzEtMjAyNCcKClRBU0tfTkFNRSAgPSAnVHVuaXNpYV9NT0QxM0EzX05EVklfMjAwMl8yMDI0JwoKIyBNT0QxM0EzIHY2LjEg4oCUIDFrbSBtb250aGx5IE5EVkkKUFJPRFVDVCAgICA9ICdNT0QxM0EzLjA2MScKTEFZRVIgICAgICA9ICdfMV9rbV9tb250aGx5X05EVkknCgoKZGVmIGdldF90b2tlbih1c2VybmFtZSwgcGFzc3dvcmQpOgogICAgIiIiQXV0aGVudGljYXRlIHdpdGggQXBwRUVBUlMgYW5kIHJldHVybiBiZWFyZXIgdG9rZW4uIiIiCiAgICByID0gcmVxdWVzdHMucG9zdCgKICAgICAgICBBUFBFRUFSU19VUkwgKyAnbG9naW4nLAogICAgICAgIGF1dGg9KHVzZXJuYW1lLCBwYXNzd29yZCksCiAgICAgICAgdGltZW91dD0zMAogICAgKQogICAgci5yYWlzZV9mb3Jfc3RhdHVzKCkKICAgIHJldHVybiByLmpzb24oKVsndG9rZW4nXQoKCmRlZiBzdWJtaXRfdGFzayh0b2tlbiwgdGFza19uYW1lKToKICAgICIiIlN1Ym1pdCBhbiBhcmVhIHNhbXBsZSB0YXNrIGZvciBNT0QxM0EzIE5EVkkgb3ZlciBUdW5pc2lhLiIiIgogICAgdGFzayA9IHsKICAgICAgICAidGFza190eXBlIiA6ICJhcmVhIiwKICAgICAgICAidGFza19uYW1lIiA6IHRhc2tfbmFtZSwKICAgICAgICAicGFyYW1zIiAgICA6IHsKICAgICAgICAgICAgImRhdGVzIiAgOiBbeyJzdGFydERhdGUiOiBTVEFSVF9EQVRFLCAiZW5kRGF0ZSI6IEVORF9EQVRFfV0sCiAgICAgICAgICAgICJsYXllcnMiIDogW3sicHJvZHVjdCI6IFBST0RVQ1QsICJsYXllciI6IExBWUVSfV0sCiAgICAgICAgICAgICJvdXRwdXQiIDogewogICAgICAgICAgICAgICAgImZvcm1hdCIgICAgIDogeyJ0eXBlIjogIm5ldGNkZjQifSwKICAgICAgICAgICAgICAgICJwcm9qZWN0aW9uIiA6ICJnZW9ncmFwaGljIgogICAgICAgICAgICB9LAogICAgICAgICAgICAiZ2VvIiAgICA6IHsKICAgICAgICAgICAgICAgICJ0eXBlIiAgICAgOiAiRmVhdHVyZUNvbGxlY3Rpb24iLAogICAgICAgICAgICAgICAgImZpbGVOYW1lIiA6ICJ0dW5pc2lhX2Jib3giLAogICAgICAgICAgICAgICAgImZlYXR1cmVzIiA6IFt7CiAgICAgICAgICAgICAgICAgICAgInR5cGUiICAgICAgIDogIkZlYXR1cmUiLAogICAgICAgICAgICAgICAgICAgICJpZCIgICAgICAgICA6ICIwIiwKICAgICAgICAgICAgICAgICAgICAiZ2VvbWV0cnkiICAgOiB7CiAgICAgICAgICAgICAgICAgICAgICAgICJ0eXBlIiAgICAgICAgOiAiUG9seWdvbiIsCiAgICAgICAgICAgICAgICAgICAgICAgICJjb29yZGluYXRlcyIgOiBbWwogICAgICAgICAgICAgICAgICAgICAgICAgICAgW0xPTl9NSU4sIExBVF9NSU5dLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgW0xPTl9NQVgsIExBVF9NSU5dLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgW0xPTl9NQVgsIExBVF9NQVhdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgW0xPTl9NSU4sIExBVF9NQVhdLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgW0xPTl9NSU4sIExBVF9NSU5dCiAgICAgICAgICAgICAgICAgICAgICAgIF1dCiAgICAgICAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAgICAgICAicHJvcGVydGllcyIgOiB7Im5hbWUiOiAidHVuaXNpYSJ9CiAgICAgICAgICAgICAgICB9XQogICAgICAgICAgICB9CiAgICAgICAgfQogICAgfQogICAgaGVhZGVycyA9IHsnQXV0aG9yaXphdGlvbic6IGYnQmVhcmVyIHt0b2tlbn0nLCAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nfQogICAgciA9IHJlcXVlc3RzLnBvc3QoQVBQRUVBUlNfVVJMICsgJ3Rhc2snLCBqc29uPXRhc2ssIGhlYWRlcnM9aGVhZGVycywgdGltZW91dD02MCkKICAgIGlmIG5vdCByLm9rOgogICAgICAgIGxvZy5lcnJvcihmIiAgQXBwRUVBUlMgZXJyb3Ige3Iuc3RhdHVzX2NvZGV9OiB7ci50ZXh0fSIpCiAgICByLnJhaXNlX2Zvcl9zdGF0dXMoKQogICAgdGFza19pZCA9IHIuanNvbigpWyd0YXNrX2lkJ10KICAgIGxvZy5pbmZvKGYiICBUYXNrIHN1Ym1pdHRlZDoge3Rhc2tfaWR9IikKICAgIHJldHVybiB0YXNrX2lkCgoKZGVmIHdhaXRfZm9yX3Rhc2sodG9rZW4sIHRhc2tfaWQsIHBvbGxfaW50ZXJ2YWw9NjApOgogICAgIiIiUG9sbCB0YXNrIHN0YXR1cyB1bnRpbCBjb21wbGV0ZS4iIiIKICAgIGhlYWRlcnMgPSB7J0F1dGhvcml6YXRpb24nOiBmJ0JlYXJlciB7dG9rZW59J30KICAgIGxvZy5pbmZvKGYiICBQb2xsaW5nIHRhc2sge3Rhc2tfaWR9ICh0aGlzIG1heSB0YWtlIDEwLTYwIG1pbiBmb3IgMjIgeWVhcnMgb2YgMWttIGRhdGEpIC4uLiIpCgogICAgd2hpbGUgVHJ1ZToKICAgICAgICByID0gcmVxdWVzdHMuZ2V0KEFQUEVFQVJTX1VSTCArIGYndGFzay97dGFza19pZH0nLCBoZWFkZXJzPWhlYWRlcnMsIHRpbWVvdXQ9MzApCiAgICAgICAgci5yYWlzZV9mb3Jfc3RhdHVzKCkKICAgICAgICBzdGF0dXMgPSByLmpzb24oKVsnc3RhdHVzJ10KICAgICAgICBwY3QgICAgPSByLmpzb24oKS5nZXQoJ3Byb2dyZXNzJywge30pLmdldCgnc3VtbWFyeScsICcnKQogICAgICAgIGxvZy5pbmZvKGYiICBTdGF0dXM6IHtzdGF0dXN9ICB7cGN0fSIpCgogICAgICAgIGlmIHN0YXR1cyA9PSAnZG9uZSc6CiAgICAgICAgICAgIGxvZy5pbmZvKCIgIFRhc2sgY29tcGxldGUhIikKICAgICAgICAgICAgcmV0dXJuIFRydWUKICAgICAgICBlbGlmIHN0YXR1cyBpbiAoJ2Vycm9yJywgJ2RlbGV0ZWQnKToKICAgICAgICAgICAgbG9nLmVycm9yKGYiICBUYXNrIGZhaWxlZCB3aXRoIHN0YXR1czoge3N0YXR1c30iKQogICAgICAgICAgICByZXR1cm4gRmFsc2UKCiAgICAgICAgdGltZS5zbGVlcChwb2xsX2ludGVydmFsKQoKCmRlZiBkb3dubG9hZF9yZXN1bHRzKHRva2VuLCB0YXNrX2lkKToKICAgICIiIkRvd25sb2FkIGFsbCBvdXRwdXQgZmlsZXMgZm9yIGEgY29tcGxldGVkIHRhc2suIiIiCiAgICBoZWFkZXJzID0geydBdXRob3JpemF0aW9uJzogZidCZWFyZXIge3Rva2VufSd9CgogICAgIyBMaXN0IGZpbGVzCiAgICByID0gcmVxdWVzdHMuZ2V0KEFQUEVFQVJTX1VSTCArIGYnYnVuZGxlL3t0YXNrX2lkfScsIGhlYWRlcnM9aGVhZGVycywgdGltZW91dD0zMCkKICAgIHIucmFpc2VfZm9yX3N0YXR1cygpCiAgICBmaWxlcyA9IHIuanNvbigpWydmaWxlcyddCgogICAgbmNfZmlsZXMgPSBbZiBmb3IgZiBpbiBmaWxlcyBpZiBmWydmaWxlX25hbWUnXS5lbmRzd2l0aCgnLm5jJyldCiAgICBsb2cuaW5mbyhmIiAge2xlbihuY19maWxlcyl9IE5ldENERiBmaWxlKHMpIHRvIGRvd25sb2FkIikKCiAgICBmb3IgZmluZm8gaW4gbmNfZmlsZXM6CiAgICAgICAgZmlsZV9pZCAgID0gZmluZm9bJ2ZpbGVfaWQnXQogICAgICAgIGZpbGVfbmFtZSA9IFBhdGgoZmluZm9bJ2ZpbGVfbmFtZSddKS5uYW1lCiAgICAgICAgb3V0X3BhdGggID0gT1VUX01PRElTIC8gZmlsZV9uYW1lCgogICAgICAgIGlmIG91dF9wYXRoLmV4aXN0cygpOgogICAgICAgICAgICBsb2cuaW5mbyhmIiAge2ZpbGVfbmFtZX0gYWxyZWFkeSBleGlzdHMg4oCUIHNraXBwaW5nIikKICAgICAgICAgICAgY29udGludWUKCiAgICAgICAgbG9nLmluZm8oZiIgIERvd25sb2FkaW5nIHtmaWxlX25hbWV9IC4uLiIpCiAgICAgICAgZGwgPSByZXF1ZXN0cy5nZXQoCiAgICAgICAgICAgIEFQUEVFQVJTX1VSTCArIGYnYnVuZGxlL3t0YXNrX2lkfS97ZmlsZV9pZH0nLAogICAgICAgICAgICBoZWFkZXJzPWhlYWRlcnMsIHN0cmVhbT1UcnVlLCB0aW1lb3V0PTMwMAogICAgICAgICkKICAgICAgICBkbC5yYWlzZV9mb3Jfc3RhdHVzKCkKCiAgICAgICAgd2l0aCBvcGVuKG91dF9wYXRoLCAnd2InKSBhcyBmb3V0OgogICAgICAgICAgICBmb3IgY2h1bmsgaW4gZGwuaXRlcl9jb250ZW50KGNodW5rX3NpemU9ODE5Mik6CiAgICAgICAgICAgICAgICBmb3V0LndyaXRlKGNodW5rKQoKICAgICAgICBzaXplX21iID0gb3V0X3BhdGguc3RhdCgpLnN0X3NpemUgLyAxMDI0IC8gMTAyNAogICAgICAgIGxvZy5pbmZvKGYiICBbT0tdIHtmaWxlX25hbWV9ICh7c2l6ZV9tYjouMWZ9IE1CKSIpCgoKZGVmIGNoZWNrX2V4aXN0aW5nX3Rhc2sodG9rZW4sIHRhc2tfbmFtZSk6CiAgICAiIiJDaGVjayBpZiBhIHRhc2sgd2l0aCB0aGlzIG5hbWUgd2FzIGFscmVhZHkgc3VibWl0dGVkLiIiIgogICAgaGVhZGVycyA9IHsnQXV0aG9yaXphdGlvbic6IGYnQmVhcmVyIHt0b2tlbn0nfQogICAgciA9IHJlcXVlc3RzLmdldChBUFBFRUFSU19VUkwgKyAndGFzaycsIGhlYWRlcnM9aGVhZGVycywgdGltZW91dD0zMCkKICAgIHIucmFpc2VfZm9yX3N0YXR1cygpCiAgICB0YXNrcyA9IHIuanNvbigpCiAgICBmb3IgdCBpbiB0YXNrczoKICAgICAgICBpZiB0LmdldCgndGFza19uYW1lJykgPT0gdGFza19uYW1lOgogICAgICAgICAgICBsb2cuaW5mbyhmIiAgRm91bmQgZXhpc3RpbmcgdGFzazoge3RbJ3Rhc2tfaWQnXX0gKHN0YXR1czoge3RbJ3N0YXR1cyddfSkiKQogICAgICAgICAgICByZXR1cm4gdFsndGFza19pZCddLCB0WydzdGF0dXMnXQogICAgcmV0dXJuIE5vbmUsIE5vbmUKCgpkZWYgbWFpbigpOgogICAgbG9nLmluZm8oIj0iICogNjApCiAgICBsb2cuaW5mbygiMDBmX2Rvd25sb2FkX21vZGlzX25kdmkucHkiKQogICAgbG9nLmluZm8oIj0iICogNjApCiAgICBsb2cuaW5mbyhmIlByb2R1Y3QgOiB7UFJPRFVDVH0gbGF5ZXIge0xBWUVSfSIpCiAgICBsb2cuaW5mbyhmIlBlcmlvZCAgOiB7U1RBUlRfREFURX0gLT4ge0VORF9EQVRFfSIpCiAgICBsb2cuaW5mbyhmIkFyZWEgICAgOiBsYXQgW3tMQVRfTUlOfSx7TEFUX01BWH1dLCBsb24gW3tMT05fTUlOfSx7TE9OX01BWH1dIikKICAgIGxvZy5pbmZvKGYiT3V0cHV0ICA6IHtPVVRfTU9ESVN9IikKCiAgICAjIFJlYWQgY3JlZGVudGlhbHMgZnJvbSAubmV0cmMgKHNhbWUgZmlsZSB1c2VkIGZvciBHTERBUy9HUkFDRSB3Z2V0KQogICAgIyBGaWxlOiBDOlxVc2Vyc1xSVFhcLm5ldHJjCiAgICAjIEV4cGVjdGVkIGxpbmU6IG1hY2hpbmUgdXJzLmVhcnRoZGF0YS5uYXNhLmdvdiBsb2dpbiBhcmdvdWJpIHBhc3N3b3JkIFlPVVJfTkVXX1BBU1NXT1JECiAgICBpbXBvcnQgbmV0cmMKICAgIG5ldHJjX3BhdGggPSBvcy5wYXRoLmpvaW4ob3MucGF0aC5leHBhbmR1c2VyKCd+JyksICcubmV0cmMnKQogICAgdHJ5OgogICAgICAgIG4gPSBuZXRyYy5uZXRyYyhuZXRyY19wYXRoKQogICAgICAgIGF1dGggPSBuLmF1dGhlbnRpY2F0b3JzKCd1cnMuZWFydGhkYXRhLm5hc2EuZ292JykKICAgICAgICBpZiBhdXRoIGlzIE5vbmU6CiAgICAgICAgICAgIHJhaXNlIFZhbHVlRXJyb3IoIk5vIGVudHJ5IGZvciB1cnMuZWFydGhkYXRhLm5hc2EuZ292IGluIC5uZXRyYyIpCiAgICAgICAgdXNlcm5hbWUgPSBhdXRoWzBdCiAgICAgICAgcGFzc3dvcmQgPSBhdXRoWzJdCiAgICAgICAgbG9nLmluZm8oZiIgIENyZWRlbnRpYWxzIGxvYWRlZCBmcm9tIC5uZXRyYyAodXNlcjoge3VzZXJuYW1lfSkiKQogICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgIGxvZy5lcnJvcihmIiAgQ291bGQgbm90IHJlYWQgLm5ldHJjOiB7ZX0iKQogICAgICAgIGxvZy5lcnJvcihmIiAgTWFrZSBzdXJlIHtuZXRyY19wYXRofSBjb250YWluczoiKQogICAgICAgIGxvZy5lcnJvcihmIiAgbWFjaGluZSB1cnMuZWFydGhkYXRhLm5hc2EuZ292IGxvZ2luIFlPVVJfVVNFUk5BTUUgcGFzc3dvcmQgWU9VUl9ORVdfUEFTU1dPUkQiKQogICAgICAgIHN5cy5leGl0KDEpCgogICAgIyBBdXRoZW50aWNhdGUKICAgIGxvZy5pbmZvKCJBdXRoZW50aWNhdGluZyB3aXRoIEFwcEVFQVJTIC4uLiIpCiAgICB0cnk6CiAgICAgICAgdG9rZW4gPSBnZXRfdG9rZW4odXNlcm5hbWUsIHBhc3N3b3JkKQogICAgICAgIGxvZy5pbmZvKCIgIFtPS10gQXV0aGVudGljYXRlZCIpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgbG9nLmVycm9yKGYiICBBdXRoZW50aWNhdGlvbiBmYWlsZWQ6IHtlfSIpCiAgICAgICAgc3lzLmV4aXQoMSkKCiAgICAjIENoZWNrIGZvciBleGlzdGluZyB0YXNrCiAgICB0YXNrX2lkLCBzdGF0dXMgPSBjaGVja19leGlzdGluZ190YXNrKHRva2VuLCBUQVNLX05BTUUpCgogICAgaWYgdGFza19pZCBpcyBOb25lOgogICAgICAgIGxvZy5pbmZvKCJTdWJtaXR0aW5nIG5ldyBBcHBFRUFSUyB0YXNrIC4uLiIpCiAgICAgICAgdGFza19pZCA9IHN1Ym1pdF90YXNrKHRva2VuLCBUQVNLX05BTUUpCiAgICAgICAgc3RhdHVzICA9ICdwZW5kaW5nJwogICAgZWxzZToKICAgICAgICBsb2cuaW5mbyhmIlJlc3VtaW5nIGV4aXN0aW5nIHRhc2sge3Rhc2tfaWR9IChzdGF0dXM6IHtzdGF0dXN9KSIpCgogICAgIyBXYWl0IGlmIG5vdCBkb25lCiAgICBpZiBzdGF0dXMgIT0gJ2RvbmUnOgogICAgICAgIG9rID0gd2FpdF9mb3JfdGFzayh0b2tlbiwgdGFza19pZCwgcG9sbF9pbnRlcnZhbD02MCkKICAgICAgICBpZiBub3Qgb2s6CiAgICAgICAgICAgIGxvZy5lcnJvcigiVGFzayBmYWlsZWQuIENoZWNrIEFwcEVFQVJTIGRhc2hib2FyZDogaHR0cHM6Ly9hcHBlZWFycy5lYXJ0aGRhdGFjbG91ZC5uYXNhLmdvdi8iKQogICAgICAgICAgICBzeXMuZXhpdCgxKQoKICAgICMgRG93bmxvYWQgcmVzdWx0cwogICAgbG9nLmluZm8oIkRvd25sb2FkaW5nIG91dHB1dCBmaWxlcyAuLi4iKQogICAgZG93bmxvYWRfcmVzdWx0cyh0b2tlbiwgdGFza19pZCkKCiAgICAjIFZlcmlmeQogICAgbmNfZmlsZXMgPSBsaXN0KE9VVF9NT0RJUy5nbG9iKCcqLm5jJykpCiAgICBsb2cuaW5mbyhmIlxuVmVyaWZpY2F0aW9uOiB7bGVuKG5jX2ZpbGVzKX0gTmV0Q0RGIGZpbGUocykgaW4ge09VVF9NT0RJU30iKQoKICAgIGxvZy5pbmZvKCJcbiIgKyAiPSIgKiA2MCkKICAgIGxvZy5pbmZvKCJNT0RJUyBORFZJIGRvd25sb2FkIENPTVBMRVRFIikKICAgIGxvZy5pbmZvKCJSZS1ydW4gMDJfZ2FwX2ZpbGxpbmcucHkgdG8gdXNlIHJlYWwgTkRWSSBkYXRhIikKICAgIGxvZy5pbmZvKCI9IiAqIDYwKQoKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICBtYWluKCk=
+# ==============================================================================
+# 00f_download_modis_ndvi.py
+# Download MODIS MOD13A3 v6.1 NDVI for Tunisia (2002-2024)
+# Resolution: 1 km, monthly
+# Method: NASA AppEEARS API (area sample)
+#
+# PREREQUISITE:
+#   pip install requests
+#   NASA Earthdata account: https://urs.earthdata.nasa.gov/users/new
+#   (same account as GLDAS/GRACE)
+# ==============================================================================
+
+import os
+import sys
+import time
+import json
+import logging
+import getpass
+from pathlib import Path
+
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(BASE)
+sys.path.insert(0, BASE)
+
+import yaml
+import requests
+
+with open('config.yaml', 'r', encoding='utf-8') as f:
+    CFG = yaml.safe_load(f)
+
+OUT_MODIS = Path(CFG['paths']['data']['modis'])
+OUT_MODIS.mkdir(parents=True, exist_ok=True)
+
+LOG_DIR = Path(CFG['paths']['outputs']['logs'])
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.FileHandler(LOG_DIR / '00f_download_modis.log', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+log = logging.getLogger(__name__)
+
+APPEEARS_URL = 'https://appeears.earthdatacloud.nasa.gov/api/'
+
+# Tunisia bounding box
+LAT_MIN, LAT_MAX =  30.0, 37.5
+LON_MIN, LON_MAX =   7.5, 11.6
+
+START_DATE = '01-01-2002'
+END_DATE   = '12-31-2024'
+
+TASK_NAME  = 'Tunisia_MOD13A3_NDVI_2002_2024'
+
+# MOD13A3 v6.1 — 1km monthly NDVI
+PRODUCT    = 'MOD13A3.061'
+LAYER      = '_1_km_monthly_NDVI'
+
+
+def get_token(username, password):
+    """Authenticate with AppEEARS and return bearer token."""
+    r = requests.post(
+        APPEEARS_URL + 'login',
+        auth=(username, password),
+        timeout=30
+    )
+    r.raise_for_status()
+    return r.json()['token']
+
+
+def submit_task(token, task_name):
+    """Submit an area sample task for MOD13A3 NDVI over Tunisia."""
+    task = {
+        "task_type" : "area",
+        "task_name" : task_name,
+        "params"    : {
+            "dates"  : [{"startDate": START_DATE, "endDate": END_DATE}],
+            "layers" : [{"product": PRODUCT, "layer": LAYER}],
+            "output" : {
+                "format"     : {"type": "netcdf4"},
+                "projection" : "geographic"
+            },
+            "geo"    : {
+                "type"     : "FeatureCollection",
+                "fileName" : "tunisia_bbox",
+                "features" : [{
+                    "type"       : "Feature",
+                    "id"         : "0",
+                    "geometry"   : {
+                        "type"        : "Polygon",
+                        "coordinates" : [[
+                            [LON_MIN, LAT_MIN],
+                            [LON_MAX, LAT_MIN],
+                            [LON_MAX, LAT_MAX],
+                            [LON_MIN, LAT_MAX],
+                            [LON_MIN, LAT_MIN]
+                        ]]
+                    },
+                    "properties" : {"name": "tunisia"}
+                }]
+            }
+        }
+    }
+    headers = {'Authorization': f'Bearer {token}', 'Content-Type': 'application/json'}
+    r = requests.post(APPEEARS_URL + 'task', json=task, headers=headers, timeout=60)
+    if not r.ok:
+        log.error(f"  AppEEARS error {r.status_code}: {r.text}")
+    r.raise_for_status()
+    task_id = r.json()['task_id']
+    log.info(f"  Task submitted: {task_id}")
+    return task_id
+
+
+def wait_for_task(token, task_id, poll_interval=60):
+    """Poll task status until complete."""
+    headers = {'Authorization': f'Bearer {token}'}
+    log.info(f"  Polling task {task_id} (this may take 10-60 min for 22 years of 1km data) ...")
+
+    while True:
+        r = requests.get(APPEEARS_URL + f'task/{task_id}', headers=headers, timeout=30)
+        r.raise_for_status()
+        status = r.json()['status']
+        pct    = r.json().get('progress', {}).get('summary', '')
+        log.info(f"  Status: {status}  {pct}")
+
+        if status == 'done':
+            log.info("  Task complete!")
+            return True
+        elif status in ('error', 'deleted'):
+            log.error(f"  Task failed with status: {status}")
+            return False
+
+        time.sleep(poll_interval)
+
+
+def download_results(token, task_id):
+    """Download all output files for a completed task."""
+    headers = {'Authorization': f'Bearer {token}'}
+
+    # List files
+    r = requests.get(APPEEARS_URL + f'bundle/{task_id}', headers=headers, timeout=30)
+    r.raise_for_status()
+    files = r.json()['files']
+
+    nc_files = [f for f in files if f['file_name'].endswith('.nc')]
+    log.info(f"  {len(nc_files)} NetCDF file(s) to download")
+
+    for finfo in nc_files:
+        file_id   = finfo['file_id']
+        file_name = Path(finfo['file_name']).name
+        out_path  = OUT_MODIS / file_name
+
+        if out_path.exists():
+            log.info(f"  {file_name} already exists — skipping")
+            continue
+
+        log.info(f"  Downloading {file_name} ...")
+        dl = requests.get(
+            APPEEARS_URL + f'bundle/{task_id}/{file_id}',
+            headers=headers, stream=True, timeout=300
+        )
+        dl.raise_for_status()
+
+        with open(out_path, 'wb') as fout:
+            for chunk in dl.iter_content(chunk_size=8192):
+                fout.write(chunk)
+
+        size_mb = out_path.stat().st_size / 1024 / 1024
+        log.info(f"  [OK] {file_name} ({size_mb:.1f} MB)")
+
+
+def check_existing_task(token, task_name):
+    """Check if a task with this name was already submitted."""
+    headers = {'Authorization': f'Bearer {token}'}
+    r = requests.get(APPEEARS_URL + 'task', headers=headers, timeout=30)
+    r.raise_for_status()
+    tasks = r.json()
+    for t in tasks:
+        if t.get('task_name') == task_name:
+            log.info(f"  Found existing task: {t['task_id']} (status: {t['status']})")
+            return t['task_id'], t['status']
+    return None, None
+
+
+def main():
+    log.info("=" * 60)
+    log.info("00f_download_modis_ndvi.py")
+    log.info("=" * 60)
+    log.info(f"Product : {PRODUCT} layer {LAYER}")
+    log.info(f"Period  : {START_DATE} -> {END_DATE}")
+    log.info(f"Area    : lat [{LAT_MIN},{LAT_MAX}], lon [{LON_MIN},{LON_MAX}]")
+    log.info(f"Output  : {OUT_MODIS}")
+
+    # Read credentials from .netrc (same file used for GLDAS/GRACE wget)
+    # File: C:\Users\RTX\.netrc
+    # Expected line: machine urs.earthdata.nasa.gov login argoubi password YOUR_NEW_PASSWORD
+    import netrc
+    netrc_path = os.path.join(os.path.expanduser('~'), '.netrc')
+    try:
+        n = netrc.netrc(netrc_path)
+        auth = n.authenticators('urs.earthdata.nasa.gov')
+        if auth is None:
+            raise ValueError("No entry for urs.earthdata.nasa.gov in .netrc")
+        username = auth[0]
+        password = auth[2]
+        log.info(f"  Credentials loaded from .netrc (user: {username})")
+    except Exception as e:
+        log.error(f"  Could not read .netrc: {e}")
+        log.error(f"  Make sure {netrc_path} contains:")
+        log.error(f"  machine urs.earthdata.nasa.gov login YOUR_USERNAME password YOUR_NEW_PASSWORD")
+        sys.exit(1)
+
+    # Authenticate
+    log.info("Authenticating with AppEEARS ...")
+    try:
+        token = get_token(username, password)
+        log.info("  [OK] Authenticated")
+    except Exception as e:
+        log.error(f"  Authentication failed: {e}")
+        sys.exit(1)
+
+    # Check for existing task
+    task_id, status = check_existing_task(token, TASK_NAME)
+
+    if task_id is None:
+        log.info("Submitting new AppEEARS task ...")
+        task_id = submit_task(token, TASK_NAME)
+        status  = 'pending'
+    else:
+        log.info(f"Resuming existing task {task_id} (status: {status})")
+
+    # Wait if not done
+    if status != 'done':
+        ok = wait_for_task(token, task_id, poll_interval=60)
+        if not ok:
+            log.error("Task failed. Check AppEEARS dashboard: https://appeears.earthdatacloud.nasa.gov/")
+            sys.exit(1)
+
+    # Download results
+    log.info("Downloading output files ...")
+    download_results(token, task_id)
+
+    # Verify
+    nc_files = list(OUT_MODIS.glob('*.nc'))
+    log.info(f"\nVerification: {len(nc_files)} NetCDF file(s) in {OUT_MODIS}")
+
+    log.info("\n" + "=" * 60)
+    log.info("MODIS NDVI download COMPLETE")
+    log.info("Re-run 02_gap_filling.py to use real NDVI data")
+    log.info("=" * 60)
+
+
+if __name__ == '__main__':
+    main()
