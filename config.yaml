@@ -1,1 +1,190 @@
-IyDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZDilZAKIyBjb25maWcueWFtbCDigJQgUGlwZWxpbmUgY29uZmlndXJhdGlvbgojIFR1bmlzaWEgR3JvdW5kd2F0ZXIgRGVwbGV0aW9uIFN0dWR5CiMg4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQ4pWQCgojIOKUgOKUgCBQYXRocyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKcGF0aHM6CiAgZGF0YToKICAgIGdyYWNlOiAgICAgICAiZGF0YS9ncmFjZS8iICAgICAgICAgICMgQ1NSLCBKUEwsIEdGWiBtYXNjb24gTmV0Q0RGIGZpbGVzCiAgICBnbGRhc19ub2FoOiAgImRhdGEvZ2xkYXMvbm9haC8iICAgICAjIEdMREFTIE5PQUggdjIuMiBOZXRDREYKICAgIGdsZGFzX3ZpYzogICAiZGF0YS9nbGRhcy92aWMvIiAgICAgICMgR0xEQVMgVklDIE5ldENERgogICAgZXJhNTogICAgICAgICJkYXRhL2VyYTUvIiAgICAgICAgICAgIyBFUkE1IFAgKyBUMm0gTmV0Q0RGCiAgICBtb2RpczogICAgICAgImRhdGEvbW9kaXMvIiAgICAgICAgICAjIE1PRDEzQTMgdjYuMSBHZW9USUZGCiAgICBjbWlwNjogICAgICAgImRhdGEvY21pcDYvIiAgICAgICAgICAjIDYgR0NNcyB4IDIgU1NQcyBOZXRDREYKICAgIGRncmU6ICAgICAgICAiZGF0YS9kZ3JlL3dlbGxzLmNzdiIgICMgMTg3IHBpZXpvbWV0cmljIHdlbGxzCiAgICBzcnRtOiAgICAgICAgImRhdGEvc3RhdGljL3NydG1fMWttX3R1bmlzaWEudGlmIgogICAgbGl0aG9sb2d5OiAgICJkYXRhL3N0YXRpYy9saXRob2xvZ3lfdHVuaXNpYS5zaHAiCiAgICBsYW5kdXNlOiAgICAgImRhdGEvc3RhdGljL2Zyb21nbGMyMDIyX3R1bmlzaWEudGlmIgogIG91dHB1dHM6CiAgICBwcm9jZXNzZWQ6ICAgIm91dHB1dHMvcHJvY2Vzc2VkLyIKICAgIG1vZGVsczogICAgICAib3V0cHV0cy9tb2RlbHMvIgogICAgcmVzdWx0czogICAgICJvdXRwdXRzL3Jlc3VsdHMvIgogICAgZmlndXJlczogICAgICJvdXRwdXRzL2ZpZ3VyZXMvIgogICAgbG9nczogICAgICAgICJvdXRwdXRzL2xvZ3MvIgoKIyDilIDilIAgU3R1ZHkgYXJlYSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKc3R1ZHlfYXJlYToKICBsb25fbWluOiA3LjUKICBsb25fbWF4OiAxMS42CiAgbGF0X21pbjogMzAuMAogIGxhdF9tYXg6IDM3LjUKICBjcnM6ICJFUFNHOjQzMjYiCiAgem9uZXM6CiAgICBub3J0aDoKICAgICAgbmFtZTogIk5vcnRoZXJuIFpvbmUiCiAgICAgIGdvdmVybm9yYXRlczogWyJCaXplcnRlIiwiQsOpamEiLCJKZW5kb3ViYSIsIktlZiIsIlNpbGlhbmEiLCJUdW5pcyIsCiAgICAgICAgICAgICAgICAgICAgICJBcmlhbmEiLCJCZW4gQXJvdXMiLCJNYW5vdWJhIiwiTmFiZXVsIiwiWmFnaG91YW4iXQogICAgY2VudHJhbDoKICAgICAgbmFtZTogIkNlbnRyYWwgWm9uZSIKICAgICAgZ292ZXJub3JhdGVzOiBbIkthaXJvdWFuIiwiS2Fzc2VyaW5lIiwiU2lkaSBCb3V6aWQiLCJTb3Vzc2UiLAogICAgICAgICAgICAgICAgICAgICAiTW9uYXN0aXIiLCJNYWhkaWEiLCJTZmF4Il0KICAgIHNvdXRoOgogICAgICBuYW1lOiAiU291dGhlcm4gWm9uZSIKICAgICAgZ292ZXJub3JhdGVzOiBbIkdhZnNhIiwiVG96ZXVyIiwiS2ViaWxpIiwiR2Fiw6hzIiwiTcOpZGVuaW5lIiwiVGF0YW91aW5lIl0KCiMg4pSA4pSAIFRpbWUgcGVyaW9kcyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKdGltZToKICBzdGFydDogICAgICAgICAgICAgICIyMDAyLTA0LTAxIgogIGVuZDogICAgICAgICAgICAgICAgIjIwMjQtMTItMDEiCiAgYmFzZWxpbmVfc3RhcnQ6ICAgICAiMjAwNC0wMS0wMSIKICBiYXNlbGluZV9lbmQ6ICAgICAgICIyMDA5LTEyLTAxIgogIGdyYWNlX2VuZDogICAgICAgICAgIjIwMTctMDYtMDEiCiAgZ3JhY2VfZm9fc3RhcnQ6ICAgICAiMjAxOC0wNi0wMSIKICBnYXBfc3RhcnQ6ICAgICAgICAgICIyMDE3LTA3LTAxIiAgICAjIEdSQUNFIGludGVyLW1pc3Npb24gZ2FwCiAgZ2FwX2VuZDogICAgICAgICAgICAiMjAxOC0wNS0wMSIKICB0cmFpbl9zdGFydDogICAgICAgICIyMDAyLTAxLTAxIgogIHRyYWluX2VuZDogICAgICAgICAgIjIwMjItMTItMDEiICAgICMgZm9yIHByZWRpY3Rpb24gbW9kZWxzCiAgdmFsX3N0YXJ0OiAgICAgICAgICAiMjAyMy0wMS0wMSIKICB2YWxfZW5kOiAgICAgICAgICAgICIyMDI0LTEyLTAxIgogIGNsYXNzX3RyYWluX2VuZDogICAgIjIwMTgtMTItMDEiICAgICMgZm9yIGNsYXNzaWZpY2F0aW9uIFJGCiAgcHJvamVjdGlvbl9zdGFydDogICAiMjAyNS0wMS0wMSIKICBwcm9qZWN0aW9uX2VuZDogICAgICIyMDMwLTEyLTAxIgoKIyDilIDilIAgR1JBQ0UgcHJlcHJvY2Vzc2luZyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKZ3JhY2U6CiAgbWFzY29uczoKICAgIC0gbmFtZTogIkNTUiIKICAgICAgZmlsZV9wYXR0ZXJuOiAiQ1NSX0dSQUNFX0dSQUNFLUZPX1JMMDZfTWFzY29uc19hbGwtY29ycmVjdGlvbnNfdjAyLm5jIgogICAgLSBuYW1lOiAiSlBMIgogICAgICBmaWxlX3BhdHRlcm46ICJKUExfR1JBQ0VfR1JBQ0UtRk9fUkwwNk1fdjAyXyoubmMiCiAgICAtIG5hbWU6ICJHRloiCiAgICAgIGZpbGVfcGF0dGVybjogIkdGWl9HUkFDRV9HUkFDRS1GT19MZXZlbC0zX3ZlcnNpb25fMDMwMF8qLm5jIgogIHJlc29sdXRpb246IDAuMjUgICAgICAgICAgICMgZGVncmVlcwogIGxhbmRfbWFza190aHJlc2hvbGQ6IDAuNTAgICMgbWluaW11bSBsYW5kIGZyYWN0aW9uIHBlciBwaXhlbCAoLT4gMTQ4IHBpeGVscykKICBtaW5fd2VsbHNfcGVyX3BpeGVsOiAzICAgICAjIG1pbmltdW0gREdSRSB3ZWxscyBmb3IgdmFsaWRhdGlvbiAoLT4gMTEyIHBpeGVscykKCiMg4pSA4pSAIEdhcCBmaWxsaW5nIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApnYXBfZmlsbGluZzoKICBtZXRob2Q6ICJsc3RtX2Jjbm4iCiAgdHJhaW5feWVhcnM6IFsyMDAyLCAyMDE2XQogIHNlcXVlbmNlX2xlbmd0aDogMjQKICBuX2Vwb2NoczogMTAwCiAgYmF0Y2hfc2l6ZTogMzIKICBwYXRpZW5jZTogMTAKICBuX3NlZWRzOiA1CiAgY29tcGFyZV9tZXRob2RzOiBbImxpbmVhciIsICJhcmltYSIsICJrYWxtYW4iXQoKIyDilIDilIAgRG93bnNjYWxpbmcg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACmRvd25zY2FsaW5nOgogIHRhcmdldF9yZXNvbHV0aW9uX2ttOiAxCiAgbW9kZWw6ICJyYW5kb21fZm9yZXN0IgogIHRyYWluX2VuZDogIjIwMTgtMTItMDEiCiAgdmFsX3N0YXJ0OiAiMjAxOS0wMS0wMSIKICBuX2VzdGltYXRvcnM6IFsxMDAsIDIwMCwgMzAwXQogIG1heF9kZXB0aDogWzUsIDEwLCAxNSwgMjBdCiAgbWluX3NhbXBsZXNfbGVhZjogWzEsIDIsIDRdCiAgcGh5c2ljYWxfY29uc2lzdGVuY3lfdGhyZXNob2xkOiAwLjMgICAjIGNtIEVXSCBtYXggYWdncmVnYXRpb24gZXJyb3IKICBiZW5jaG1hcmtfbGluZWFyOiB0cnVlCgojIOKUgOKUgCBORFZJIGVtdWxhdG9yIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApuZHZpX2VtdWxhdG9yOgogIG1vZGVsOiAicmFuZG9tX2ZvcmVzdCIKICBwcmVkaWN0b3JzOiBbIlAiLCAiVDJtIiwgIkxBSSJdCiAgdHJhaW5fZW5kOiAiMjAyMi0xMi0wMSIKICB2YWxfc3RhcnQ6ICIyMDIzLTAxLTAxIgogIHNjZW5hcmlvczogWyJzc3AyNDUiLCAic3NwNTg1Il0KICBuX2VzdGltYXRvcnM6IDIwMAogIG1heF9kZXB0aDogMTAKCiMg4pSA4pSAIFRyZW5kIGRldGVjdGlvbiDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKdHJlbmQ6CiAgbWV0aG9kOiAibW9kaWZpZWRfbWFubl9rZW5kYWxsIgogIGFscGhhOiAwLjA1CiAgbWF4X2xhZzogMTIgICAgICAgICAgICMgYXV0b2NvcnJlbGF0aW9uIGxhZ3MgdG8gY29ycmVjdAogIHByZXdoaXRlbmluZzogdHJ1ZSAgICAjIFl1ZSAyMDAyCiAgdmFyaWFibGVzOiBbImd3c2EiLCAicHJlY2lwaXRhdGlvbiIsICJ0ZW1wZXJhdHVyZSIsICJuZHZpIl0KCiMg4pSA4pSAIFdhdGVyIHN0cmVzcyBjbGFzc2lmaWNhdGlvbiDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKY2xhc3NpZmljYXRpb246CiAgZmVhdHVyZXM6IFsiZ3dzYV9hbm9tYWx5IiwgInByZWNpcF9hbm9tYWx5IiwgInRlbXBfYW5vbWFseSIsICJuZHZpX2Fub21hbHkiXQogICMgSy1NZWFucyAoZXhwbG9yYXRvcnkpCiAga21lYW5zOgogICAgazogNAogICAgbl9ib290c3RyYXA6IDEwMDAKICAgIGxhYmVsczogWyJsb3ciLCAibW9kZXJhdGUiLCAiaGlnaCIsICJjcml0aWNhbCJdCiAgICB0aHJlc2hvbGRzX21feXI6IFswLjIsIDAuNSwgMS4wXSAgICMgZHJhd2Rvd24gcmF0ZSB0aHJlc2hvbGRzCiAgIyBSYW5kb20gRm9yZXN0IChwcmltYXJ5KQogIHJmOgogICAgbl9lc3RpbWF0b3JzX3JhbmdlOiBbNTAsIDEwMCwgMjAwLCAzMDAsIDUwMF0KICAgIG1heF9kZXB0aF9yYW5nZTogWzMsIDUsIDEwLCAxNSwgMjBdCiAgICBtaW5fc2FtcGxlc19sZWFmX3JhbmdlOiBbMSwgMiwgNSwgMTBdCiAgICBjdjogImxvb2N2IgogICAgbl9qb2JzOiAtMQogICAgcmFuZG9tX3N0YXRlOiA0MgoKIyDilIDilIAgUHJlZGljdGlvbiDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKcHJlZGljdGlvbjoKICBzY2VuYXJpb3M6IFsic3NwMjQ1IiwgInNzcDU4NSJdCiAgZ2NtczogWyJJUFNMLUNNNkEtTFIiLCAiTVBJLUVTTTEtMi1IUiIsICJFQy1FYXJ0aDMiLAogICAgICAgICAiQ05STS1DTTYtMSIsICJNUkktRVNNMi0wIiwgIkFDQ0VTUy1DTTIiXQogIHVuY2VydGFpbnR5X2ludGVydmFsOiAwLjkwICAgIyA5MCUgcHJlZGljdGlvbiBpbnRlcnZhbAoKICAjIFNBUklNQVggYmFzZWxpbmUKICBzYXJpbWF4OgogICAgb3JkZXI6IFsxLCAxLCAxXQogICAgc2Vhc29uYWxfb3JkZXI6IFsxLCAxLCAxLCAxMl0KCiAgIyBMU1RNCiAgbHN0bToKICAgIHNlcXVlbmNlX2xlbmd0aDogMjQKICAgIG5fZmVhdHVyZXM6IDE2CiAgICBsYXllcnM6IFs2NCwgMzJdCiAgICBkcm9wb3V0OiAwLjIKICAgIGwyX2xhbWJkYTogMC4wMDAxCiAgICBncmFkX2NsaXBfbm9ybTogMS4wCiAgICBuX2Vwb2NoczogMTAwCiAgICBiYXRjaF9zaXplOiAzMgogICAgcGF0aWVuY2U6IDEwCiAgICBvcHRpbWl6ZXI6ICJhZGFtIgogICAgbG9zczogIm1zZSIKICAgIG5fc2VlZHM6IDEwCiAgICBvcHR1bmFfdHJpYWxzOiA1MAogICAgY3ZfZm9sZHM6IDUKCiAgIyBYR0Jvb3N0CiAgeGdib29zdDoKICAgIHdpbmRvd19zaXplOiAxMgogICAgbl9mZWF0dXJlczogMTYKICAgIGN2X2ZvbGRzOiA1CiAgICBwYXJhbV9ncmlkOgogICAgICBuX2VzdGltYXRvcnM6IFsxMDAsIDIwMCwgNTAwXQogICAgICBtYXhfZGVwdGg6IFszLCA1LCA3XQogICAgICBsZWFybmluZ19yYXRlOiBbMC4wMSwgMC4wNSwgMC4xXQogICAgICBzdWJzYW1wbGU6IFswLjgsIDEuMF0KICAgICAgY29sc2FtcGxlX2J5dHJlZTogWzAuOCwgMS4wXQoKIyDilIDilIAgQ01JUDYgYmlhcyBjb3JyZWN0aW9uIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApiaWFzX2NvcnJlY3Rpb246CiAgbWV0aG9kOiAicXVhbnRpbGVfbWFwcGluZyIKICByZWZlcmVuY2U6ICJlcmE1IgogIGFwcGx5X3BlcjogWyJtb250aCIsICJ6b25lIiwgInZhcmlhYmxlIl0KCiMg4pSA4pSAIERhc2sgY2x1c3RlciDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKZGFzazoKICBuX3dvcmtlcnM6IDQgICAgICAgICAgIyBhZGp1c3QgdG8geW91ciBtYWNoaW5lCiAgdGhyZWFkc19wZXJfd29ya2VyOiAyCiAgbWVtb3J5X2xpbWl0OiAiOEdCIiAgICMgcGVyIHdvcmtlcgoKIyDilIDilIAgUmVwcm9kdWNpYmlsaXR5IOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApyYW5kb21fc3RhdGU6IDQyCg==
+# ══════════════════════════════════════════════════════════════════════════════
+# config.yaml — Pipeline configuration
+# Tunisia Groundwater Depletion Study
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Paths ─────────────────────────────────────────────────────────────────────
+paths:
+  data:
+    grace:       "data/grace/"          # CSR, JPL, GFZ mascon NetCDF files
+    gldas_noah:  "data/gldas/noah/"     # GLDAS NOAH v2.2 NetCDF
+    gldas_vic:   "data/gldas/vic/"      # GLDAS VIC NetCDF
+    era5:        "data/era5/"           # ERA5 P + T2m NetCDF
+    modis:       "data/modis/"          # MOD13A3 v6.1 GeoTIFF
+    cmip6:       "data/cmip6/"          # 6 GCMs x 2 SSPs NetCDF
+    dgre:        "data/dgre/wells.csv"  # 187 piezometric wells
+    srtm:        "data/static/srtm_1km_tunisia.tif"
+    lithology:   "data/static/lithology_tunisia.shp"
+    landuse:     "data/static/fromglc2022_tunisia.tif"
+  outputs:
+    processed:   "outputs/processed/"
+    models:      "outputs/models/"
+    results:     "outputs/results/"
+    figures:     "outputs/figures/"
+    logs:        "outputs/logs/"
+
+# ── Study area ────────────────────────────────────────────────────────────────
+study_area:
+  lon_min: 7.5
+  lon_max: 11.6
+  lat_min: 30.0
+  lat_max: 37.5
+  crs: "EPSG:4326"
+  zones:
+    north:
+      name: "Northern Zone"
+      governorates: ["Bizerte","Béja","Jendouba","Kef","Siliana","Tunis",
+                     "Ariana","Ben Arous","Manouba","Nabeul","Zaghouan"]
+    central:
+      name: "Central Zone"
+      governorates: ["Kairouan","Kasserine","Sidi Bouzid","Sousse",
+                     "Monastir","Mahdia","Sfax"]
+    south:
+      name: "Southern Zone"
+      governorates: ["Gafsa","Tozeur","Kebili","Gabès","Médenine","Tataouine"]
+
+# ── Time periods ──────────────────────────────────────────────────────────────
+time:
+  start:              "2002-04-01"
+  end:                "2024-12-01"
+  baseline_start:     "2004-01-01"
+  baseline_end:       "2009-12-01"
+  grace_end:          "2017-06-01"
+  grace_fo_start:     "2018-06-01"
+  gap_start:          "2017-07-01"    # GRACE inter-mission gap
+  gap_end:            "2018-05-01"
+  train_start:        "2002-01-01"
+  train_end:          "2022-12-01"    # for prediction models
+  val_start:          "2023-01-01"
+  val_end:            "2024-12-01"
+  class_train_end:    "2018-12-01"    # for classification RF
+  projection_start:   "2025-01-01"
+  projection_end:     "2030-12-01"
+
+# ── GRACE preprocessing ───────────────────────────────────────────────────────
+grace:
+  mascons:
+    - name: "CSR"
+      file_pattern: "CSR_GRACE_GRACE-FO_RL06_Mascons_all-corrections_v02.nc"
+    - name: "JPL"
+      file_pattern: "JPL_GRACE_GRACE-FO_RL06M_v02_*.nc"
+    - name: "GFZ"
+      file_pattern: "GFZ_GRACE_GRACE-FO_Level-3_version_0300_*.nc"
+  resolution: 0.25           # degrees
+  land_mask_threshold: 0.50  # minimum land fraction per pixel (-> 148 pixels)
+  min_wells_per_pixel: 3     # minimum DGRE wells for validation (-> 112 pixels)
+
+# ── Gap filling ───────────────────────────────────────────────────────────────
+gap_filling:
+  method: "lstm_bcnn"
+  train_years: [2002, 2016]
+  sequence_length: 24
+  n_epochs: 100
+  batch_size: 32
+  patience: 10
+  n_seeds: 5
+  compare_methods: ["linear", "arima", "kalman"]
+
+# ── Downscaling ───────────────────────────────────────────────────────────────
+downscaling:
+  target_resolution_km: 1
+  model: "random_forest"
+  train_end: "2018-12-01"
+  val_start: "2019-01-01"
+  n_estimators: [100, 200, 300]
+  max_depth: [5, 10, 15, 20]
+  min_samples_leaf: [1, 2, 4]
+  physical_consistency_threshold: 0.3   # cm EWH max aggregation error
+  benchmark_linear: true
+
+# ── NDVI emulator ─────────────────────────────────────────────────────────────
+ndvi_emulator:
+  model: "random_forest"
+  predictors: ["P", "T2m", "LAI"]
+  train_end: "2022-12-01"
+  val_start: "2023-01-01"
+  scenarios: ["ssp245", "ssp585"]
+  n_estimators: 200
+  max_depth: 10
+
+# ── Trend detection ───────────────────────────────────────────────────────────
+trend:
+  method: "modified_mann_kendall"
+  alpha: 0.05
+  max_lag: 12           # autocorrelation lags to correct
+  prewhitening: true    # Yue 2002
+  variables: ["gwsa", "precipitation", "temperature", "ndvi"]
+
+# ── Water stress classification ───────────────────────────────────────────────
+classification:
+  features: ["gwsa_anomaly", "precip_anomaly", "temp_anomaly", "ndvi_anomaly"]
+  # K-Means (exploratory)
+  kmeans:
+    k: 4
+    n_bootstrap: 1000
+    labels: ["low", "moderate", "high", "critical"]
+    thresholds_m_yr: [0.2, 0.5, 1.0]   # drawdown rate thresholds
+  # Random Forest (primary)
+  rf:
+    n_estimators_range: [50, 100, 200, 300, 500]
+    max_depth_range: [3, 5, 10, 15, 20]
+    min_samples_leaf_range: [1, 2, 5, 10]
+    cv: "loocv"
+    n_jobs: -1
+    random_state: 42
+
+# ── Prediction ────────────────────────────────────────────────────────────────
+prediction:
+  scenarios: ["ssp245", "ssp585"]
+  gcms: ["IPSL-CM6A-LR", "MPI-ESM1-2-HR", "EC-Earth3",
+         "CNRM-CM6-1", "MRI-ESM2-0", "ACCESS-CM2"]
+  uncertainty_interval: 0.90   # 90% prediction interval
+
+  # SARIMAX baseline
+  sarimax:
+    order: [1, 1, 1]
+    seasonal_order: [1, 1, 1, 12]
+
+  # LSTM
+  lstm:
+    sequence_length: 24
+    n_features: 16
+    layers: [64, 32]
+    dropout: 0.2
+    l2_lambda: 0.0001
+    grad_clip_norm: 1.0
+    n_epochs: 100
+    batch_size: 32
+    patience: 10
+    optimizer: "adam"
+    loss: "mse"
+    n_seeds: 10
+    optuna_trials: 50
+    cv_folds: 5
+
+  # XGBoost
+  xgboost:
+    window_size: 12
+    n_features: 16
+    cv_folds: 5
+    param_grid:
+      n_estimators: [100, 200, 500]
+      max_depth: [3, 5, 7]
+      learning_rate: [0.01, 0.05, 0.1]
+      subsample: [0.8, 1.0]
+      colsample_bytree: [0.8, 1.0]
+
+# ── CMIP6 bias correction ─────────────────────────────────────────────────────
+bias_correction:
+  method: "quantile_mapping"
+  reference: "era5"
+  apply_per: ["month", "zone", "variable"]
+
+# ── Dask cluster ──────────────────────────────────────────────────────────────
+dask:
+  n_workers: 4          # adjust to your machine
+  threads_per_worker: 2
+  memory_limit: "8GB"   # per worker
+
+# ── Reproducibility ───────────────────────────────────────────────────────────
+random_state: 42
