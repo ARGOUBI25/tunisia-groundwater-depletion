@@ -1,1 +1,566 @@
-IyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyAwNF9mZWF0dXJlX2VuZ2luZWVyaW5nLnB5CiMgVHVuaXNpYSBHcm91bmR3YXRlciBEZXBsZXRpb24gU3R1ZHkKIyBNT0RVTEUgMyDigJQgRmVhdHVyZSBFbmdpbmVlcmluZwojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIE1ldGhvZG9sb2d5IChTZWN0aW9uIDIuNCk6CiMgICBCdWlsZHMgdGhlIG1hc3RlciBmZWF0dXJlIG1hdHJpeCB1c2VkIGJ5IHNjcmlwdHMgMDYtMDk6CiMgICAtIEdXU0EgYW5vbWFseSAoZnJvbSAxa20gZG93bnNjYWxlZCkKIyAgIC0gUHJlY2lwaXRhdGlvbiBhbm9tYWx5IChFUkE1LCBTUEktMyBhbmQgU1BJLTEyKQojICAgLSBUZW1wZXJhdHVyZSBhbm9tYWx5IChFUkE1KQojICAgLSBORFZJIGFub21hbHkgKE1PRElTKQojICAgLSBTZWFzb25hbCBlbmNvZGluZ3MgKG1vbnRoX3NpbiwgbW9udGhfY29zKQojICAgLSBMYWdnZWQgZmVhdHVyZXMgKEdXU0EgdC0xLi50LTEyLCBQIHQtMS4udC0zKQojICAgLSBSb2xsaW5nIHN0YXRpc3RpY3MgKDMtbW9udGgsIDYtbW9udGgsIDEyLW1vbnRoIG1lYW5zKQojICAgLSBab25lIGR1bW1pZXMKIwojIElucHV0czoKIyAgIG91dHB1dHMvcHJvY2Vzc2VkL2d3c2FfMWttX3pvbmVzLmNzdgojICAgb3V0cHV0cy9wcm9jZXNzZWQvZ3dzYV96b25lc19nYXBfZmlsbGVkLmNzdgojICAgZGF0YS9lcmE1L2VyYTVfcHJlY2lwXyoubmMKIyAgIGRhdGEvZXJhNS9lcmE1X3QybV8qLm5jCiMgICBkYXRhL21vZGlzL01PRDEzQTMuMDYxXzFrbV9haWQwMDAxLm5jCiMKIyBPdXRwdXRzOgojICAgb3V0cHV0cy9wcm9jZXNzZWQvZmVhdHVyZXNfbWFzdGVyLmNzdiAgIChhbGwgem9uZXMsIGFsbCBtb250aHMpCiMgICBvdXRwdXRzL3Byb2Nlc3NlZC9mZWF0dXJlc19ub3J0aC5jc3YKIyAgIG91dHB1dHMvcHJvY2Vzc2VkL2ZlYXR1cmVzX2NlbnRyYWwuY3N2CiMgICBvdXRwdXRzL3Byb2Nlc3NlZC9mZWF0dXJlc19zb3V0aC5jc3YKIyAgIG91dHB1dHMvcmVzdWx0cy9mZWF0dXJlX3N0YXRzLmNzdgojICAgb3V0cHV0cy9maWd1cmVzLzA0X2ZlYXR1cmVfY29ycmVsYXRpb25zLnBuZwojICAgb3V0cHV0cy9maWd1cmVzLzA0X2ZlYXR1cmVfdGltZXNlcmllcy5wbmcKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmltcG9ydCBvcwppbXBvcnQgc3lzCmltcG9ydCBsb2dnaW5nCmltcG9ydCB3YXJuaW5ncwppbXBvcnQgeWFtbAppbXBvcnQgbnVtcHkgYXMgbnAKaW1wb3J0IHBhbmRhcyBhcyBwZAppbXBvcnQgeGFycmF5IGFzIHhyCmZyb20gcGF0aGxpYiBpbXBvcnQgUGF0aApmcm9tIHNjaXB5IGltcG9ydCBzdGF0cwoKd2FybmluZ3MuZmlsdGVyd2FybmluZ3MoJ2lnbm9yZScpCmltcG9ydCBpbwpzeXMuc3Rkb3V0ID0gaW8uVGV4dElPV3JhcHBlcihzeXMuc3Rkb3V0LmJ1ZmZlciwgZW5jb2Rpbmc9J3V0Zi04JywgZXJyb3JzPSdyZXBsYWNlJykKCkJBU0UgPSBvcy5wYXRoLmRpcm5hbWUob3MucGF0aC5kaXJuYW1lKG9zLnBhdGguYWJzcGF0aChfX2ZpbGVfXykpKQpvcy5jaGRpcihCQVNFKQoKd2l0aCBvcGVuKCdjb25maWcueWFtbCcsICdyJywgZW5jb2Rpbmc9J3V0Zi04JykgYXMgZjoKICAgIENGRyA9IHlhbWwuc2FmZV9sb2FkKGYpCgpPVVRfUFJPQyA9IFBhdGgoQ0ZHWydwYXRocyddWydvdXRwdXRzJ11bJ3Byb2Nlc3NlZCddKQpPVVRfUkVTICA9IFBhdGgoQ0ZHWydwYXRocyddWydvdXRwdXRzJ11bJ3Jlc3VsdHMnXSkKT1VUX0ZJRyAgPSBQYXRoKENGR1sncGF0aHMnXVsnb3V0cHV0cyddWydmaWd1cmVzJ10pCk9VVF9MT0cgID0gUGF0aChDRkdbJ3BhdGhzJ11bJ291dHB1dHMnXVsnbG9ncyddKQpmb3IgcCBpbiBbT1VUX1BST0MsIE9VVF9SRVMsIE9VVF9GSUcsIE9VVF9MT0ddOgogICAgcC5ta2RpcihwYXJlbnRzPVRydWUsIGV4aXN0X29rPVRydWUpCgpsb2dnaW5nLmJhc2ljQ29uZmlnKAogICAgbGV2ZWw9bG9nZ2luZy5JTkZPLAogICAgZm9ybWF0PSclKGFzY3RpbWUpcyBbJShsZXZlbG5hbWUpc10gJShtZXNzYWdlKXMnLAogICAgaGFuZGxlcnM9WwogICAgICAgIGxvZ2dpbmcuRmlsZUhhbmRsZXIoT1VUX0xPRyAvICcwNF9mZWF0dXJlX2VuZ2luZWVyaW5nLmxvZycsIGVuY29kaW5nPSd1dGYtOCcpLAogICAgICAgIGxvZ2dpbmcuU3RyZWFtSGFuZGxlcihzeXMuc3Rkb3V0KQogICAgXQopCmxvZyA9IGxvZ2dpbmcuZ2V0TG9nZ2VyKF9fbmFtZV9fKQpTRVAgPSAnPScgKiA2MAoKQkFTRUxJTkVfU1RBUlQgPSBwZC5UaW1lc3RhbXAoQ0ZHWyd0aW1lJ11bJ2Jhc2VsaW5lX3N0YXJ0J10pCkJBU0VMSU5FX0VORCAgID0gcGQuVGltZXN0YW1wKENGR1sndGltZSddWydiYXNlbGluZV9lbmQnXSkKWk9ORVMgPSBbJ25vcnRoJywgJ2NlbnRyYWwnLCAnc291dGgnXQoKTEFUX1pPTkUgPSB7CiAgICAnbm9ydGgnICA6ICgzNC4wLCAzNy41KSwKICAgICdjZW50cmFsJzogKDMyLjAsIDM0LjApLAogICAgJ3NvdXRoJyAgOiAoMzAuMCwgMzIuMCksCn0KTE9OX01JTiA9IENGR1snc3R1ZHlfYXJlYSddWydsb25fbWluJ10KTE9OX01BWCA9IENGR1snc3R1ZHlfYXJlYSddWydsb25fbWF4J10KTEFUX01JTiA9IENGR1snc3R1ZHlfYXJlYSddWydsYXRfbWluJ10KTEFUX01BWCA9IENGR1snc3R1ZHlfYXJlYSddWydsYXRfbWF4J10KCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIExPQURFUlMKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmRlZiBsb2FkX2d3c2Ffem9uZXMoKToKICAgICIiIkxvYWQgem9uZS1tZWFuIEdXU0EgZnJvbSAxa20gZ3JpZCAocHJlZmVycmVkKSBvciBnYXAtZmlsbGVkIDAuMjVkZWcuIiIiCiAgICBwYXRoXzFrbSA9IE9VVF9QUk9DIC8gJ2d3c2FfMWttX3pvbmVzLmNzdicKICAgIHBhdGhfZ2YgID0gT1VUX1BST0MgLyAnZ3dzYV96b25lc19nYXBfZmlsbGVkLmNzdicKCiAgICBpZiBwYXRoXzFrbS5leGlzdHMoKToKICAgICAgICBkZiA9IHBkLnJlYWRfY3N2KHBhdGhfMWttLCBwYXJzZV9kYXRlcz1bJ3RpbWUnXSwgaW5kZXhfY29sPSd0aW1lJykKICAgICAgICBkZi5pbmRleCA9IGRmLmluZGV4LnRvX3BlcmlvZCgnTScpLnRvX3RpbWVzdGFtcCgpCiAgICAgICAgZGYgPSBkZlt+ZGYuaW5kZXguZHVwbGljYXRlZChrZWVwPSdmaXJzdCcpXS5zb3J0X2luZGV4KCkKICAgICAgICAjIFJlbmFtZSBjb2x1bW5zIHRvIHN0YW5kYXJkIG5hbWVzCiAgICAgICAgcmVuYW1lID0ge30KICAgICAgICBmb3IgY29sIGluIGRmLmNvbHVtbnM6CiAgICAgICAgICAgIGZvciB6IGluIFpPTkVTOgogICAgICAgICAgICAgICAgaWYgeiBpbiBjb2wubG93ZXIoKToKICAgICAgICAgICAgICAgICAgICByZW5hbWVbY29sXSA9IGYnZ3dzYV97en0nCiAgICAgICAgZGYgPSBkZi5yZW5hbWUoY29sdW1ucz1yZW5hbWUpCiAgICAgICAgbG9nLmluZm8oZiIgIEdXU0EgMWttIHpvbmVzIGxvYWRlZDoge2RmLnNoYXBlfSwgY29sczoge2xpc3QoZGYuY29sdW1ucyl9IikKICAgICAgICByZXR1cm4gZGYKCiAgICBlbGlmIHBhdGhfZ2YuZXhpc3RzKCk6CiAgICAgICAgZGYgPSBwZC5yZWFkX2NzdihwYXRoX2dmLCBwYXJzZV9kYXRlcz1bMF0sIGluZGV4X2NvbD0wKQogICAgICAgIGRmLmluZGV4ID0gZGYuaW5kZXgudG9fcGVyaW9kKCdNJykudG9fdGltZXN0YW1wKCkKICAgICAgICBkZi5jb2x1bW5zID0gW2YnZ3dzYV97en0nIGZvciB6IGluIFpPTkVTWzpsZW4oZGYuY29sdW1ucyldXQogICAgICAgIGxvZy5pbmZvKGYiICBHV1NBIGdhcC1maWxsZWQgem9uZXMgbG9hZGVkOiB7ZGYuc2hhcGV9IikKICAgICAgICByZXR1cm4gZGYKCiAgICBlbHNlOgogICAgICAgIHJhaXNlIEZpbGVOb3RGb3VuZEVycm9yKCJObyBHV1NBIHpvbmUgQ1NWIGZvdW5kLiBSdW4gc2NyaXB0cyAwMS0wMyBmaXJzdC4iKQoKCmRlZiBsb2FkX2VyYTVfem9uZV9tZWFucygpOgogICAgIiIiTG9hZCBFUkE1IFAgYW5kIFQybSwgY29tcHV0ZSB6b25lIG1lYW5zLiIiIgogICAgZXJhNV9kaXIgPSBQYXRoKENGR1sncGF0aHMnXVsnZGF0YSddWydlcmE1J10pCiAgICByZXN1bHQgPSB7fQoKICAgIGZvciB2YXIsIGtleSBpbiBbKCdwcmVjaXAnLCAnUCcpLCAoJ3QybScsICdUMm0nKV06CiAgICAgICAgZmlsZXMgPSBzb3J0ZWQoZXJhNV9kaXIuZ2xvYihmJ2VyYTVfe3Zhcn1fKi5uYycpKQogICAgICAgIGlmIG5vdCBmaWxlczoKICAgICAgICAgICAgbG9nLndhcm5pbmcoZiIgIEVSQTUge3Zhcn0gbm90IGZvdW5kIikKICAgICAgICAgICAgcmVzdWx0W2tleV0gPSBOb25lCiAgICAgICAgICAgIGNvbnRpbnVlCgogICAgICAgIGRzID0geHIub3Blbl9tZmRhdGFzZXQoZmlsZXMsIGNvbWJpbmU9J2J5X2Nvb3JkcycpCiAgICAgICAgdm5hbWUgPSBbdiBmb3IgdiBpbiBkcy5kYXRhX3ZhcnMgaWYgdiBub3QgaW4gKCdsb25naXR1ZGUnLCdsYXRpdHVkZScsJ3RpbWUnKV0KICAgICAgICBpZiBub3Qgdm5hbWU6CiAgICAgICAgICAgIHZuYW1lID0gbGlzdChkcy5kYXRhX3ZhcnMpCiAgICAgICAgZGEgPSBkc1t2bmFtZVswXV0KCiAgICAgICAgbGF0X2RpbSA9ICdsYXRpdHVkZScgaWYgJ2xhdGl0dWRlJyBpbiBkYS5kaW1zIGVsc2UgJ2xhdCcKICAgICAgICBsb25fZGltID0gJ2xvbmdpdHVkZScgaWYgJ2xvbmdpdHVkZScgaW4gZGEuZGltcyBlbHNlICdsb24nCgogICAgICAgICMgSGFuZGxlIGRlc2NlbmRpbmcgbGF0aXR1ZGUKICAgICAgICBsYXRfdmFscyA9IGRhW2xhdF9kaW1dLnZhbHVlcwogICAgICAgIGlmIGxhdF92YWxzWzBdID4gbGF0X3ZhbHNbLTFdOgogICAgICAgICAgICBkYSA9IGRhLnNlbCgqKntsYXRfZGltOiBzbGljZShMQVRfTUFYLCBMQVRfTUlOKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9uX2RpbTogc2xpY2UoTE9OX01JTiwgTE9OX01BWCl9KQogICAgICAgIGVsc2U6CiAgICAgICAgICAgIGRhID0gZGEuc2VsKCoqe2xhdF9kaW06IHNsaWNlKExBVF9NSU4sIExBVF9NQVgpLAogICAgICAgICAgICAgICAgICAgICAgICAgICBsb25fZGltOiBzbGljZShMT05fTUlOLCBMT05fTUFYKX0pCgogICAgICAgICMgVW5pdCBjb252ZXJzaW9ucwogICAgICAgIGlmIGtleSA9PSAnUCc6CiAgICAgICAgICAgIGRhID0gZGEgKiAxMDAwICAjIG0gLT4gbW0KICAgICAgICBlbGlmIGtleSA9PSAnVDJtJyBhbmQgZmxvYXQoZGEubWVhbigpKSA+IDEwMDoKICAgICAgICAgICAgZGEgPSBkYSAtIDI3My4xNSAgIyBLIC0+IEMKCiAgICAgICAgIyBab25lIG1lYW5zCiAgICAgICAgem9uZV9zZXJpZXMgPSB7fQogICAgICAgIGZvciB6b25lLCAobGF0X2xvLCBsYXRfaGkpIGluIExBVF9aT05FLml0ZW1zKCk6CiAgICAgICAgICAgIGlmIGxhdF92YWxzWzBdID4gbGF0X3ZhbHNbLTFdOgogICAgICAgICAgICAgICAgZGFfeiA9IGRhLnNlbCgqKntsYXRfZGltOiBzbGljZShsYXRfaGksIGxhdF9sbyksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvbl9kaW06IHNsaWNlKExPTl9NSU4sIExPTl9NQVgpfSkKICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgIGRhX3ogPSBkYS5zZWwoKip7bGF0X2RpbTogc2xpY2UobGF0X2xvLCBsYXRfaGkpLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBsb25fZGltOiBzbGljZShMT05fTUlOLCBMT05fTUFYKX0pCiAgICAgICAgICAgIHRzID0gZGFfei5tZWFuKGRpbT1bbGF0X2RpbSwgbG9uX2RpbV0pLnRvX3NlcmllcygpCiAgICAgICAgICAgIHRzLmluZGV4ID0gcGQuRGF0ZXRpbWVJbmRleChbCiAgICAgICAgICAgICAgICBwZC5UaW1lc3RhbXAoc3RyKHQpWzoxMF0pIGZvciB0IGluIHRzLmluZGV4CiAgICAgICAgICAgIF0pLnRvX3BlcmlvZCgnTScpLnRvX3RpbWVzdGFtcCgpCiAgICAgICAgICAgIHRzID0gdHNbfnRzLmluZGV4LmR1cGxpY2F0ZWQoa2VlcD0nZmlyc3QnKV0uc29ydF9pbmRleCgpCiAgICAgICAgICAgIHpvbmVfc2VyaWVzW3pvbmVdID0gdHMKCiAgICAgICAgcmVzdWx0W2tleV0gPSB6b25lX3NlcmllcwogICAgICAgIGxvZy5pbmZvKGYiICBFUkE1IHtrZXl9OiB7bGVuKHpvbmVfc2VyaWVzWydub3J0aCddKX0gbW9udGhzLCAiCiAgICAgICAgICAgICAgICAgZiJub3J0aCBtZWFuPXt6b25lX3Nlcmllc1snbm9ydGgnXS5tZWFuKCk6LjJmfSIpCgogICAgcmV0dXJuIHJlc3VsdAoKCmRlZiBsb2FkX25kdmlfem9uZV9tZWFucygpOgogICAgIiIiTG9hZCBNT0RJUyBORFZJIHpvbmUgbWVhbnMuIiIiCiAgICBtb2Rpc19kaXIgPSBQYXRoKENGR1sncGF0aHMnXVsnZGF0YSddWydtb2RpcyddKQogICAgbmNfZmlsZXMgID0gbGlzdChtb2Rpc19kaXIuZ2xvYignKi5uYycpKQoKICAgIGlmIG5vdCBuY19maWxlczoKICAgICAgICBsb2cud2FybmluZygiICBNT0RJUyBub3QgZm91bmQg4oCUIE5EVkkgd2lsbCBiZSBzeW50aGV0aWMiKQogICAgICAgIHJldHVybiBOb25lCgogICAgZHMgPSB4ci5vcGVuX2RhdGFzZXQobmNfZmlsZXNbMF0pCiAgICBuZHZpX3ZhciA9IG5leHQoKHYgZm9yIHYgaW4gZHMuZGF0YV92YXJzIGlmICdORFZJJyBpbiB2KSwgbGlzdChkcy5kYXRhX3ZhcnMpWzBdKQogICAgZGEgPSBkc1tuZHZpX3Zhcl0KCiAgICAjIE1hc2sgbm9kYXRhICh4YXJyYXkgYWxyZWFkeSBhcHBsaWVkIHNjYWxlX2ZhY3RvcikKICAgIG5vZGF0YXZhbCA9IGRhLmF0dHJzLmdldCgnbm9kYXRhdmFscycsIC0zMDAwLjApCiAgICBkYSA9IGRhLndoZXJlKGRhICE9IG5vZGF0YXZhbCkKICAgIGRhID0gZGEud2hlcmUoKGRhID49IC0wLjIpICYgKGRhIDw9IDEuMCkpCgogICAgIyBOb3JtYWxpemUgdGltZQogICAgdHJ5OgogICAgICAgIG5ld190aW1lcyA9IHBkLkRhdGV0aW1lSW5kZXgoWwogICAgICAgICAgICBwZC5UaW1lc3RhbXAoc3RyKHQpWzoxMF0pIGZvciB0IGluIGRhLnRpbWUudmFsdWVzCiAgICAgICAgXSkudG9fcGVyaW9kKCdNJykudG9fdGltZXN0YW1wKCkKICAgICAgICBkYSA9IGRhLmFzc2lnbl9jb29yZHModGltZT1uZXdfdGltZXMpCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgbG9nLndhcm5pbmcoZiIgIE1PRElTIHRpbWUgY29udmVyc2lvbjoge2V9IikKCiAgICAjIElkZW50aWZ5IHNwYXRpYWwgZGltcwogICAgbGF0X2RpbSA9IG5leHQoKGQgZm9yIGQgaW4gZGEuZGltcyBpZiBkIGluICgnbGF0JywnbGF0aXR1ZGUnLCdZRGltJywneScpKSwgTm9uZSkKICAgIGxvbl9kaW0gPSBuZXh0KChkIGZvciBkIGluIGRhLmRpbXMgaWYgZCBpbiAoJ2xvbicsJ2xvbmdpdHVkZScsJ1hEaW0nLCd4JykpLCBOb25lKQoKICAgIHpvbmVfc2VyaWVzID0ge30KICAgIGZvciB6b25lLCAobGF0X2xvLCBsYXRfaGkpIGluIExBVF9aT05FLml0ZW1zKCk6CiAgICAgICAgaWYgbGF0X2RpbSBhbmQgbG9uX2RpbToKICAgICAgICAgICAgbGF0X3ZhbHMgPSBkYVtsYXRfZGltXS52YWx1ZXMKICAgICAgICAgICAgaWYgbGF0X3ZhbHNbMF0gPiBsYXRfdmFsc1stMV06CiAgICAgICAgICAgICAgICBkYV96ID0gZGEuc2VsKCoqe2xhdF9kaW06IHNsaWNlKGxhdF9oaSwgbGF0X2xvKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9uX2RpbTogc2xpY2UoTE9OX01JTiwgTE9OX01BWCl9KQogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgZGFfeiA9IGRhLnNlbCgqKntsYXRfZGltOiBzbGljZShsYXRfbG8sIGxhdF9oaSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGxvbl9kaW06IHNsaWNlKExPTl9NSU4sIExPTl9NQVgpfSkKICAgICAgICAgICAgdHMgPSBkYV96Lm1lYW4oZGltPVtsYXRfZGltLCBsb25fZGltXSkudG9fc2VyaWVzKCkKICAgICAgICBlbHNlOgogICAgICAgICAgICB0cyA9IGRhLm1lYW4oZGltPVtkIGZvciBkIGluIGRhLmRpbXMgaWYgZCAhPSAndGltZSddKS50b19zZXJpZXMoKQoKICAgICAgICB0cy5pbmRleCA9IHBkLkRhdGV0aW1lSW5kZXgodHMuaW5kZXgpLnRvX3BlcmlvZCgnTScpLnRvX3RpbWVzdGFtcCgpCiAgICAgICAgdHMgPSB0c1t+dHMuaW5kZXguZHVwbGljYXRlZChrZWVwPSdmaXJzdCcpXS5zb3J0X2luZGV4KCkuZHJvcG5hKCkKICAgICAgICB6b25lX3Nlcmllc1t6b25lXSA9IHRzCgogICAgbG9nLmluZm8oZiIgIE1PRElTIE5EVkk6IHtsZW4oem9uZV9zZXJpZXNbJ25vcnRoJ10pfSBtb250aHMsICIKICAgICAgICAgICAgIGYibm9ydGggbWVhbj17em9uZV9zZXJpZXNbJ25vcnRoJ10ubWVhbigpOi4zZn0iKQogICAgcmV0dXJuIHpvbmVfc2VyaWVzCgoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBGRUFUVVJFIEJVSUxERVJTCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpkZWYgY29tcHV0ZV9hbm9tYWx5KHNlcmllcywgYmFzZWxpbmVfc3RhcnQ9QkFTRUxJTkVfU1RBUlQsIGJhc2VsaW5lX2VuZD1CQVNFTElORV9FTkQpOgogICAgIiIiQ29tcHV0ZSBtb250aGx5IGFub21hbHkgcmVsYXRpdmUgdG8gMjAwNC0yMDA5IGJhc2VsaW5lLiIiIgogICAgYmFzZWxpbmUgPSBzZXJpZXNbKHNlcmllcy5pbmRleCA+PSBiYXNlbGluZV9zdGFydCkgJiAoc2VyaWVzLmluZGV4IDw9IGJhc2VsaW5lX2VuZCldCiAgICBtb250aGx5X21lYW4gPSBiYXNlbGluZS5ncm91cGJ5KGJhc2VsaW5lLmluZGV4Lm1vbnRoKS5tZWFuKCkKICAgIGFub21hbHkgPSBzZXJpZXMuY29weSgpCiAgICBmb3IgbSBpbiByYW5nZSgxLCAxMyk6CiAgICAgICAgbWFzayA9IHNlcmllcy5pbmRleC5tb250aCA9PSBtCiAgICAgICAgaWYgbSBpbiBtb250aGx5X21lYW4uaW5kZXg6CiAgICAgICAgICAgIGFub21hbHlbbWFza10gPSBzZXJpZXNbbWFza10gLSBtb250aGx5X21lYW5bbV0KICAgIHJldHVybiBhbm9tYWx5CgoKZGVmIGNvbXB1dGVfc3BpKHByZWNpcF9zZXJpZXMsIHNjYWxlPTMpOgogICAgIiIiCiAgICBTdGFuZGFyZGl6ZWQgUHJlY2lwaXRhdGlvbiBJbmRleCAoU1BJKSBhdCBnaXZlbiBzY2FsZSAobW9udGhzKS4KICAgIFVzZXMgZ2FtbWEgZGlzdHJpYnV0aW9uIGZpdHRpbmcgcGVyIGNhbGVuZGFyIG1vbnRoLgogICAgIiIiCiAgICBzcGkgPSBwZC5TZXJpZXMobnAubmFuLCBpbmRleD1wcmVjaXBfc2VyaWVzLmluZGV4KQogICAgcCA9IHByZWNpcF9zZXJpZXMucm9sbGluZyh3aW5kb3c9c2NhbGUsIG1pbl9wZXJpb2RzPXNjYWxlKS5zdW0oKQoKICAgIGZvciBtIGluIHJhbmdlKDEsIDEzKToKICAgICAgICBtYXNrID0gcC5pbmRleC5tb250aCA9PSBtCiAgICAgICAgdmFscyA9IHBbbWFza10uZHJvcG5hKCkKICAgICAgICBpZiBsZW4odmFscykgPCAxMDoKICAgICAgICAgICAgY29udGludWUKICAgICAgICB2YWxzX3BvcyA9IHZhbHNbdmFscyA+IDBdCiAgICAgICAgaWYgbGVuKHZhbHNfcG9zKSA8IDU6CiAgICAgICAgICAgIHNwaVttYXNrXSA9IDAuMAogICAgICAgICAgICBjb250aW51ZQogICAgICAgIHRyeToKICAgICAgICAgICAgc2hhcGUsIGxvYywgc2NhbGVfcCA9IHN0YXRzLmdhbW1hLmZpdCh2YWxzX3BvcywgZmxvYz0wKQogICAgICAgICAgICBwcm9iID0gc3RhdHMuZ2FtbWEuY2RmKHZhbHMuY2xpcChsb3dlcj0xZS02KSwgc2hhcGUsIGxvYz0wLCBzY2FsZT1zY2FsZV9wKQogICAgICAgICAgICBwcm9iID0gbnAuY2xpcChwcm9iLCAxZS02LCAxIC0gMWUtNikKICAgICAgICAgICAgc3BpX3ZhbHMgPSBzdGF0cy5ub3JtLnBwZihwcm9iKQogICAgICAgICAgICBzcGlbdmFscy5pbmRleF0gPSBzcGlfdmFscwogICAgICAgIGV4Y2VwdCBFeGNlcHRpb246CiAgICAgICAgICAgIHNwaVttYXNrICYgfnNwaS5pc25hKCldID0gMC4wCgogICAgcmV0dXJuIHNwaS5jbGlwKC0zLCAzKQoKCmRlZiBidWlsZF96b25lX2ZlYXR1cmVzKHpvbmUsIGd3c2FfZGYsIGVyYTVfZGljdCwgbmR2aV9kaWN0KToKICAgICIiIkJ1aWxkIGNvbXBsZXRlIGZlYXR1cmUgbWF0cml4IGZvciBvbmUgem9uZS4iIiIKICAgIGd3c2FfY29sID0gZidnd3NhX3t6b25lfScKICAgIGlmIGd3c2FfY29sIG5vdCBpbiBnd3NhX2RmLmNvbHVtbnM6CiAgICAgICAgIyBUcnkgdG8gZmluZCBhIG1hdGNoaW5nIGNvbHVtbgogICAgICAgIG1hdGNoZXMgPSBbYyBmb3IgYyBpbiBnd3NhX2RmLmNvbHVtbnMgaWYgem9uZSBpbiBjLmxvd2VyKCldCiAgICAgICAgaWYgbm90IG1hdGNoZXM6CiAgICAgICAgICAgIGxvZy53YXJuaW5nKGYiICBObyBHV1NBIGNvbHVtbiBmb3Igem9uZT17em9uZX0iKQogICAgICAgICAgICByZXR1cm4gTm9uZQogICAgICAgIGd3c2FfY29sID0gbWF0Y2hlc1swXQoKICAgIGd3c2EgPSBnd3NhX2RmW2d3c2FfY29sXS5kcm9wbmEoKS5zb3J0X2luZGV4KCkKCiAgICAjIENvbW1vbiB0aW1lIGluZGV4CiAgICB0aW1lX2lkeCA9IGd3c2EuaW5kZXgKCiAgICAjIEdXU0EgYW5vbWFseQogICAgZ3dzYV9hbm9tID0gY29tcHV0ZV9hbm9tYWx5KGd3c2EpLnJlbmFtZSgnZ3dzYV9hbm9tYWx5JykKCiAgICAjIEVSQTUgUAogICAgaWYgZXJhNV9kaWN0LmdldCgnUCcpIGFuZCB6b25lIGluIGVyYTVfZGljdFsnUCddOgogICAgICAgIFAgPSBlcmE1X2RpY3RbJ1AnXVt6b25lXS5yZWluZGV4KHRpbWVfaWR4KS5mZmlsbCgpLmJmaWxsKCkKICAgIGVsc2U6CiAgICAgICAgIyBTeW50aGV0aWMKICAgICAgICBtID0gdGltZV9pZHgubW9udGgKICAgICAgICBQID0gcGQuU2VyaWVzKAogICAgICAgICAgICA1MCArIDMwICogbnAuY29zKDIqbnAucGkqKG0gLSAxKS8xMikgKiAoMSBpZiB6b25lPT0nbm9ydGgnIGVsc2UgMC41KSwKICAgICAgICAgICAgaW5kZXg9dGltZV9pZHgKICAgICAgICApCiAgICBQID0gUC5yZW5hbWUoJ3ByZWNpcF9tbScpCiAgICBQX2Fub20gPSBjb21wdXRlX2Fub21hbHkoUCkucmVuYW1lKCdwcmVjaXBfYW5vbWFseScpCiAgICBzcGkzICA9IGNvbXB1dGVfc3BpKFAsIHNjYWxlPTMpLnJlaW5kZXgodGltZV9pZHgpLnJlbmFtZSgnc3BpMycpCiAgICBzcGkxMiA9IGNvbXB1dGVfc3BpKFAsIHNjYWxlPTEyKS5yZWluZGV4KHRpbWVfaWR4KS5yZW5hbWUoJ3NwaTEyJykKCiAgICAjIEVSQTUgVDJtCiAgICBpZiBlcmE1X2RpY3QuZ2V0KCdUMm0nKSBhbmQgem9uZSBpbiBlcmE1X2RpY3RbJ1QybSddOgogICAgICAgIFQybSA9IGVyYTVfZGljdFsnVDJtJ11bem9uZV0ucmVpbmRleCh0aW1lX2lkeCkuZmZpbGwoKS5iZmlsbCgpCiAgICBlbHNlOgogICAgICAgIG0gPSB0aW1lX2lkeC5tb250aAogICAgICAgIFQybSA9IHBkLlNlcmllcygKICAgICAgICAgICAgMjIgKyAxMCAqIG5wLmNvcygyKm5wLnBpKihtIC0gNykvMTIpLAogICAgICAgICAgICBpbmRleD10aW1lX2lkeAogICAgICAgICkKICAgIFQybSA9IFQybS5yZW5hbWUoJ3QybV9jJykKICAgIFQybV9hbm9tID0gY29tcHV0ZV9hbm9tYWx5KFQybSkucmVuYW1lKCd0Mm1fYW5vbWFseScpCgogICAgIyBORFZJCiAgICBpZiBuZHZpX2RpY3QgYW5kIHpvbmUgaW4gbmR2aV9kaWN0OgogICAgICAgIG5kdmkgPSBuZHZpX2RpY3Rbem9uZV0ucmVpbmRleCh0aW1lX2lkeCkuZmZpbGwoKS5iZmlsbCgpCiAgICBlbHNlOgogICAgICAgIG0gPSB0aW1lX2lkeC5tb250aAogICAgICAgIHQgPSBucC5hcmFuZ2UobGVuKHRpbWVfaWR4KSkKICAgICAgICBuZHZpID0gcGQuU2VyaWVzKAogICAgICAgICAgICAwLjE4ICsgMC4wOCpucC5jb3MoMipucC5waSoobS0zKS8xMikgLSAwLjAwMDIqdCwKICAgICAgICAgICAgaW5kZXg9dGltZV9pZHgKICAgICAgICApCiAgICBuZHZpID0gbmR2aS5yZW5hbWUoJ25kdmknKQogICAgbmR2aV9hbm9tID0gY29tcHV0ZV9hbm9tYWx5KG5kdmkpLnJlbmFtZSgnbmR2aV9hbm9tYWx5JykKCiAgICAjIFNlYXNvbmFsIGVuY29kaW5nCiAgICBtb250aCAgICAgPSB0aW1lX2lkeC5tb250aAogICAgbW9udGhfc2luID0gcGQuU2VyaWVzKG5wLnNpbigyKm5wLnBpKm1vbnRoLzEyKSwgaW5kZXg9dGltZV9pZHgsIG5hbWU9J21vbnRoX3NpbicpCiAgICBtb250aF9jb3MgPSBwZC5TZXJpZXMobnAuY29zKDIqbnAucGkqbW9udGgvMTIpLCBpbmRleD10aW1lX2lkeCwgbmFtZT0nbW9udGhfY29zJykKICAgIHllYXJfbm9ybSA9IHBkLlNlcmllcygodGltZV9pZHgueWVhciAtIDIwMDIpIC8gMjIuMCwgaW5kZXg9dGltZV9pZHgsIG5hbWU9J3llYXJfbm9ybScpCgogICAgIyBMYWdnZWQgR1dTQSAodC0xIHRvIHQtMTIpCiAgICBsYWdfY29scyA9IHt9CiAgICBmb3IgbGFnIGluIHJhbmdlKDEsIDEzKToKICAgICAgICBsYWdfY29sc1tmJ2d3c2FfbGFne2xhZ30nXSA9IGd3c2Euc2hpZnQobGFnKQoKICAgICMgTGFnZ2VkIFAgKHQtMSB0byB0LTMpCiAgICBmb3IgbGFnIGluIHJhbmdlKDEsIDQpOgogICAgICAgIGxhZ19jb2xzW2YncHJlY2lwX2xhZ3tsYWd9J10gPSBQLnNoaWZ0KGxhZykKCiAgICAjIFJvbGxpbmcgbWVhbnMKICAgIHJvbGxfY29scyA9IHsKICAgICAgICAnZ3dzYV9yb2xsMycgOiBnd3NhLnJvbGxpbmcoMywgIG1pbl9wZXJpb2RzPTEpLm1lYW4oKSwKICAgICAgICAnZ3dzYV9yb2xsNicgOiBnd3NhLnJvbGxpbmcoNiwgIG1pbl9wZXJpb2RzPTEpLm1lYW4oKSwKICAgICAgICAnZ3dzYV9yb2xsMTInOiBnd3NhLnJvbGxpbmcoMTIsIG1pbl9wZXJpb2RzPTEpLm1lYW4oKSwKICAgICAgICAncHJlY2lwX3JvbGwzJyA6IFAucm9sbGluZygzLCAgbWluX3BlcmlvZHM9MSkubWVhbigpLAogICAgICAgICdwcmVjaXBfcm9sbDEyJzogUC5yb2xsaW5nKDEyLCBtaW5fcGVyaW9kcz0xKS5tZWFuKCksCiAgICB9CgogICAgIyBab25lIGR1bW15CiAgICB6b25lX2R1bW1pZXMgPSB7CiAgICAgICAgJ3pvbmVfbm9ydGgnICA6IGludCh6b25lID09ICdub3J0aCcpLAogICAgICAgICd6b25lX2NlbnRyYWwnOiBpbnQoem9uZSA9PSAnY2VudHJhbCcpLAogICAgICAgICd6b25lX3NvdXRoJyAgOiBpbnQoem9uZSA9PSAnc291dGgnKSwKICAgIH0KCiAgICAjIEFzc2VtYmxlCiAgICBkZiA9IHBkLmNvbmNhdChbCiAgICAgICAgZ3dzYS5yZW5hbWUoJ2d3c2EnKSwKICAgICAgICBnd3NhX2Fub20sCiAgICAgICAgUCwgUF9hbm9tLCBzcGkzLCBzcGkxMiwKICAgICAgICBUMm0sIFQybV9hbm9tLAogICAgICAgIG5kdmksIG5kdmlfYW5vbSwKICAgICAgICBtb250aF9zaW4sIG1vbnRoX2NvcywgeWVhcl9ub3JtLAogICAgICAgIHBkLkRhdGFGcmFtZShsYWdfY29scywgaW5kZXg9dGltZV9pZHgpLAogICAgICAgIHBkLkRhdGFGcmFtZShyb2xsX2NvbHMsIGluZGV4PXRpbWVfaWR4KSwKICAgIF0sIGF4aXM9MSkKCiAgICBmb3IgaywgdiBpbiB6b25lX2R1bW1pZXMuaXRlbXMoKToKICAgICAgICBkZltrXSA9IHYKCiAgICBkZlsnem9uZSddID0gem9uZQogICAgZGYuaW5kZXgubmFtZSA9ICd0aW1lJwoKICAgIGxvZy5pbmZvKGYiICBab25lIHt6b25lfToge2xlbihkZil9IHJvd3MsIHtsZW4oZGYuY29sdW1ucyl9IGZlYXR1cmVzIikKICAgIGxvZy5pbmZvKGYiICAgIEdXU0EgcmFuZ2U6IFt7Z3dzYS5taW4oKTouMmZ9LCB7Z3dzYS5tYXgoKTouMmZ9XSBjbSBFV0giKQogICAgbG9nLmluZm8oZiIgICAgUHJlY2lwIG1lYW46IHtQLm1lYW4oKTouMWZ9IG1tL21vbnRoIikKICAgIGxvZy5pbmZvKGYiICAgIE5EVkkgbWVhbjoge25kdmkubWVhbigpOi4zZn0iKQoKICAgIHJldHVybiBkZgoKCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgRElBR05PU1RJQ1MKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCmRlZiBmZWF0dXJlX3N0YXRzKGRmX2FsbCk6CiAgICAiIiJDb21wdXRlIHN1bW1hcnkgc3RhdGlzdGljcyBmb3IgYWxsIGZlYXR1cmVzLiIiIgogICAgbnVtZXJpY19jb2xzID0gZGZfYWxsLnNlbGVjdF9kdHlwZXMoaW5jbHVkZT1bbnAubnVtYmVyXSkuY29sdW1ucwogICAgc3RhdHNfZGYgPSBkZl9hbGxbbnVtZXJpY19jb2xzXS5kZXNjcmliZSgpLlQKICAgIHN0YXRzX2RmWydtaXNzaW5nX3BjdCddID0gZGZfYWxsW251bWVyaWNfY29sc10uaXNuYSgpLm1lYW4oKSAqIDEwMAogICAgc3RhdHNfZGZbJ3NrZXduZXNzJ10gICAgPSBkZl9hbGxbbnVtZXJpY19jb2xzXS5za2V3KCkKICAgIHJldHVybiBzdGF0c19kZgoKCmRlZiBwbG90X2NvcnJlbGF0aW9ucyhkZl9hbGwsIG91dF9wYXRoKToKICAgICIiIkZpZ3VyZSAwNGEg4oCUIENvcnJlbGF0aW9uIG1hdHJpeCBoZWF0bWFwLiIiIgogICAgaW1wb3J0IG1hdHBsb3RsaWIKICAgIG1hdHBsb3RsaWIudXNlKCdBZ2cnKQogICAgaW1wb3J0IG1hdHBsb3RsaWIucHlwbG90IGFzIHBsdAoKICAgIGtleV9jb2xzID0gWwogICAgICAgICdnd3NhJywgJ2d3c2FfYW5vbWFseScsICdwcmVjaXBfbW0nLCAncHJlY2lwX2Fub21hbHknLAogICAgICAgICdzcGkzJywgJ3NwaTEyJywgJ3QybV9jJywgJ3QybV9hbm9tYWx5JywgJ25kdmknLCAnbmR2aV9hbm9tYWx5JywKICAgICAgICAnZ3dzYV9sYWcxJywgJ2d3c2FfbGFnMycsICdnd3NhX2xhZzYnLCAnZ3dzYV9sYWcxMicsCiAgICAgICAgJ2d3c2Ffcm9sbDMnLCAnZ3dzYV9yb2xsMTInLAogICAgXQogICAgY29scyA9IFtjIGZvciBjIGluIGtleV9jb2xzIGlmIGMgaW4gZGZfYWxsLmNvbHVtbnNdCiAgICBjb3JyID0gZGZfYWxsW2NvbHNdLmNvcnIoKQoKICAgIGZpZywgYXggPSBwbHQuc3VicGxvdHMoZmlnc2l6ZT0oMTQsIDEyKSkKICAgIGltID0gYXguaW1zaG93KGNvcnIudmFsdWVzLCBjbWFwPSdSZEJ1X3InLCB2bWluPS0xLCB2bWF4PTEsIGFzcGVjdD0nYXV0bycpCiAgICBheC5zZXRfeHRpY2tzKHJhbmdlKGxlbihjb2xzKSkpCiAgICBheC5zZXRfeXRpY2tzKHJhbmdlKGxlbihjb2xzKSkpCiAgICBheC5zZXRfeHRpY2tsYWJlbHMoY29scywgcm90YXRpb249NDUsIGhhPSdyaWdodCcsIGZvbnRzaXplPTgpCiAgICBheC5zZXRfeXRpY2tsYWJlbHMoY29scywgZm9udHNpemU9OCkKCiAgICAjIEFkZCBjb3JyZWxhdGlvbiB2YWx1ZXMKICAgIGZvciBpIGluIHJhbmdlKGxlbihjb2xzKSk6CiAgICAgICAgZm9yIGogaW4gcmFuZ2UobGVuKGNvbHMpKToKICAgICAgICAgICAgdmFsID0gY29yci52YWx1ZXNbaSwgal0KICAgICAgICAgICAgY29sb3IgPSAnd2hpdGUnIGlmIGFicyh2YWwpID4gMC42IGVsc2UgJ2JsYWNrJwogICAgICAgICAgICBheC50ZXh0KGosIGksIGYne3ZhbDouMmZ9JywgaGE9J2NlbnRlcicsIHZhPSdjZW50ZXInLAogICAgICAgICAgICAgICAgICAgIGZvbnRzaXplPTYsIGNvbG9yPWNvbG9yKQoKICAgIHBsdC5jb2xvcmJhcihpbSwgYXg9YXgsIGxhYmVsPSdQZWFyc29uIHInLCBzaHJpbms9MC44KQogICAgYXguc2V0X3RpdGxlKCdGZWF0dXJlIENvcnJlbGF0aW9uIE1hdHJpeCDigJQgQWxsIFpvbmVzJywgZm9udHNpemU9MTMpCiAgICBwbHQudGlnaHRfbGF5b3V0KCkKICAgIGZpZy5zYXZlZmlnKG91dF9wYXRoLCBkcGk9MTUwLCBiYm94X2luY2hlcz0ndGlnaHQnKQogICAgcGx0LmNsb3NlKGZpZykKICAgIGxvZy5pbmZvKGYnICBbT0tdIHtvdXRfcGF0aH0nKQoKCmRlZiBwbG90X3RpbWVzZXJpZXMoZGZfYWxsLCBvdXRfcGF0aCk6CiAgICAiIiJGaWd1cmUgMDRiIOKAlCBLZXkgZmVhdHVyZSB0aW1lIHNlcmllcyBieSB6b25lLiIiIgogICAgaW1wb3J0IG1hdHBsb3RsaWIKICAgIG1hdHBsb3RsaWIudXNlKCdBZ2cnKQogICAgaW1wb3J0IG1hdHBsb3RsaWIucHlwbG90IGFzIHBsdAoKICAgIGZpZywgYXhlcyA9IHBsdC5zdWJwbG90cyg0LCAxLCBmaWdzaXplPSgxNCwgMTYpLCBzaGFyZXg9VHJ1ZSkKICAgIGNvbG9ycyA9IHsnbm9ydGgnOiAnIzFmNzdiNCcsICdjZW50cmFsJzogJyNmZjdmMGUnLCAnc291dGgnOiAnIzJjYTAyYyd9CgogICAgZmVhdHVyZXMgPSBbJ2d3c2EnLCAncHJlY2lwX21tJywgJ3QybV9jJywgJ25kdmknXQogICAgbGFiZWxzICAgPSBbJ0dXU0EgKGNtIEVXSCknLCAnUHJlY2lwIChtbS9tb250aCknLCAnVDJtIChDKScsICdORFZJJ10KCiAgICBmb3IgYXgsIGZlYXQsIGxhYmVsIGluIHppcChheGVzLCBmZWF0dXJlcywgbGFiZWxzKToKICAgICAgICBmb3Igem9uZSBpbiBaT05FUzoKICAgICAgICAgICAgZGZfeiA9IGRmX2FsbFtkZl9hbGxbJ3pvbmUnXSA9PSB6b25lXQogICAgICAgICAgICBpZiBmZWF0IGluIGRmX3ouY29sdW1uczoKICAgICAgICAgICAgICAgIGF4LnBsb3QoZGZfei5pbmRleCwgZGZfeltmZWF0XSwKICAgICAgICAgICAgICAgICAgICAgICAgbGFiZWw9em9uZS5jYXBpdGFsaXplKCksIGNvbG9yPWNvbG9yc1t6b25lXSwKICAgICAgICAgICAgICAgICAgICAgICAgbGluZXdpZHRoPTAuOSwgYWxwaGE9MC44NSkKICAgICAgICBheC5zZXRfeWxhYmVsKGxhYmVsLCBmb250c2l6ZT05KQogICAgICAgIGF4LmxlZ2VuZChmb250c2l6ZT04LCBsb2M9J3VwcGVyIHJpZ2h0JykKICAgICAgICBheC5ncmlkKFRydWUsIGFscGhhPTAuMykKICAgICAgICBpZiBmZWF0ID09ICdnd3NhJzoKICAgICAgICAgICAgYXguYXhobGluZSgwLCBjb2xvcj0naycsIGxpbmV3aWR0aD0wLjUsIGxpbmVzdHlsZT0nLS0nKQoKICAgIGF4ZXNbLTFdLnNldF94bGFiZWwoJ0RhdGUnKQogICAgZmlnLnN1cHRpdGxlKCdLZXkgRmVhdHVyZXMgVGltZSBTZXJpZXMg4oCUIFR1bmlzaWEgWm9uZXMgKDIwMDItMjAyNCknLCBmb250c2l6ZT0xMykKICAgIHBsdC50aWdodF9sYXlvdXQoKQogICAgZmlnLnNhdmVmaWcob3V0X3BhdGgsIGRwaT0xNTAsIGJib3hfaW5jaGVzPSd0aWdodCcpCiAgICBwbHQuY2xvc2UoZmlnKQogICAgbG9nLmluZm8oZicgIFtPS10ge291dF9wYXRofScpCgoKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBNQUlOCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CgpkZWYgbWFpbigpOgogICAgcHJpbnQoU0VQKQogICAgcHJpbnQoJzA0X2ZlYXR1cmVfZW5naW5lZXJpbmcucHknKQogICAgcHJpbnQoU0VQKQoKICAgICMgU1RFUCAxIOKAlCBMb2FkIEdXU0EKICAgIGxvZy5pbmZvKCdbU1RFUCAxXSBDaGFyZ2VtZW50IEdXU0Egem9uZXMgLi4uJykKICAgIGd3c2FfZGYgPSBsb2FkX2d3c2Ffem9uZXMoKQoKICAgICMgU1RFUCAyIOKAlCBMb2FkIEVSQTUKICAgIGxvZy5pbmZvKCdbU1RFUCAyXSBDaGFyZ2VtZW50IEVSQTUgem9uZSBtZWFucyAuLi4nKQogICAgZXJhNV9kaWN0ID0gbG9hZF9lcmE1X3pvbmVfbWVhbnMoKQoKICAgICMgU1RFUCAzIOKAlCBMb2FkIE5EVkkKICAgIGxvZy5pbmZvKCdbU1RFUCAzXSBDaGFyZ2VtZW50IE1PRElTIE5EVkkgem9uZSBtZWFucyAuLi4nKQogICAgbmR2aV9kaWN0ID0gbG9hZF9uZHZpX3pvbmVfbWVhbnMoKQoKICAgICMgU1RFUCA0IOKAlCBCdWlsZCBmZWF0dXJlcyBwZXIgem9uZQogICAgbG9nLmluZm8oJ1tTVEVQIDRdIENvbnN0cnVjdGlvbiBmZWF0dXJlcyBwYXIgem9uZSAuLi4nKQogICAgem9uZV9kZnMgPSB7fQogICAgZm9yIHpvbmUgaW4gWk9ORVM6CiAgICAgICAgbG9nLmluZm8oZidcbiAgLS0gWm9uZToge3pvbmUudXBwZXIoKX0gLS0nKQogICAgICAgIGRmX3ogPSBidWlsZF96b25lX2ZlYXR1cmVzKHpvbmUsIGd3c2FfZGYsIGVyYTVfZGljdCwgbmR2aV9kaWN0KQogICAgICAgIGlmIGRmX3ogaXMgbm90IE5vbmU6CiAgICAgICAgICAgIHpvbmVfZGZzW3pvbmVdID0gZGZfegogICAgICAgICAgICBvdXRfeiA9IE9VVF9QUk9DIC8gZidmZWF0dXJlc197em9uZX0uY3N2JwogICAgICAgICAgICBkZl96LnRvX2NzdihvdXRfeikKICAgICAgICAgICAgbG9nLmluZm8oZicgIFtPS10ge291dF96fScpCgogICAgaWYgbm90IHpvbmVfZGZzOgogICAgICAgIGxvZy5lcnJvcignTm8gem9uZSBmZWF0dXJlcyBidWlsdCDigJQgY2hlY2sgaW5wdXRzJykKICAgICAgICByZXR1cm4KCiAgICAjIFNURVAgNSDigJQgTWFzdGVyIGZlYXR1cmUgbWF0cml4CiAgICBsb2cuaW5mbygnXG5bU1RFUCA1XSBDb25zdHJ1Y3Rpb24gbWFzdGVyIGZlYXR1cmUgbWF0cml4IC4uLicpCiAgICBkZl9hbGwgPSBwZC5jb25jYXQoem9uZV9kZnMudmFsdWVzKCksIGF4aXM9MCkuc29ydF9pbmRleCgpCiAgICBvdXRfbWFzdGVyID0gT1VUX1BST0MgLyAnZmVhdHVyZXNfbWFzdGVyLmNzdicKICAgIGRmX2FsbC50b19jc3Yob3V0X21hc3RlcikKICAgIGxvZy5pbmZvKGYnICBbT0tdIHtvdXRfbWFzdGVyfSDigJQge2xlbihkZl9hbGwpfSByb3dzLCB7bGVuKGRmX2FsbC5jb2x1bW5zKX0gY29scycpCgogICAgIyBTVEVQIDYg4oCUIEZlYXR1cmUgc3RhdGlzdGljcwogICAgbG9nLmluZm8oJ1tTVEVQIDZdIENhbGN1bCBzdGF0aXN0aXF1ZXMgZmVhdHVyZXMgLi4uJykKICAgIHN0YXRzX2RmID0gZmVhdHVyZV9zdGF0cyhkZl9hbGwpCiAgICBvdXRfc3RhdHMgPSBPVVRfUkVTIC8gJ2ZlYXR1cmVfc3RhdHMuY3N2JwogICAgc3RhdHNfZGYudG9fY3N2KG91dF9zdGF0cykKICAgIGxvZy5pbmZvKGYnICBbT0tdIHtvdXRfc3RhdHN9JykKCiAgICAjIFNURVAgNyDigJQgRmlndXJlcwogICAgbG9nLmluZm8oJ1tTVEVQIDddIEdlbmVyYXRpb24gZmlndXJlcyAuLi4nKQogICAgcGxvdF9jb3JyZWxhdGlvbnMoZGZfYWxsLCBPVVRfRklHIC8gJzA0X2ZlYXR1cmVfY29ycmVsYXRpb25zLnBuZycpCiAgICBwbG90X3RpbWVzZXJpZXMoZGZfYWxsLCBPVVRfRklHIC8gJzA0X2ZlYXR1cmVfdGltZXNlcmllcy5wbmcnKQoKICAgICMgU3VtbWFyeQogICAgcHJpbnQoJ1xuJyArIFNFUCkKICAgIHByaW50KCdSRVNVTUUgMDRfZmVhdHVyZV9lbmdpbmVlcmluZy5weScpCiAgICBwcmludChTRVApCiAgICBwcmludChmJyAgWm9uZXMgICAgICAgICA6IHtsaXN0KHpvbmVfZGZzLmtleXMoKSl9JykKICAgIHByaW50KGYnICBUb3RhbCByb3dzICAgIDoge2xlbihkZl9hbGwpfScpCiAgICBwcmludChmJyAgVG90YWwgZmVhdHVyZXM6IHtsZW4oZGZfYWxsLmNvbHVtbnMpfScpCiAgICBwcmludChmJyAgVGltZSByYW5nZSAgICA6IHtkZl9hbGwuaW5kZXgubWluKCkuZGF0ZSgpfSAtPiB7ZGZfYWxsLmluZGV4Lm1heCgpLmRhdGUoKX0nKQogICAgcHJpbnQoKQoKICAgICMgRmVhdHVyZSBsaXN0CiAgICBmZWF0X2NvbHMgPSBbYyBmb3IgYyBpbiBkZl9hbGwuY29sdW1ucyBpZiBjIG5vdCBpbiAoJ3pvbmUnLCldCiAgICBwcmludChmJyAgRmVhdHVyZXMgKHtsZW4oZmVhdF9jb2xzKX0pOicpCiAgICBmb3IgaSBpbiByYW5nZSgwLCBsZW4oZmVhdF9jb2xzKSwgNSk6CiAgICAgICAgcHJpbnQoJyAgICAnICsgJywgJy5qb2luKGZlYXRfY29sc1tpOmkrNV0pKQoKICAgIHByaW50KCkKICAgIHByaW50KCdPdXRwdXRzOicpCiAgICBwcmludChmJyAge09VVF9QUk9DfS9mZWF0dXJlc19tYXN0ZXIuY3N2JykKICAgIGZvciB6IGluIFpPTkVTOgogICAgICAgIHByaW50KGYnICB7T1VUX1BST0N9L2ZlYXR1cmVzX3t6fS5jc3YnKQogICAgcHJpbnQoZicgIHtPVVRfUkVTfS9mZWF0dXJlX3N0YXRzLmNzdicpCiAgICBwcmludChmJyAge09VVF9GSUd9LzA0X2ZlYXR1cmVfY29ycmVsYXRpb25zLnBuZycpCiAgICBwcmludChmJyAge09VVF9GSUd9LzA0X2ZlYXR1cmVfdGltZXNlcmllcy5wbmcnKQogICAgcHJpbnQoKQogICAgcHJpbnQoJ1tET05FXSBQcmV0IHBvdXIgMDVfbmR2aV9lbXVsYXRvci5weSBldCAwNl90cmVuZF9hbmFseXNpcy5weScpCiAgICBwcmludChTRVApCgoKaWYgX19uYW1lX18gPT0gJ19fbWFpbl9fJzoKICAgIG1haW4oKQo=
+# ==============================================================================
+# 04_feature_engineering.py
+# Tunisia Groundwater Depletion Study
+# MODULE 3 — Feature Engineering
+# ==============================================================================
+# Methodology (Section 2.4):
+#   Builds the master feature matrix used by scripts 06-09:
+#   - GWSA anomaly (from 1km downscaled)
+#   - Precipitation anomaly (ERA5, SPI-3 and SPI-12)
+#   - Temperature anomaly (ERA5)
+#   - NDVI anomaly (MODIS)
+#   - Seasonal encodings (month_sin, month_cos)
+#   - Lagged features (GWSA t-1..t-12, P t-1..t-3)
+#   - Rolling statistics (3-month, 6-month, 12-month means)
+#   - Zone dummies
+#
+# Inputs:
+#   outputs/processed/gwsa_1km_zones.csv
+#   outputs/processed/gwsa_zones_gap_filled.csv
+#   data/era5/era5_precip_*.nc
+#   data/era5/era5_t2m_*.nc
+#   data/modis/MOD13A3.061_1km_aid0001.nc
+#
+# Outputs:
+#   outputs/processed/features_master.csv   (all zones, all months)
+#   outputs/processed/features_north.csv
+#   outputs/processed/features_central.csv
+#   outputs/processed/features_south.csv
+#   outputs/results/feature_stats.csv
+#   outputs/figures/04_feature_correlations.png
+#   outputs/figures/04_feature_timeseries.png
+# ==============================================================================
+
+import os
+import sys
+import logging
+import warnings
+import yaml
+import numpy as np
+import pandas as pd
+import xarray as xr
+from pathlib import Path
+from scipy import stats
+
+warnings.filterwarnings('ignore')
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+os.chdir(BASE)
+
+with open('config.yaml', 'r', encoding='utf-8') as f:
+    CFG = yaml.safe_load(f)
+
+OUT_PROC = Path(CFG['paths']['outputs']['processed'])
+OUT_RES  = Path(CFG['paths']['outputs']['results'])
+OUT_FIG  = Path(CFG['paths']['outputs']['figures'])
+OUT_LOG  = Path(CFG['paths']['outputs']['logs'])
+for p in [OUT_PROC, OUT_RES, OUT_FIG, OUT_LOG]:
+    p.mkdir(parents=True, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    handlers=[
+        logging.FileHandler(OUT_LOG / '04_feature_engineering.log', encoding='utf-8'),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+log = logging.getLogger(__name__)
+SEP = '=' * 60
+
+BASELINE_START = pd.Timestamp(CFG['time']['baseline_start'])
+BASELINE_END   = pd.Timestamp(CFG['time']['baseline_end'])
+ZONES = ['north', 'central', 'south']
+
+LAT_ZONE = {
+    'north'  : (34.0, 37.5),
+    'central': (32.0, 34.0),
+    'south'  : (30.0, 32.0),
+}
+LON_MIN = CFG['study_area']['lon_min']
+LON_MAX = CFG['study_area']['lon_max']
+LAT_MIN = CFG['study_area']['lat_min']
+LAT_MAX = CFG['study_area']['lat_max']
+
+
+# ==============================================================================
+# LOADERS
+# ==============================================================================
+
+def load_gwsa_zones():
+    """Load zone-mean GWSA from 1km grid (preferred) or gap-filled 0.25deg."""
+    path_1km = OUT_PROC / 'gwsa_1km_zones.csv'
+    path_gf  = OUT_PROC / 'gwsa_zones_gap_filled.csv'
+
+    if path_1km.exists():
+        df = pd.read_csv(path_1km, parse_dates=['time'], index_col='time')
+        df.index = df.index.to_period('M').to_timestamp()
+        df = df[~df.index.duplicated(keep='first')].sort_index()
+        # Rename columns to standard names
+        rename = {}
+        for col in df.columns:
+            for z in ZONES:
+                if z in col.lower():
+                    rename[col] = f'gwsa_{z}'
+        df = df.rename(columns=rename)
+        log.info(f"  GWSA 1km zones loaded: {df.shape}, cols: {list(df.columns)}")
+        return df
+
+    elif path_gf.exists():
+        df = pd.read_csv(path_gf, parse_dates=[0], index_col=0)
+        df.index = df.index.to_period('M').to_timestamp()
+        df.columns = [f'gwsa_{z}' for z in ZONES[:len(df.columns)]]
+        log.info(f"  GWSA gap-filled zones loaded: {df.shape}")
+        return df
+
+    else:
+        raise FileNotFoundError("No GWSA zone CSV found. Run scripts 01-03 first.")
+
+
+def load_era5_zone_means():
+    """Load ERA5 P and T2m, compute zone means."""
+    era5_dir = Path(CFG['paths']['data']['era5'])
+    result = {}
+
+    for var, key in [('precip', 'P'), ('t2m', 'T2m')]:
+        files = sorted(era5_dir.glob(f'era5_{var}_*.nc'))
+        if not files:
+            log.warning(f"  ERA5 {var} not found")
+            result[key] = None
+            continue
+
+        ds = xr.open_mfdataset(files, combine='by_coords')
+        vname = [v for v in ds.data_vars if v not in ('longitude','latitude','time')]
+        if not vname:
+            vname = list(ds.data_vars)
+        da = ds[vname[0]]
+
+        lat_dim = 'latitude' if 'latitude' in da.dims else 'lat'
+        lon_dim = 'longitude' if 'longitude' in da.dims else 'lon'
+
+        # Handle descending latitude
+        lat_vals = da[lat_dim].values
+        if lat_vals[0] > lat_vals[-1]:
+            da = da.sel(**{lat_dim: slice(LAT_MAX, LAT_MIN),
+                           lon_dim: slice(LON_MIN, LON_MAX)})
+        else:
+            da = da.sel(**{lat_dim: slice(LAT_MIN, LAT_MAX),
+                           lon_dim: slice(LON_MIN, LON_MAX)})
+
+        # Unit conversions
+        if key == 'P':
+            da = da * 1000  # m -> mm
+        elif key == 'T2m' and float(da.mean()) > 100:
+            da = da - 273.15  # K -> C
+
+        # Zone means
+        zone_series = {}
+        for zone, (lat_lo, lat_hi) in LAT_ZONE.items():
+            if lat_vals[0] > lat_vals[-1]:
+                da_z = da.sel(**{lat_dim: slice(lat_hi, lat_lo),
+                                 lon_dim: slice(LON_MIN, LON_MAX)})
+            else:
+                da_z = da.sel(**{lat_dim: slice(lat_lo, lat_hi),
+                                 lon_dim: slice(LON_MIN, LON_MAX)})
+            ts = da_z.mean(dim=[lat_dim, lon_dim]).to_series()
+            ts.index = pd.DatetimeIndex([
+                pd.Timestamp(str(t)[:10]) for t in ts.index
+            ]).to_period('M').to_timestamp()
+            ts = ts[~ts.index.duplicated(keep='first')].sort_index()
+            zone_series[zone] = ts
+
+        result[key] = zone_series
+        log.info(f"  ERA5 {key}: {len(zone_series['north'])} months, "
+                 f"north mean={zone_series['north'].mean():.2f}")
+
+    return result
+
+
+def load_ndvi_zone_means():
+    """Load MODIS NDVI zone means."""
+    modis_dir = Path(CFG['paths']['data']['modis'])
+    nc_files  = list(modis_dir.glob('*.nc'))
+
+    if not nc_files:
+        log.warning("  MODIS not found — NDVI will be synthetic")
+        return None
+
+    ds = xr.open_dataset(nc_files[0])
+    ndvi_var = next((v for v in ds.data_vars if 'NDVI' in v), list(ds.data_vars)[0])
+    da = ds[ndvi_var]
+
+    # Mask nodata (xarray already applied scale_factor)
+    nodataval = da.attrs.get('nodatavals', -3000.0)
+    da = da.where(da != nodataval)
+    da = da.where((da >= -0.2) & (da <= 1.0))
+
+    # Normalize time
+    try:
+        new_times = pd.DatetimeIndex([
+            pd.Timestamp(str(t)[:10]) for t in da.time.values
+        ]).to_period('M').to_timestamp()
+        da = da.assign_coords(time=new_times)
+    except Exception as e:
+        log.warning(f"  MODIS time conversion: {e}")
+
+    # Identify spatial dims
+    lat_dim = next((d for d in da.dims if d in ('lat','latitude','YDim','y')), None)
+    lon_dim = next((d for d in da.dims if d in ('lon','longitude','XDim','x')), None)
+
+    zone_series = {}
+    for zone, (lat_lo, lat_hi) in LAT_ZONE.items():
+        if lat_dim and lon_dim:
+            lat_vals = da[lat_dim].values
+            if lat_vals[0] > lat_vals[-1]:
+                da_z = da.sel(**{lat_dim: slice(lat_hi, lat_lo),
+                                 lon_dim: slice(LON_MIN, LON_MAX)})
+            else:
+                da_z = da.sel(**{lat_dim: slice(lat_lo, lat_hi),
+                                 lon_dim: slice(LON_MIN, LON_MAX)})
+            ts = da_z.mean(dim=[lat_dim, lon_dim]).to_series()
+        else:
+            ts = da.mean(dim=[d for d in da.dims if d != 'time']).to_series()
+
+        ts.index = pd.DatetimeIndex(ts.index).to_period('M').to_timestamp()
+        ts = ts[~ts.index.duplicated(keep='first')].sort_index().dropna()
+        zone_series[zone] = ts
+
+    log.info(f"  MODIS NDVI: {len(zone_series['north'])} months, "
+             f"north mean={zone_series['north'].mean():.3f}")
+    return zone_series
+
+
+# ==============================================================================
+# FEATURE BUILDERS
+# ==============================================================================
+
+def compute_anomaly(series, baseline_start=BASELINE_START, baseline_end=BASELINE_END):
+    """Compute monthly anomaly relative to 2004-2009 baseline."""
+    baseline = series[(series.index >= baseline_start) & (series.index <= baseline_end)]
+    monthly_mean = baseline.groupby(baseline.index.month).mean()
+    anomaly = series.copy()
+    for m in range(1, 13):
+        mask = series.index.month == m
+        if m in monthly_mean.index:
+            anomaly[mask] = series[mask] - monthly_mean[m]
+    return anomaly
+
+
+def compute_spi(precip_series, scale=3):
+    """
+    Standardized Precipitation Index (SPI) at given scale (months).
+    Uses gamma distribution fitting per calendar month.
+    """
+    spi = pd.Series(np.nan, index=precip_series.index)
+    p = precip_series.rolling(window=scale, min_periods=scale).sum()
+
+    for m in range(1, 13):
+        mask = p.index.month == m
+        vals = p[mask].dropna()
+        if len(vals) < 10:
+            continue
+        vals_pos = vals[vals > 0]
+        if len(vals_pos) < 5:
+            spi[mask] = 0.0
+            continue
+        try:
+            shape, loc, scale_p = stats.gamma.fit(vals_pos, floc=0)
+            prob = stats.gamma.cdf(vals.clip(lower=1e-6), shape, loc=0, scale=scale_p)
+            prob = np.clip(prob, 1e-6, 1 - 1e-6)
+            spi_vals = stats.norm.ppf(prob)
+            spi[vals.index] = spi_vals
+        except Exception:
+            spi[mask & ~spi.isna()] = 0.0
+
+    return spi.clip(-3, 3)
+
+
+def build_zone_features(zone, gwsa_df, era5_dict, ndvi_dict):
+    """Build complete feature matrix for one zone."""
+    gwsa_col = f'gwsa_{zone}'
+    if gwsa_col not in gwsa_df.columns:
+        # Try to find a matching column
+        matches = [c for c in gwsa_df.columns if zone in c.lower()]
+        if not matches:
+            log.warning(f"  No GWSA column for zone={zone}")
+            return None
+        gwsa_col = matches[0]
+
+    gwsa = gwsa_df[gwsa_col].dropna().sort_index()
+
+    # Common time index
+    time_idx = gwsa.index
+
+    # GWSA anomaly
+    gwsa_anom = compute_anomaly(gwsa).rename('gwsa_anomaly')
+
+    # ERA5 P
+    if era5_dict.get('P') and zone in era5_dict['P']:
+        P = era5_dict['P'][zone].reindex(time_idx).ffill().bfill()
+    else:
+        # Synthetic
+        m = time_idx.month
+        P = pd.Series(
+            50 + 30 * np.cos(2*np.pi*(m - 1)/12) * (1 if zone=='north' else 0.5),
+            index=time_idx
+        )
+    P = P.rename('precip_mm')
+    P_anom = compute_anomaly(P).rename('precip_anomaly')
+    spi3  = compute_spi(P, scale=3).reindex(time_idx).rename('spi3')
+    spi12 = compute_spi(P, scale=12).reindex(time_idx).rename('spi12')
+
+    # ERA5 T2m
+    if era5_dict.get('T2m') and zone in era5_dict['T2m']:
+        T2m = era5_dict['T2m'][zone].reindex(time_idx).ffill().bfill()
+    else:
+        m = time_idx.month
+        T2m = pd.Series(
+            22 + 10 * np.cos(2*np.pi*(m - 7)/12),
+            index=time_idx
+        )
+    T2m = T2m.rename('t2m_c')
+    T2m_anom = compute_anomaly(T2m).rename('t2m_anomaly')
+
+    # NDVI
+    if ndvi_dict and zone in ndvi_dict:
+        ndvi = ndvi_dict[zone].reindex(time_idx).ffill().bfill()
+    else:
+        m = time_idx.month
+        t = np.arange(len(time_idx))
+        ndvi = pd.Series(
+            0.18 + 0.08*np.cos(2*np.pi*(m-3)/12) - 0.0002*t,
+            index=time_idx
+        )
+    ndvi = ndvi.rename('ndvi')
+    ndvi_anom = compute_anomaly(ndvi).rename('ndvi_anomaly')
+
+    # Seasonal encoding
+    month     = time_idx.month
+    month_sin = pd.Series(np.sin(2*np.pi*month/12), index=time_idx, name='month_sin')
+    month_cos = pd.Series(np.cos(2*np.pi*month/12), index=time_idx, name='month_cos')
+    year_norm = pd.Series((time_idx.year - 2002) / 22.0, index=time_idx, name='year_norm')
+
+    # Lagged GWSA (t-1 to t-12)
+    lag_cols = {}
+    for lag in range(1, 13):
+        lag_cols[f'gwsa_lag{lag}'] = gwsa.shift(lag)
+
+    # Lagged P (t-1 to t-3)
+    for lag in range(1, 4):
+        lag_cols[f'precip_lag{lag}'] = P.shift(lag)
+
+    # Rolling means
+    roll_cols = {
+        'gwsa_roll3' : gwsa.rolling(3,  min_periods=1).mean(),
+        'gwsa_roll6' : gwsa.rolling(6,  min_periods=1).mean(),
+        'gwsa_roll12': gwsa.rolling(12, min_periods=1).mean(),
+        'precip_roll3' : P.rolling(3,  min_periods=1).mean(),
+        'precip_roll12': P.rolling(12, min_periods=1).mean(),
+    }
+
+    # Zone dummy
+    zone_dummies = {
+        'zone_north'  : int(zone == 'north'),
+        'zone_central': int(zone == 'central'),
+        'zone_south'  : int(zone == 'south'),
+    }
+
+    # Assemble
+    df = pd.concat([
+        gwsa.rename('gwsa'),
+        gwsa_anom,
+        P, P_anom, spi3, spi12,
+        T2m, T2m_anom,
+        ndvi, ndvi_anom,
+        month_sin, month_cos, year_norm,
+        pd.DataFrame(lag_cols, index=time_idx),
+        pd.DataFrame(roll_cols, index=time_idx),
+    ], axis=1)
+
+    for k, v in zone_dummies.items():
+        df[k] = v
+
+    df['zone'] = zone
+    df.index.name = 'time'
+
+    log.info(f"  Zone {zone}: {len(df)} rows, {len(df.columns)} features")
+    log.info(f"    GWSA range: [{gwsa.min():.2f}, {gwsa.max():.2f}] cm EWH")
+    log.info(f"    Precip mean: {P.mean():.1f} mm/month")
+    log.info(f"    NDVI mean: {ndvi.mean():.3f}")
+
+    return df
+
+
+# ==============================================================================
+# DIAGNOSTICS
+# ==============================================================================
+
+def feature_stats(df_all):
+    """Compute summary statistics for all features."""
+    numeric_cols = df_all.select_dtypes(include=[np.number]).columns
+    stats_df = df_all[numeric_cols].describe().T
+    stats_df['missing_pct'] = df_all[numeric_cols].isna().mean() * 100
+    stats_df['skewness']    = df_all[numeric_cols].skew()
+    return stats_df
+
+
+def plot_correlations(df_all, out_path):
+    """Figure 04a — Correlation matrix heatmap."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    key_cols = [
+        'gwsa', 'gwsa_anomaly', 'precip_mm', 'precip_anomaly',
+        'spi3', 'spi12', 't2m_c', 't2m_anomaly', 'ndvi', 'ndvi_anomaly',
+        'gwsa_lag1', 'gwsa_lag3', 'gwsa_lag6', 'gwsa_lag12',
+        'gwsa_roll3', 'gwsa_roll12',
+    ]
+    cols = [c for c in key_cols if c in df_all.columns]
+    corr = df_all[cols].corr()
+
+    fig, ax = plt.subplots(figsize=(14, 12))
+    im = ax.imshow(corr.values, cmap='RdBu_r', vmin=-1, vmax=1, aspect='auto')
+    ax.set_xticks(range(len(cols)))
+    ax.set_yticks(range(len(cols)))
+    ax.set_xticklabels(cols, rotation=45, ha='right', fontsize=8)
+    ax.set_yticklabels(cols, fontsize=8)
+
+    # Add correlation values
+    for i in range(len(cols)):
+        for j in range(len(cols)):
+            val = corr.values[i, j]
+            color = 'white' if abs(val) > 0.6 else 'black'
+            ax.text(j, i, f'{val:.2f}', ha='center', va='center',
+                    fontsize=6, color=color)
+
+    plt.colorbar(im, ax=ax, label='Pearson r', shrink=0.8)
+    ax.set_title('Feature Correlation Matrix — All Zones', fontsize=13)
+    plt.tight_layout()
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    log.info(f'  [OK] {out_path}')
+
+
+def plot_timeseries(df_all, out_path):
+    """Figure 04b — Key feature time series by zone."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    fig, axes = plt.subplots(4, 1, figsize=(14, 16), sharex=True)
+    colors = {'north': '#1f77b4', 'central': '#ff7f0e', 'south': '#2ca02c'}
+
+    features = ['gwsa', 'precip_mm', 't2m_c', 'ndvi']
+    labels   = ['GWSA (cm EWH)', 'Precip (mm/month)', 'T2m (C)', 'NDVI']
+
+    for ax, feat, label in zip(axes, features, labels):
+        for zone in ZONES:
+            df_z = df_all[df_all['zone'] == zone]
+            if feat in df_z.columns:
+                ax.plot(df_z.index, df_z[feat],
+                        label=zone.capitalize(), color=colors[zone],
+                        linewidth=0.9, alpha=0.85)
+        ax.set_ylabel(label, fontsize=9)
+        ax.legend(fontsize=8, loc='upper right')
+        ax.grid(True, alpha=0.3)
+        if feat == 'gwsa':
+            ax.axhline(0, color='k', linewidth=0.5, linestyle='--')
+
+    axes[-1].set_xlabel('Date')
+    fig.suptitle('Key Features Time Series — Tunisia Zones (2002-2024)', fontsize=13)
+    plt.tight_layout()
+    fig.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    log.info(f'  [OK] {out_path}')
+
+
+# ==============================================================================
+# MAIN
+# ==============================================================================
+
+def main():
+    print(SEP)
+    print('04_feature_engineering.py')
+    print(SEP)
+
+    # STEP 1 — Load GWSA
+    log.info('[STEP 1] Chargement GWSA zones ...')
+    gwsa_df = load_gwsa_zones()
+
+    # STEP 2 — Load ERA5
+    log.info('[STEP 2] Chargement ERA5 zone means ...')
+    era5_dict = load_era5_zone_means()
+
+    # STEP 3 — Load NDVI
+    log.info('[STEP 3] Chargement MODIS NDVI zone means ...')
+    ndvi_dict = load_ndvi_zone_means()
+
+    # STEP 4 — Build features per zone
+    log.info('[STEP 4] Construction features par zone ...')
+    zone_dfs = {}
+    for zone in ZONES:
+        log.info(f'\n  -- Zone: {zone.upper()} --')
+        df_z = build_zone_features(zone, gwsa_df, era5_dict, ndvi_dict)
+        if df_z is not None:
+            zone_dfs[zone] = df_z
+            out_z = OUT_PROC / f'features_{zone}.csv'
+            df_z.to_csv(out_z)
+            log.info(f'  [OK] {out_z}')
+
+    if not zone_dfs:
+        log.error('No zone features built — check inputs')
+        return
+
+    # STEP 5 — Master feature matrix
+    log.info('\n[STEP 5] Construction master feature matrix ...')
+    df_all = pd.concat(zone_dfs.values(), axis=0).sort_index()
+    out_master = OUT_PROC / 'features_master.csv'
+    df_all.to_csv(out_master)
+    log.info(f'  [OK] {out_master} — {len(df_all)} rows, {len(df_all.columns)} cols')
+
+    # STEP 6 — Feature statistics
+    log.info('[STEP 6] Calcul statistiques features ...')
+    stats_df = feature_stats(df_all)
+    out_stats = OUT_RES / 'feature_stats.csv'
+    stats_df.to_csv(out_stats)
+    log.info(f'  [OK] {out_stats}')
+
+    # STEP 7 — Figures
+    log.info('[STEP 7] Generation figures ...')
+    plot_correlations(df_all, OUT_FIG / '04_feature_correlations.png')
+    plot_timeseries(df_all, OUT_FIG / '04_feature_timeseries.png')
+
+    # Summary
+    print('\n' + SEP)
+    print('RESUME 04_feature_engineering.py')
+    print(SEP)
+    print(f'  Zones         : {list(zone_dfs.keys())}')
+    print(f'  Total rows    : {len(df_all)}')
+    print(f'  Total features: {len(df_all.columns)}')
+    print(f'  Time range    : {df_all.index.min().date()} -> {df_all.index.max().date()}')
+    print()
+
+    # Feature list
+    feat_cols = [c for c in df_all.columns if c not in ('zone',)]
+    print(f'  Features ({len(feat_cols)}):')
+    for i in range(0, len(feat_cols), 5):
+        print('    ' + ', '.join(feat_cols[i:i+5]))
+
+    print()
+    print('Outputs:')
+    print(f'  {OUT_PROC}/features_master.csv')
+    for z in ZONES:
+        print(f'  {OUT_PROC}/features_{z}.csv')
+    print(f'  {OUT_RES}/feature_stats.csv')
+    print(f'  {OUT_FIG}/04_feature_correlations.png')
+    print(f'  {OUT_FIG}/04_feature_timeseries.png')
+    print()
+    print('[DONE] Pret pour 05_ndvi_emulator.py et 06_trend_analysis.py')
+    print(SEP)
+
+
+if __name__ == '__main__':
+    main()
