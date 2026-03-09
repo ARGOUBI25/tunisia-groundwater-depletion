@@ -1,1 +1,94 @@
-IiIiCjAwY19kb3dubG9hZF9nbGRhcy5weQpUw6lsw6ljaGFyZ2VtZW50IGF1dG9tYXRpcXVlIGRlcyAzMTMgZmljaGllcnMgR0xEQVMgTk9BSApkZXB1aXMgbGEgbGlzdGUgZGUgbGllbnMgR0VTIERJU0MKIiIiCgppbXBvcnQgb3MKaW1wb3J0IHJlcXVlc3RzCmltcG9ydCBuZXRyYwppbXBvcnQgdGltZQpmcm9tIHBhdGhsaWIgaW1wb3J0IFBhdGgKCiMg4pSA4pSAIENvbmZpZyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKTElOS1NfRklMRSA9IHIiQzpcVXNlcnNcUlRYXERlc2t0b3BcVHVuaXNpYV9HV1xkYXRhXGdsZGFzXG5vYWhcbGlua3MudHh0IgpPVVRfRElSICAgID0gciJDOlxVc2Vyc1xSVFhcRGVza3RvcFxUdW5pc2lhX0dXXGRhdGFcZ2xkYXNcbm9haCIKCm9zLm1ha2VkaXJzKE9VVF9ESVIsIGV4aXN0X29rPVRydWUpCgojIOKUgOKUgCBBdXRoZW50aWZpY2F0aW9uIE5BU0EgRWFydGhkYXRhIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApuZXRyY19wYXRoID0gb3MucGF0aC5qb2luKG9zLnBhdGguZXhwYW5kdXNlcigifiIpLCAiLm5ldHJjIikKYXV0aCA9IG5ldHJjLm5ldHJjKG5ldHJjX3BhdGgpLmF1dGhlbnRpY2F0b3JzKCJ1cnMuZWFydGhkYXRhLm5hc2EuZ292IikKVVNFUk5BTUUgPSBhdXRoWzBdClBBU1NXT1JEID0gYXV0aFsyXQoKcHJpbnQoZiJDb25uZWN0w6kgZW4gdGFudCBxdWUgOiB7VVNFUk5BTUV9IikKCiMg4pSA4pSAIExlY3R1cmUgZGVzIGxpZW5zIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAp3aXRoIG9wZW4oTElOS1NfRklMRSwgInIiKSBhcyBmOgogICAgbGlua3MgPSBbbGluZS5zdHJpcCgpIGZvciBsaW5lIGluIGYucmVhZGxpbmVzKCkKICAgICAgICAgICAgIGlmIGxpbmUuc3RyaXAoKS5zdGFydHN3aXRoKCJodHRwIikgYW5kICJHTERBUyIgaW4gbGluZV0KCnByaW50KGYiTm9tYnJlIGRlIGZpY2hpZXJzIMOgIHTDqWzDqWNoYXJnZXIgOiB7bGVuKGxpbmtzKX0iKQoKIyDilIDilIAgVMOpbMOpY2hhcmdlbWVudCDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKc2Vzc2lvbiA9IHJlcXVlc3RzLlNlc3Npb24oKQpzZXNzaW9uLmF1dGggPSAoVVNFUk5BTUUsIFBBU1NXT1JEKQoKc3VjY2VzcyA9IDAKZmFpbGVkICA9IFtdCgpmb3IgaSwgdXJsIGluIGVudW1lcmF0ZShsaW5rcywgMSk6CiAgICAjIEV4dHJhaXJlIGxlIG5vbSBkdSBmaWNoaWVyIGRlcHVpcyBsZSBwYXJhbcOodHJlIExBQkVMIGRhbnMgbCdVUkwKICAgIGZpbGVuYW1lID0gTm9uZQogICAgZm9yIHBhcnQgaW4gdXJsLnNwbGl0KCImIik6CiAgICAgICAgaWYgcGFydC5zdGFydHN3aXRoKCJMQUJFTD0iKToKICAgICAgICAgICAgZmlsZW5hbWUgPSBwYXJ0LnJlcGxhY2UoIkxBQkVMPSIsICIiKQogICAgICAgICAgICBicmVhawogICAgaWYgZmlsZW5hbWUgaXMgTm9uZToKICAgICAgICBmaWxlbmFtZSA9IGYiZ2xkYXNfe2k6MDRkfS5uYzQiCgogICAgb3V0X3BhdGggPSBvcy5wYXRoLmpvaW4oT1VUX0RJUiwgZmlsZW5hbWUpCgogICAgIyBTYXV0ZXIgc2kgZMOpasOgIHTDqWzDqWNoYXJnw6kKICAgIGlmIG9zLnBhdGguZXhpc3RzKG91dF9wYXRoKSBhbmQgb3MucGF0aC5nZXRzaXplKG91dF9wYXRoKSA+IDEwMDA6CiAgICAgICAgcHJpbnQoZiJbU0tJUCB7aTowM2R9L3tsZW4obGlua3MpfV0ge2ZpbGVuYW1lfSIpCiAgICAgICAgc3VjY2VzcyArPSAxCiAgICAgICAgY29udGludWUKCiAgICBwcmludChmIltET1dOIHtpOjAzZH0ve2xlbihsaW5rcyl9XSB7ZmlsZW5hbWV9IC4uLiIsIGVuZD0iICIpCgogICAgdHJ5OgogICAgICAgIHJlc3BvbnNlID0gc2Vzc2lvbi5nZXQodXJsLCB0aW1lb3V0PTEyMCkKICAgICAgICByZXNwb25zZS5yYWlzZV9mb3Jfc3RhdHVzKCkKCiAgICAgICAgd2l0aCBvcGVuKG91dF9wYXRoLCAid2IiKSBhcyBmOgogICAgICAgICAgICBmLndyaXRlKHJlc3BvbnNlLmNvbnRlbnQpCgogICAgICAgIHNpemVfa2IgPSBvcy5wYXRoLmdldHNpemUob3V0X3BhdGgpIC8gMTAyNAogICAgICAgIHByaW50KGYiT0sgKHtzaXplX2tiOi4wZn0gS0IpIikKICAgICAgICBzdWNjZXNzICs9IDEKCiAgICBleGNlcHQgRXhjZXB0aW9uIGFzIGU6CiAgICAgICAgcHJpbnQoZiJFUlJFVVI6IHtlfSIpCiAgICAgICAgZmFpbGVkLmFwcGVuZCgoaSwgdXJsLCBzdHIoZSkpKQoKICAgICMgUGF1c2UgcG91ciBuZSBwYXMgc3VyY2hhcmdlciBsZSBzZXJ2ZXVyCiAgICB0aW1lLnNsZWVwKDAuNSkKCiMg4pSA4pSAIFLDqXN1bcOpIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgApwcmludCgiXG4iICsgIj0iICogNTApCnByaW50KGYiVMOpbMOpY2hhcmfDqXMgYXZlYyBzdWNjw6hzIDoge3N1Y2Nlc3N9L3tsZW4obGlua3MpfSIpCmlmIGZhaWxlZDoKICAgIHByaW50KGYiw4ljaGVjcyAoe2xlbihmYWlsZWQpfSkgOiIpCiAgICBmb3IgaWR4LCB1cmwsIGVyciBpbiBmYWlsZWQ6CiAgICAgICAgcHJpbnQoZiIgIFt7aWR4fV0ge2Vycn0iKQogICAgIyBTYXV2ZWdhcmRlciBsZXMgbGllbnMgw6ljaG91w6lzIHBvdXIgcmV0cnkKICAgIHJldHJ5X2ZpbGUgPSBvcy5wYXRoLmpvaW4oT1VUX0RJUiwgImZhaWxlZF9saW5rcy50eHQiKQogICAgd2l0aCBvcGVuKHJldHJ5X2ZpbGUsICJ3IikgYXMgZjoKICAgICAgICBmb3IgXywgdXJsLCBfIGluIGZhaWxlZDoKICAgICAgICAgICAgZi53cml0ZSh1cmwgKyAiXG4iKQogICAgcHJpbnQoZiIgIExpZW5zIMOpY2hvdcOpcyBzYXV2ZWdhcmTDqXMgZGFuczoge3JldHJ5X2ZpbGV9IikKZWxzZToKICAgIHByaW50KCJUb3VzIGxlcyBmaWNoaWVycyB0w6lsw6ljaGFyZ8OpcyBhdmVjIHN1Y2PDqHMgISIpCnByaW50KCI9IiAqIDUwKQo=
+"""
+00c_download_gldas.py
+Téléchargement automatique des 313 fichiers GLDAS NOAH
+depuis la liste de liens GES DISC
+"""
+
+import os
+import requests
+import netrc
+import time
+from pathlib import Path
+
+# ── Config ────────────────────────────────────────────────────────────────────
+LINKS_FILE = r"C:\Users\RTX\Desktop\Tunisia_GW\data\gldas\noah\links.txt"
+OUT_DIR    = r"C:\Users\RTX\Desktop\Tunisia_GW\data\gldas\noah"
+
+os.makedirs(OUT_DIR, exist_ok=True)
+
+# ── Authentification NASA Earthdata ───────────────────────────────────────────
+netrc_path = os.path.join(os.path.expanduser("~"), ".netrc")
+auth = netrc.netrc(netrc_path).authenticators("urs.earthdata.nasa.gov")
+USERNAME = auth[0]
+PASSWORD = auth[2]
+
+print(f"Connecté en tant que : {USERNAME}")
+
+# ── Lecture des liens ─────────────────────────────────────────────────────────
+with open(LINKS_FILE, "r") as f:
+    links = [line.strip() for line in f.readlines()
+             if line.strip().startswith("http") and "GLDAS" in line]
+
+print(f"Nombre de fichiers à télécharger : {len(links)}")
+
+# ── Téléchargement ────────────────────────────────────────────────────────────
+session = requests.Session()
+session.auth = (USERNAME, PASSWORD)
+
+success = 0
+failed  = []
+
+for i, url in enumerate(links, 1):
+    # Extraire le nom du fichier depuis le paramètre LABEL dans l'URL
+    filename = None
+    for part in url.split("&"):
+        if part.startswith("LABEL="):
+            filename = part.replace("LABEL=", "")
+            break
+    if filename is None:
+        filename = f"gldas_{i:04d}.nc4"
+
+    out_path = os.path.join(OUT_DIR, filename)
+
+    # Sauter si déjà téléchargé
+    if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+        print(f"[SKIP {i:03d}/{len(links)}] {filename}")
+        success += 1
+        continue
+
+    print(f"[DOWN {i:03d}/{len(links)}] {filename} ...", end=" ")
+
+    try:
+        response = session.get(url, timeout=120)
+        response.raise_for_status()
+
+        with open(out_path, "wb") as f:
+            f.write(response.content)
+
+        size_kb = os.path.getsize(out_path) / 1024
+        print(f"OK ({size_kb:.0f} KB)")
+        success += 1
+
+    except Exception as e:
+        print(f"ERREUR: {e}")
+        failed.append((i, url, str(e)))
+
+    # Pause pour ne pas surcharger le serveur
+    time.sleep(0.5)
+
+# ── Résumé ────────────────────────────────────────────────────────────────────
+print("\n" + "=" * 50)
+print(f"Téléchargés avec succès : {success}/{len(links)}")
+if failed:
+    print(f"Échecs ({len(failed)}) :")
+    for idx, url, err in failed:
+        print(f"  [{idx}] {err}")
+    # Sauvegarder les liens échoués pour retry
+    retry_file = os.path.join(OUT_DIR, "failed_links.txt")
+    with open(retry_file, "w") as f:
+        for _, url, _ in failed:
+            f.write(url + "\n")
+    print(f"  Liens échoués sauvegardés dans: {retry_file}")
+else:
+    print("Tous les fichiers téléchargés avec succès !")
+print("=" * 50)
